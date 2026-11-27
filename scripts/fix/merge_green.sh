@@ -11,4 +11,4 @@ while read -r R N _; do
   title=$(gh api "repos/juju35/$R/pulls/$N" --jq .title); body=$(gh api "repos/juju35/$R/pulls/$N" --jq .body)
   gh api -X PUT "repos/juju35/$R/pulls/$N/merge" -f merge_method=squash -f commit_title="$title (#$N)" -f commit_message="$body" >/dev/null 2>&1 \
     && echo "$R #$N MERGED" || echo "$R #$N merge refused"
-done < fixes/opened.txt
+done < "${1:-fixes/opened.txt}"

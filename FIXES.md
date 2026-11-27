@@ -54,13 +54,14 @@ the drawing's abort signal). PRs in [fixes/opened-morph.txt](fixes/opened-morph.
 
 | State | Repos |
 |---|---|
-| Merged (auto-merge) | timer #19, light #19, power-device #28, water-heater #26 |
-| **Open, CI green, waiting for your go** | cover #48, 3d-printer #32, energy #41, github #74, mower #36, pool #37, tempo #31 |
+| Merged | all 11: timer #19, light #19, power-device #28, water-heater #26 (auto-merge); cover #48, 3d-printer #32, energy #41, github #74, mower #36, pool #37, tempo #31 (on request) |
 | No change needed | room-card (`room-card` flag came from the mock), vivarium (rebuilds its tank scene on purpose when a drawn part changes, so its animation restarts) |
 
 ## Header scenes — maintenance / notify-hub
 Three proposals each, day/night, normal/alert: [proposals/headers.png](proposals/headers.png)
-(source [proposals/headers.html](proposals/headers.html)). Waiting for the choice.
+(source [proposals/headers.html](proposals/headers.html)). Chosen as the most consistent with the other cards and
+today's illustrations: **A · Workshop** (maintenance 0.6.0, #22) and **A · Post** (notify-hub 0.11.0, #25), card and
+panel, status pill moved next to the title on the cards. Both merged.
 
 ## Not done on purpose
    - shared header / detail-button markup across repos: the repos stay independent, so this is a big refactor with nothing visible for users;
