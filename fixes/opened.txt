@@ -71,3 +71,13 @@ ha-saint-of-the-day #26 no-auto
 ha-scene-card #18 auto
 ha-scheduler-card #31 auto
 ha-seedbox-card #25 no-auto
+ha-sky-card #18 no-auto
+ha-smart-appliance-card #121 auto
+ha-smart-comfort #123 auto
+ha-smartlock-card #64 no-auto
+ha-solar-forecast-card #11 no-auto
+ha-solar-roof-card #12 no-auto
+ha-solar-router-card #9 no-auto
+ha-speedtest-card #18 auto
+ha-sports-card #10 no-auto
+ha-stock-card #28 no-auto
