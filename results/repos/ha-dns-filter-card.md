@@ -9,3 +9,4 @@
 |---|---|---|---|
 | minor | conventions | readme: no `/local/community/` resource path in install section | auto |
 | info | visual | stale-comment: comments still describe the old `sun.sun` night rule | auto |
+| minor | security | url-scheme: src/base-card.js:357 `href` from data `${esc(href)}` without a scheme check (javascript: URLs) | false positive |

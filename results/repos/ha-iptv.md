@@ -12,3 +12,4 @@
 | info | code | lifecycle: 6 observers created, 5 `.disconnect()` calls | auto |
 | info | code | size: src/iptv-panel/panel.js is 1638 lines | auto |
 | info | code | biome: lint/suspicious/noTemplateCurlyInString ×1 (test/) | auto |
+| info | security | Xtream credentials travel in URLs (query/path) by protocol design, often over plain http to the provider; the integration keeps them server-side, admin-only for `get_credentials`, never in recorder/notifications. Fine — mention the http risk in the README. | verified |

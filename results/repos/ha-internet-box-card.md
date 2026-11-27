@@ -12,3 +12,4 @@
 | info | code | biome: lint/complexity/noCommaOperator ×2 (src/) | auto |
 | info | code | biome: lint/complexity/useOptionalChain ×2 (src/) | auto |
 | info | code | biome: lint/complexity/noCommaOperator ×1 (test/) | auto |
+| minor | security | url-scheme: src/core.js:615 `href` from data `${esc(href)}` without a scheme check (javascript: URLs) | false positive |

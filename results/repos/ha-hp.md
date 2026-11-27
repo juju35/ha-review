@@ -8,8 +8,14 @@
 | Sev | Area | Finding | Status |
 |---|---|---|---|
 | minor | conventions | screenshots: screenshots/ present but no screenshots.yml workflow — static copies that can drift from the card/theme they show | auto |
+| info | security | cleartext: custom_components/hp/escl.py:141 plain-http endpoint `http://schemas.hp.com` | auto |
+| info | security | cleartext: custom_components/hp/escl.py:142 plain-http endpoint `http://www.pwg.org` | auto |
 | info | code | TLS verification disabled towards the printer (`verify_ssl=False`): justified (printers use self-signed certificates); keep it limited to the printer host. | verified |
 | minor | code | tls: custom_components/hp/__init__.py:39 TLS verification disabled (`verify_ssl=False`) | false positive |
 | minor | code | tls: custom_components/hp/config_flow.py:67 TLS verification disabled (`verify_ssl=False`) | false positive |
 | minor | code | tls: custom_components/hp/api.py:161 TLS verification disabled (`ssl=False`) | false positive |
 | minor | code | tls: custom_components/hp/api.py:193 TLS verification disabled (`ssl=False`) | false positive |
+| minor | security | tls-off: custom_components/hp/__init__.py:39 TLS verification disabled | false positive |
+| minor | security | tls-off: custom_components/hp/config_flow.py:67 TLS verification disabled | false positive |
+| minor | security | tls-off: custom_components/hp/api.py:161 TLS verification disabled | false positive |
+| minor | security | tls-off: custom_components/hp/api.py:194 TLS verification disabled | false positive |

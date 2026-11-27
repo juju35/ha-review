@@ -12,3 +12,6 @@
 | info | code | biome: lint/complexity/useOptionalChain ×1 (src/) | auto |
 | info | code | biome: lint/complexity/noCommaOperator ×2 (test/) | auto |
 | info | code | biome: lint/correctness/noUnusedFunctionParameters ×1 (test/) | auto |
+| info | security | noopener: src/public-transport-card/public-transport-card-2.js:651 target=_blank without rel=noopener | auto |
+| info | security | GTFS cache read with `pickle.load` (gtfs.py:777): file written by the integration in `.storage`, never downloaded — acceptable; a JSON/msgpack cache would remove the class of risk entirely. | verified |
+| major | security | unsafe-deser: custom_components/public_transport/providers/gtfs.py:777 unsafe deserialisation `pickle.load(` | false positive |

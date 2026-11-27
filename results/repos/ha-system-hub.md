@@ -17,4 +17,7 @@
 | info | code | except: 35 `except Exception` blocks | auto |
 | info | code | biome: lint/complexity/useOptionalChain ×1 (src/) | auto |
 | info | code | biome: lint/complexity/noCommaOperator ×1 (test/) | auto |
+| info | security | noopener: src/system-hub-panel/panel.js:1763 target=_blank without rel=noopener | auto |
+| info | security | noopener: src/system-hub-panel/panel.js:2948 target=_blank without rel=noopener | auto |
 | info | code | Sub-card version constants lag behind the release (`*_CARD_VERSION = '2.11.0'`, `SECURITY_CARD_VERSION = '1.0.0'` vs 3.15.2): harmless for the release check (only the panel constant is read) but the console banner shows stale versions. | verified |
+| minor | security | url-scheme: src/system-hub-panel/panel.js:1136 `href` from data `${shEsc(opts.href)}` without a scheme check (javascript: URLs) | false positive |

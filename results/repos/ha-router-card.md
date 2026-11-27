@@ -9,3 +9,4 @@
 |---|---|---|---|
 | minor | conventions | readme: no `/local/community/` resource path in install section | auto |
 | info | code | biome: lint/complexity/useOptionalChain ×1 (test/) | auto |
+| minor | security | url-scheme: src/pictures.js:171 `href` from data `${esc(href)}` without a scheme check (javascript: URLs) | false positive |

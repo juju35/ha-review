@@ -8,3 +8,6 @@
 | Sev | Area | Finding | Status |
 |---|---|---|---|
 | info | code | biome: lint/style/useTemplate ×1 (src/) | auto |
+| minor | security | url-scheme: src/styles.js:1223 `src` from data `${url}` without a scheme check (javascript: URLs) | false positive |
+| minor | security | url-scheme: src/styles.js:1224 `src` from data `${url}` without a scheme check (javascript: URLs) | false positive |
+| minor | security | url-scheme: src/styles.js:1224 `src` from data `${url}` without a scheme check (javascript: URLs) | false positive |

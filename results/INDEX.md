@@ -3,15 +3,16 @@
 | Repo | Kind | To act on | Major |
 |---|---|---|---|
 | [ha-maintenance](repos/ha-maintenance.md) | panel-integration | 4 | 0 |
+| [ha-github](repos/ha-github.md) | panel-integration | 3 | 0 |
 | [ha-house-rules](repos/ha-house-rules.md) | panel-integration | 3 | 0 |
 | [ha-notify-hub](repos/ha-notify-hub.md) | panel-integration | 3 | 0 |
 | [ha-wall-panel](repos/ha-wall-panel.md) | card | 3 | 0 |
-| [ha-github](repos/ha-github.md) | panel-integration | 2 | 0 |
 | [ha-liquid-glass](repos/ha-liquid-glass.md) | theme | 2 | 0 |
 | [ha-media-server-card](repos/ha-media-server-card.md) | card | 2 | 0 |
 | [ha-neutral](repos/ha-neutral.md) | theme | 2 | 0 |
 | [ha-opening-card](repos/ha-opening-card.md) | card | 2 | 0 |
 | [ha-orange-internet-on-the-move](repos/ha-orange-internet-on-the-move.md) | integration | 2 | 0 |
+| [ha-proxmox](repos/ha-proxmox.md) | panel-integration | 2 | 0 |
 | [ha-safety-card](repos/ha-safety-card.md) | card | 2 | 0 |
 | [ha-system-hub](repos/ha-system-hub.md) | panel-integration | 2 | 0 |
 | [ha-uv-card](repos/ha-uv-card.md) | card | 2 | 0 |
@@ -20,6 +21,7 @@
 | [ha-weather-card](repos/ha-weather-card.md) | card | 2 | 0 |
 | [ha-wero-card](repos/ha-wero-card.md) | card | 2 | 0 |
 | [ha-alarm-card](repos/ha-alarm-card.md) | panel-integration | 1 | 0 |
+| [ha-camera](repos/ha-camera.md) | panel-integration | 1 | 0 |
 | [ha-certificate-card](repos/ha-certificate-card.md) | card | 1 | 0 |
 | [ha-chores-card](repos/ha-chores-card.md) | card | 1 | 0 |
 | [ha-climate-air-card](repos/ha-climate-air-card.md) | card | 1 | 0 |
@@ -28,6 +30,9 @@
 | [ha-dns-filter-card](repos/ha-dns-filter-card.md) | card | 1 | 0 |
 | [ha-docker-card](repos/ha-docker-card.md) | card | 1 | 0 |
 | [ha-energy-card](repos/ha-energy-card.md) | card | 1 | 0 |
+| [ha-ent-educartable](repos/ha-ent-educartable.md) | panel-integration | 1 | 0 |
+| [ha-ent-one](repos/ha-ent-one.md) | panel-integration | 1 | 0 |
+| [ha-ent-skolengo](repos/ha-ent-skolengo.md) | card | 1 | 0 |
 | [ha-ev-charger-card](repos/ha-ev-charger-card.md) | card | 1 | 0 |
 | [ha-family-link](repos/ha-family-link.md) | integration | 1 | 0 |
 | [ha-hp](repos/ha-hp.md) | integration | 1 | 0 |
@@ -66,7 +71,6 @@
 | [ha-assist-card](repos/ha-assist-card.md) | card | 0 | 0 |
 | [ha-backup-card](repos/ha-backup-card.md) | card | 0 | 0 |
 | [ha-calendar-card](repos/ha-calendar-card.md) | card | 0 | 0 |
-| [ha-camera](repos/ha-camera.md) | panel-integration | 0 | 0 |
 | [ha-carburants-france](repos/ha-carburants-france.md) | integration | 0 | 0 |
 | [ha-cloud-card](repos/ha-cloud-card.md) | card | 0 | 0 |
 | [ha-console-card](repos/ha-console-card.md) | card | 0 | 0 |
@@ -75,9 +79,6 @@
 | [ha-doorbell-card](repos/ha-doorbell-card.md) | card | 0 | 0 |
 | [ha-ecowatt-card](repos/ha-ecowatt-card.md) | card | 0 | 0 |
 | [ha-energy-hub](repos/ha-energy-hub.md) | panel-integration | 0 | 0 |
-| [ha-ent-educartable](repos/ha-ent-educartable.md) | panel-integration | 0 | 0 |
-| [ha-ent-one](repos/ha-ent-one.md) | panel-integration | 0 | 0 |
-| [ha-ent-skolengo](repos/ha-ent-skolengo.md) | card | 0 | 0 |
 | [ha-family-day-card](repos/ha-family-day-card.md) | card | 0 | 0 |
 | [ha-findmy](repos/ha-findmy.md) | integration | 0 | 0 |
 | [ha-flight-board-card](repos/ha-flight-board-card.md) | card | 0 | 0 |
@@ -90,7 +91,6 @@
 | [ha-pool-card](repos/ha-pool-card.md) | card | 0 | 0 |
 | [ha-printer-scanner-card](repos/ha-printer-scanner-card.md) | card | 0 | 0 |
 | [ha-pronote-card](repos/ha-pronote-card.md) | card | 0 | 0 |
-| [ha-proxmox](repos/ha-proxmox.md) | panel-integration | 0 | 0 |
 | [ha-public-transport](repos/ha-public-transport.md) | integration | 0 | 0 |
 | [ha-rain-card](repos/ha-rain-card.md) | card | 0 | 0 |
 | [ha-remote-card](repos/ha-remote-card.md) | card | 0 | 0 |

@@ -13,3 +13,5 @@
 | info | code | secrets: custom_components/family_link/api.py:297 log line mentions a secret: `_LOGGER.debug('Cookie rotation: HTTP %s, changed: %s, next in %ss', response.status, chang` | auto |
 | info | code | secrets: custom_components/family_link/api.py:305 log line mentions a secret: `_LOGGER.debug('Cookie rotation failed: %s', err)` | auto |
 | info | code | biome: lint/complexity/useOptionalChain ×1 (src/) | auto |
+| info | security | `API_KEY` in api.py:60 is the public key of the Family Link web app (sent by every browser) — not a secret; diagnostics use an allow-list (no cookie values). | verified |
+| major | security | committed-secret: custom_components/family_link/api.py:60 looks like a secret (`AIzaSyAQb1gu…`) | false positive |

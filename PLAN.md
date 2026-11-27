@@ -17,6 +17,7 @@ Revision reviewed: the `main` HEAD of each repo at clone time, recorded in `prog
 | 2 | Conventions & CI audit (automatic) | `results/auto/conventions.json`, `results/CONVENTIONS.md` | `scripts/audit_conventions.py` |
 | 3 | Visual consistency audit (automatic) | `results/auto/visual.json`, `results/VISUAL.md` | `scripts/audit_visual.py` |
 | 4 | Code review — lint + risky patterns (automatic) | `results/auto/code.json`, `results/CODE.md` | `scripts/audit_code.py`, biome, ruff |
+| 4c | Security audit (backend, frontend, CI / supply chain, secrets) | `results/auto/security.json`, `results/SECURITY.md`, `results/SECURITY-REVIEW.md` | `scripts/audit_security.py` + triage |
 | 5 | Code review — manual reading of flagged spots | `results/repos/<repo>.md` | by hand, per repo |
 | 6 | Summary & action list | `SUMMARY.md` | from phases 2–5 |
 
@@ -45,6 +46,13 @@ Revision reviewed: the `main` HEAD of each repo at clone time, recorded in `prog
 - Mini cards: expand button top-right; same icon size as full card.
 - Popup/details closed on `disconnectedCallback`.
 - Status palette and radii/font sizes compared across repos (outliers flagged).
+
+### Security
+- Backend: websocket admin checks, HTTP auth, static paths, diagnostics redaction, secrets in logs,
+  subprocess/shell, file paths from callers, unsafe deserialisation, TLS.
+- Frontend: HTML injection, `javascript:` URLs, `noopener`, secrets in storage, remote code.
+- CI: `pull_request_target`, permissions, SHA pinning, script injection, fork PRs, Dependabot.
+- Committed secrets.
 
 ### Code
 - Biome lint (repo config), ruff (repo config).

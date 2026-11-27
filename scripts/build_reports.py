@@ -14,6 +14,8 @@ REPOS = open(os.path.join(ROOT, "repos.txt")).read().split()
 conv = {x["repo"]: x for x in json.load(open(os.path.join(R, "auto", "conventions.json")))}
 vis = {x["repo"]: x for x in json.load(open(os.path.join(R, "auto", "visual.json")))}
 code = {x["repo"]: x for x in json.load(open(os.path.join(R, "auto", "code.json")))}
+sec = {x["repo"]: {"issues": [i for i in x["issues"] if i["code"] != "security-md"]}
+       for x in json.load(open(os.path.join(R, "auto", "security.json")))}
 opts = {x["repo"]: x for x in json.load(open(os.path.join(R, "auto", "options.json")))}
 tri = json.load(open(os.path.join(R, "triage.json")))
 progress = json.load(open(os.path.join(ROOT, "progress.json")))
@@ -23,7 +25,7 @@ index = []
 for r in REPOS:
     fps = tri["false_positive"].get(r, []) + tri["false_positive"].get("*", [])
     rows = []
-    for area, src in (("conventions", conv), ("visual", vis), ("code", code)):
+    for area, src in (("conventions", conv), ("visual", vis), ("code", code), ("security", sec)):
         for i in src.get(r, {}).get("issues", []):
             fp = any(s in i["msg"] or s == i["code"] for s in fps)
             rows.append((i["sev"], area, f"{i['code']}: {i['msg']}", "false positive" if fp else "auto"))

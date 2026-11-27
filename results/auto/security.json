@@ -1,0 +1,1428 @@
+[
+ {
+  "repo": "ha-3d-printer-card",
+  "issues": [
+   {
+    "sev": "minor",
+    "area": "frontend",
+    "code": "url-scheme",
+    "msg": "src/styles.js:1223 `src` from data `${url}` without a scheme check (javascript: URLs)"
+   },
+   {
+    "sev": "minor",
+    "area": "frontend",
+    "code": "url-scheme",
+    "msg": "src/styles.js:1224 `src` from data `${url}` without a scheme check (javascript: URLs)"
+   },
+   {
+    "sev": "minor",
+    "area": "frontend",
+    "code": "url-scheme",
+    "msg": "src/styles.js:1224 `src` from data `${url}` without a scheme check (javascript: URLs)"
+   },
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-alarm-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-assist-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-backup-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-calendar-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-camera",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-carburants-france",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-certificate-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-chores-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-climate-air-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-cloud-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-console-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-countdown-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-cover-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-dashboard-header",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-device-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-dns-filter-card",
+  "issues": [
+   {
+    "sev": "minor",
+    "area": "frontend",
+    "code": "url-scheme",
+    "msg": "src/base-card.js:357 `href` from data `${esc(href)}` without a scheme check (javascript: URLs)"
+   },
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-docker-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-doorbell-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-ecowatt-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-energy-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-energy-hub",
+  "issues": [
+   {
+    "sev": "minor",
+    "area": "frontend",
+    "code": "url-scheme",
+    "msg": "src/energy-hub-panel/panel.js:1140 `href` from data `${a.link}` without a scheme check (javascript: URLs)"
+   },
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-ent-educartable",
+  "issues": [
+   {
+    "sev": "minor",
+    "area": "frontend",
+    "code": "noopener",
+    "msg": "src/educartable-card/helpers.js:336 window.open without `noopener`"
+   },
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-ent-one",
+  "issues": [
+   {
+    "sev": "minor",
+    "area": "frontend",
+    "code": "noopener",
+    "msg": "src/ent-one-card/helpers.js:354 window.open without `noopener`"
+   },
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-ent-skolengo",
+  "issues": [
+   {
+    "sev": "minor",
+    "area": "frontend",
+    "code": "noopener",
+    "msg": "src/skolengo-card/lessons.js:410 window.open without `noopener`"
+   },
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-ev-charger-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-family-day-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-family-link",
+  "issues": [
+   {
+    "sev": "major",
+    "area": "secrets",
+    "code": "committed-secret",
+    "msg": "custom_components/family_link/api.py:60 looks like a secret (`AIzaSyAQb1gu\u2026`)"
+   },
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-findmy",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-flight-board-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-garden-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-github",
+  "issues": [
+   {
+    "sev": "minor",
+    "area": "frontend",
+    "code": "url-scheme",
+    "msg": "src/github-panel/panel.js:1282 `href` from data `${esc(url)}` without a scheme check (javascript: URLs)"
+   },
+   {
+    "sev": "minor",
+    "area": "frontend",
+    "code": "url-scheme",
+    "msg": "src/github-panel/panel.js:1497 `href` from data `${esc(b.pr.url)}` without a scheme check (javascript: URLs)"
+   },
+   {
+    "sev": "minor",
+    "area": "frontend",
+    "code": "url-scheme",
+    "msg": "src/github-panel/panel.js:1698 `href` from data `${esc(r.url)}` without a scheme check (javascript: URLs)"
+   },
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-heating-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-house-rules",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-hp",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "backend",
+    "code": "cleartext",
+    "msg": "custom_components/hp/escl.py:141 plain-http endpoint `http://schemas.hp.com`"
+   },
+   {
+    "sev": "info",
+    "area": "backend",
+    "code": "cleartext",
+    "msg": "custom_components/hp/escl.py:142 plain-http endpoint `http://www.pwg.org`"
+   },
+   {
+    "sev": "minor",
+    "area": "backend",
+    "code": "tls-off",
+    "msg": "custom_components/hp/__init__.py:39 TLS verification disabled"
+   },
+   {
+    "sev": "minor",
+    "area": "backend",
+    "code": "tls-off",
+    "msg": "custom_components/hp/config_flow.py:67 TLS verification disabled"
+   },
+   {
+    "sev": "minor",
+    "area": "backend",
+    "code": "tls-off",
+    "msg": "custom_components/hp/api.py:161 TLS verification disabled"
+   },
+   {
+    "sev": "minor",
+    "area": "backend",
+    "code": "tls-off",
+    "msg": "custom_components/hp/api.py:194 TLS verification disabled"
+   },
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-internet-box-card",
+  "issues": [
+   {
+    "sev": "minor",
+    "area": "frontend",
+    "code": "url-scheme",
+    "msg": "src/core.js:615 `href` from data `${esc(href)}` without a scheme check (javascript: URLs)"
+   },
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-iptv",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-light-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-liquid-glass",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-mailbox-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-maintenance",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-matter-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-meal-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-media-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-media-server-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-mower-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-nas-card",
+  "issues": [
+   {
+    "sev": "minor",
+    "area": "frontend",
+    "code": "url-scheme",
+    "msg": "src/shared-styles.js:846 `href` from data `${esc(href)}` without a scheme check (javascript: URLs)"
+   },
+   {
+    "sev": "minor",
+    "area": "frontend",
+    "code": "url-scheme",
+    "msg": "src/illustrated-header.js:32 `href` from data `${esc(href)}` without a scheme check (javascript: URLs)"
+   },
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-neutral",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-notify-hub",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-opening-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-orange-internet-on-the-move",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-parcel",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-pc-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-pet-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-pool-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-power-device-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-presence-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-printer-scanner-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-pronote-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-proxmox",
+  "issues": [
+   {
+    "sev": "minor",
+    "area": "frontend",
+    "code": "url-scheme",
+    "msg": "src/proxmox-panel/panel.js:648 `href` from data `${esc(node.url)}` without a scheme check (javascript: URLs)"
+   },
+   {
+    "sev": "minor",
+    "area": "frontend",
+    "code": "url-scheme",
+    "msg": "src/proxmox-panel/panel.js:756 `href` from data `${esc(g.url)}` without a scheme check (javascript: URLs)"
+   },
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-public-transport",
+  "issues": [
+   {
+    "sev": "major",
+    "area": "backend",
+    "code": "unsafe-deser",
+    "msg": "custom_components/public_transport/providers/gtfs.py:777 unsafe deserialisation `pickle.load(`"
+   },
+   {
+    "sev": "info",
+    "area": "frontend",
+    "code": "noopener",
+    "msg": "src/public-transport-card/public-transport-card-2.js:651 target=_blank without rel=noopener"
+   },
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-rain-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-remote-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-renault-picture",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-reverse-proxy",
+  "issues": [
+   {
+    "sev": "major",
+    "area": "secrets",
+    "code": "committed-secret",
+    "msg": "tests/test_npm.py:79 looks like a secret (`-----BEGIN P\u2026`)"
+   },
+   {
+    "sev": "info",
+    "area": "backend",
+    "code": "cleartext",
+    "msg": "custom_components/reverse_proxy/const.py:30 plain-http endpoint `http://zoraxy.local`"
+   },
+   {
+    "sev": "info",
+    "area": "backend",
+    "code": "cleartext",
+    "msg": "custom_components/reverse_proxy/const.py:37 plain-http endpoint `http://traefik.local`"
+   },
+   {
+    "sev": "info",
+    "area": "backend",
+    "code": "cleartext",
+    "msg": "custom_components/reverse_proxy/const.py:44 plain-http endpoint `http://npm.local`"
+   },
+   {
+    "sev": "minor",
+    "area": "frontend",
+    "code": "url-scheme",
+    "msg": "src/reverse-proxy-card/reverse-proxy-card-2.js:76 `href` from data `${rpEsc(url)}` without a scheme check (javascript: URLs)"
+   },
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-room-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-router-card",
+  "issues": [
+   {
+    "sev": "minor",
+    "area": "frontend",
+    "code": "url-scheme",
+    "msg": "src/pictures.js:171 `href` from data `${esc(href)}` without a scheme check (javascript: URLs)"
+   },
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-safety-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-saint-of-the-day",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-scene-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-scheduler-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-seedbox-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-sky-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-smart-appliance-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-smart-comfort",
+  "issues": [
+   {
+    "sev": "major",
+    "area": "backend",
+    "code": "unsafe-deser",
+    "msg": "custom_components/smart_comfort/yaml_file.py:218 unsafe deserialisation `yaml.load(`"
+   },
+   {
+    "sev": "major",
+    "area": "backend",
+    "code": "unsafe-deser",
+    "msg": "custom_components/smart_comfort/yaml_file.py:220 unsafe deserialisation `yaml.load(`"
+   },
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-smartlock-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-solar-forecast-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-solar-roof-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-solar-router-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-speedtest-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-sports-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-stock-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-switch-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-system-hub",
+  "issues": [
+   {
+    "sev": "minor",
+    "area": "frontend",
+    "code": "url-scheme",
+    "msg": "src/system-hub-panel/panel.js:1136 `href` from data `${shEsc(opts.href)}` without a scheme check (javascript: URLs)"
+   },
+   {
+    "sev": "info",
+    "area": "frontend",
+    "code": "noopener",
+    "msg": "src/system-hub-panel/panel.js:1763 target=_blank without rel=noopener"
+   },
+   {
+    "sev": "info",
+    "area": "frontend",
+    "code": "noopener",
+    "msg": "src/system-hub-panel/panel.js:2948 target=_blank without rel=noopener"
+   },
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-tank-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-tapo",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-tempo-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-timer-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-todo-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-tracker-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-train-board-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-ups-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-uptime-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-utility-meter-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-uv-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-vacuum-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-vacuum-map",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-vehicle-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-vehicle-consumption",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-vivarium-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-wall-panel",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-waste-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-water-heater-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-water-pump-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-weather-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-wero-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-wifi-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-zigbee-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-zlinky-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-zwave-card",
+  "issues": [
+   {
+    "sev": "info",
+    "area": "policy",
+    "code": "security-md",
+    "msg": "no SECURITY.md (how to report a vulnerability)"
+   }
+  ]
+ }
+]

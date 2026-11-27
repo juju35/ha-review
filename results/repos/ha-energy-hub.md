@@ -12,3 +12,4 @@
 | info | code | lifecycle: 1 observers created, 0 `.disconnect()` calls | auto |
 | info | code | biome: lint/style/useTemplate ×1 (src/) | auto |
 | info | code | biome: lint/complexity/useOptionalChain ×1 (src/) | auto |
+| minor | security | url-scheme: src/energy-hub-panel/panel.js:1140 `href` from data `${a.link}` without a scheme check (javascript: URLs) | false positive |
