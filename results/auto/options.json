@@ -1,0 +1,664 @@
+[
+ {
+  "repo": "ha-3d-printer-card",
+  "documented": 22,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-alarm-card",
+  "documented": 22,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-assist-card",
+  "documented": 16,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-backup-card",
+  "documented": 14,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-calendar-card",
+  "documented": 25,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-camera",
+  "documented": 40,
+  "doc_not_in_code": [],
+  "used_not_documented": [
+   "hide_toolbar"
+  ]
+ },
+ {
+  "repo": "ha-carburants-france",
+  "documented": 44,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-certificate-card",
+  "documented": 20,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-chores-card",
+  "documented": 14,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-climate-air-card",
+  "documented": 55,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-cloud-card",
+  "documented": 13,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-console-card",
+  "documented": 16,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-countdown-card",
+  "documented": 14,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-cover-card",
+  "documented": 31,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-dashboard-header",
+  "documented": 34,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-device-card",
+  "documented": 26,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-dns-filter-card",
+  "documented": 15,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-docker-card",
+  "documented": 19,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-doorbell-card",
+  "documented": 34,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-ecowatt-card",
+  "documented": 13,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-energy-card",
+  "documented": 29,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-energy-hub",
+  "documented": 0,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-ent-educartable",
+  "documented": 18,
+  "doc_not_in_code": [
+   "educartable_new_activity",
+   "educartable_new_document",
+   "educartable_new_homework",
+   "educartable_new_message",
+   "educartable_new_news"
+  ],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-ent-one",
+  "documented": 20,
+  "doc_not_in_code": [
+   "ent_one_new_blog_post",
+   "ent_one_new_homework",
+   "ent_one_new_message",
+   "ent_one_new_word"
+  ],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-ent-skolengo",
+  "documented": 21,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-ev-charger-card",
+  "documented": 20,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-family-day-card",
+  "documented": 24,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-family-link",
+  "documented": 13,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-flight-board-card",
+  "documented": 17,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-garden-card",
+  "documented": 37,
+  "doc_not_in_code": [],
+  "used_not_documented": [
+   "plant_entities",
+   "zone_entities"
+  ]
+ },
+ {
+  "repo": "ha-github",
+  "documented": 20,
+  "doc_not_in_code": [],
+  "used_not_documented": [
+   "hide_toolbar"
+  ]
+ },
+ {
+  "repo": "ha-heating-card",
+  "documented": 46,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-house-rules",
+  "documented": 79,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-internet-box-card",
+  "documented": 33,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-iptv",
+  "documented": 11,
+  "doc_not_in_code": [],
+  "used_not_documented": [
+   "hide_toolbar"
+  ]
+ },
+ {
+  "repo": "ha-light-card",
+  "documented": 29,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-mailbox-card",
+  "documented": 14,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-maintenance",
+  "documented": 5,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-matter-card",
+  "documented": 14,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-meal-card",
+  "documented": 16,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-media-card",
+  "documented": 28,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-media-server-card",
+  "documented": 13,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-mower-card",
+  "documented": 21,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-nas-card",
+  "documented": 26,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-notify-hub",
+  "documented": 5,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-opening-card",
+  "documented": 23,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-parcel",
+  "documented": 15,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-pc-card",
+  "documented": 18,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-pet-card",
+  "documented": 13,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-pool-card",
+  "documented": 38,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-power-device-card",
+  "documented": 54,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-presence-card",
+  "documented": 16,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-printer-scanner-card",
+  "documented": 42,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-pronote-card",
+  "documented": 22,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-proxmox",
+  "documented": 16,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-public-transport",
+  "documented": 11,
+  "doc_not_in_code": [],
+  "used_not_documented": [
+   "illustration"
+  ]
+ },
+ {
+  "repo": "ha-rain-card",
+  "documented": 13,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-remote-card",
+  "documented": 24,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-reverse-proxy",
+  "documented": 12,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-room-card",
+  "documented": 42,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-router-card",
+  "documented": 23,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-safety-card",
+  "documented": 22,
+  "doc_not_in_code": [],
+  "used_not_documented": [
+   "hide_when_off"
+  ]
+ },
+ {
+  "repo": "ha-saint-of-the-day",
+  "documented": 9,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-scene-card",
+  "documented": 17,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-scheduler-card",
+  "documented": 29,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-seedbox-card",
+  "documented": 16,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-sky-card",
+  "documented": 13,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-smart-appliance-card",
+  "documented": 40,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-smart-comfort",
+  "documented": 47,
+  "doc_not_in_code": [],
+  "used_not_documented": [
+   "hide_header_modes",
+   "illustration",
+   "illustration_theme",
+   "show_subtitle",
+   "show_title"
+  ]
+ },
+ {
+  "repo": "ha-smartlock-card",
+  "documented": 24,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-solar-forecast-card",
+  "documented": 15,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-solar-roof-card",
+  "documented": 16,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-solar-router-card",
+  "documented": 15,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-speedtest-card",
+  "documented": 19,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-sports-card",
+  "documented": 13,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-stock-card",
+  "documented": 20,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-switch-card",
+  "documented": 24,
+  "doc_not_in_code": [],
+  "used_not_documented": [
+   "traffic_in_entity",
+   "traffic_out_entity"
+  ]
+ },
+ {
+  "repo": "ha-system-hub",
+  "documented": 88,
+  "doc_not_in_code": [
+   "system_hub_orphans_devices_removed",
+   "system_hub_orphans_removed"
+  ],
+  "used_not_documented": [
+   "hide_ok",
+   "hide_when_empty",
+   "show_filters"
+  ]
+ },
+ {
+  "repo": "ha-tank-card",
+  "documented": 18,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-tempo-card",
+  "documented": 20,
+  "doc_not_in_code": [],
+  "used_not_documented": [
+   "days_left_entities"
+  ]
+ },
+ {
+  "repo": "ha-timer-card",
+  "documented": 15,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-todo-card",
+  "documented": 16,
+  "doc_not_in_code": [],
+  "used_not_documented": [
+   "hide_header"
+  ]
+ },
+ {
+  "repo": "ha-tracker-card",
+  "documented": 18,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-train-board-card",
+  "documented": 22,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-ups-card",
+  "documented": 29,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-uptime-card",
+  "documented": 31,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-utility-meter-card",
+  "documented": 33,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-uv-card",
+  "documented": 15,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-vacuum-card",
+  "documented": 26,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-vacuum-map",
+  "documented": 17,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-vehicle-card",
+  "documented": 50,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-vehicle-consumption",
+  "documented": 18,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-vivarium-card",
+  "documented": 29,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-wall-panel",
+  "documented": 18,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-waste-card",
+  "documented": 30,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-water-heater-card",
+  "documented": 28,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-water-pump-card",
+  "documented": 26,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-weather-card",
+  "documented": 29,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-wero-card",
+  "documented": 11,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-wifi-card",
+  "documented": 17,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-zigbee-card",
+  "documented": 17,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-zlinky-card",
+  "documented": 32,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ },
+ {
+  "repo": "ha-zwave-card",
+  "documented": 14,
+  "doc_not_in_code": [],
+  "used_not_documented": []
+ }
+]

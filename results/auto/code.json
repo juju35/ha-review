@@ -1,0 +1,1305 @@
+[
+ {
+  "repo": "ha-3d-printer-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/style/useTemplate \u00d71 (src/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-alarm-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "5 observers created, 4 `.disconnect()` calls"
+   },
+   {
+    "sev": "info",
+    "code": "size",
+    "msg": "src/alarm-panel/panel.js is 2004 lines"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noCommaOperator \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-assist-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-backup-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-calendar-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (src/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-camera",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "window/document addEventListener \u00d79 but removeEventListener \u00d77"
+   },
+   {
+    "sev": "info",
+    "code": "size",
+    "msg": "src/home-camera-card/card.js is 2222 lines"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d72 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noCommaOperator \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-carburants-france",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "window/document addEventListener \u00d711 but removeEventListener \u00d77"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d72 (src/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-certificate-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-chores-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-climate-air-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/style/useTemplate \u00d72 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useMathMinMax \u00d71 (src/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-cloud-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-console-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noCommaOperator \u00d72 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-countdown-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-cover-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-dashboard-header",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "setInterval \u00d71 but clearInterval \u00d70"
+   },
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "window/document addEventListener \u00d74 but removeEventListener \u00d70"
+   },
+   {
+    "sev": "info",
+    "code": "size",
+    "msg": "src/core.js is 1843 lines"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noCommaOperator \u00d72 (test/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/correctness/noUnusedFunctionParameters \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-device-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/correctness/noUnusedFunctionParameters \u00d71 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (src/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-dns-filter-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-docker-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-doorbell-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-ecowatt-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-energy-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (src/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-energy-hub",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "setInterval \u00d71 but clearInterval \u00d70"
+   },
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "1 observers created, 0 `.disconnect()` calls"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/style/useTemplate \u00d71 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (src/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-ent-educartable",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "setInterval \u00d71 but clearInterval \u00d70"
+   },
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "5 observers created, 4 `.disconnect()` calls"
+   },
+   {
+    "sev": "info",
+    "code": "errors",
+    "msg": "14 hass.callService calls, none with .catch/try (a failure is silent)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/style/useTemplate \u00d7153 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/style/useTemplate \u00d71 (test/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noCommaOperator \u00d72 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-ent-one",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "setInterval \u00d71 but clearInterval \u00d70"
+   },
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "5 observers created, 4 `.disconnect()` calls"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/style/useTemplate \u00d7139 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noCommaOperator \u00d72 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-ent-skolengo",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "5 observers created, 4 `.disconnect()` calls"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noCommaOperator \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-ev-charger-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/style/useTemplate \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-family-day-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-family-link",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "secrets",
+    "msg": "custom_components/family_link/coordinator.py:277 log line mentions a secret: `_LOGGER.warning('Google refused both the session and its cookie rotation: the session is b`"
+   },
+   {
+    "sev": "info",
+    "code": "secrets",
+    "msg": "custom_components/family_link/api.py:317 log line mentions a secret: `_LOGGER.warning('Google accepts the cookie rotation but no longer renews the short-lived s`"
+   },
+   {
+    "sev": "info",
+    "code": "secrets",
+    "msg": "custom_components/family_link/api.py:297 log line mentions a secret: `_LOGGER.debug('Cookie rotation: HTTP %s, changed: %s, next in %ss', response.status, chang`"
+   },
+   {
+    "sev": "info",
+    "code": "secrets",
+    "msg": "custom_components/family_link/api.py:305 log line mentions a secret: `_LOGGER.debug('Cookie rotation failed: %s', err)`"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (src/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-findmy",
+  "issues": []
+ },
+ {
+  "repo": "ha-flight-board-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-garden-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (src/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-github",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "5 observers created, 4 `.disconnect()` calls"
+   },
+   {
+    "sev": "info",
+    "code": "size",
+    "msg": "src/github-panel/panel.js is 2027 lines"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noCommaOperator \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-heating-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "size",
+    "msg": "src/cards.js is 1602 lines"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useMathMinMax \u00d71 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/correctness/noUnusedVariables \u00d71 (src/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-house-rules",
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "xss",
+    "msg": "src/house-rules-panel/panel.js:258 unescaped `${a.attributes.levels}` in an HTML template"
+   },
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "setInterval \u00d73 but clearInterval \u00d72"
+   },
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "4 observers created, 3 `.disconnect()` calls"
+   }
+  ]
+ },
+ {
+  "repo": "ha-hp",
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "tls",
+    "msg": "custom_components/hp/__init__.py:39 TLS verification disabled (`verify_ssl=False`)"
+   },
+   {
+    "sev": "minor",
+    "code": "tls",
+    "msg": "custom_components/hp/config_flow.py:67 TLS verification disabled (`verify_ssl=False`)"
+   },
+   {
+    "sev": "minor",
+    "code": "tls",
+    "msg": "custom_components/hp/api.py:161 TLS verification disabled (`ssl=False`)"
+   },
+   {
+    "sev": "minor",
+    "code": "tls",
+    "msg": "custom_components/hp/api.py:193 TLS verification disabled (`ssl=False`)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-internet-box-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/style/useTemplate \u00d71 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noCommaOperator \u00d72 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d72 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noCommaOperator \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-iptv",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "setInterval \u00d71 but clearInterval \u00d70"
+   },
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "6 observers created, 5 `.disconnect()` calls"
+   },
+   {
+    "sev": "info",
+    "code": "size",
+    "msg": "src/iptv-panel/panel.js is 1638 lines"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/suspicious/noTemplateCurlyInString \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-light-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-liquid-glass",
+  "issues": []
+ },
+ {
+  "repo": "ha-mailbox-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-maintenance",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "setInterval \u00d72 but clearInterval \u00d71"
+   },
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "4 observers created, 3 `.disconnect()` calls"
+   }
+  ]
+ },
+ {
+  "repo": "ha-matter-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-meal-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-media-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-media-server-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-mower-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-nas-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-neutral",
+  "issues": []
+ },
+ {
+  "repo": "ha-notify-hub",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "4 observers created, 3 `.disconnect()` calls"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/style/useTemplate \u00d71 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d72 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/correctness/noUnusedFunctionParameters \u00d71 (src/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-opening-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-orange-internet-on-the-move",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "secrets",
+    "msg": "custom_components/orange_internet_on_the_move/api.py:202 log line mentions a secret: `_LOGGER.debug('Token rejected (HTTP %s), logging in again', response.status)`"
+   }
+  ]
+ },
+ {
+  "repo": "ha-parcel",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/style/useTemplate \u00d75 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d77 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/correctness/noUnusedVariables \u00d71 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noCommaOperator \u00d73 (test/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/correctness/noUnusedFunctionParameters \u00d72 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-pc-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-pet-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-pool-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-power-device-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-presence-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-printer-scanner-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "errors",
+    "msg": "3 hass.callService calls, none with .catch/try (a failure is silent)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/style/useTemplate \u00d77 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (src/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-pronote-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "5 observers created, 4 `.disconnect()` calls"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noCommaOperator \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-proxmox",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "5 observers created, 4 `.disconnect()` calls"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noThisInStatic \u00d71 (src/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-public-transport",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/style/useTemplate \u00d71 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noCommaOperator \u00d72 (test/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/correctness/noUnusedFunctionParameters \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-rain-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-remote-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-renault-picture",
+  "issues": []
+ },
+ {
+  "repo": "ha-reverse-proxy",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "secrets",
+    "msg": "custom_components/reverse_proxy/api.py:314 log line mentions a secret: `_LOGGER.debug('Nginx Proxy Manager: token expired on %s, logging in again', endpoint)`"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noThisInStatic \u00d71 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noCommaOperator \u00d73 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-room-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-router-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-safety-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "3 observers created, 1 `.disconnect()` calls"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-saint-of-the-day",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/correctness/noUnusedVariables \u00d71 (test/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-scene-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-scheduler-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "size",
+    "msg": "src/full-card.js is 1883 lines"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/style/useTemplate \u00d71 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/correctness/noUnusedFunctionParameters \u00d71 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-seedbox-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-sky-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-smart-appliance-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "size",
+    "msg": "src/shadow-dom-patching.js is 1650 lines"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/style/useTemplate \u00d71 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (src/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-smart-comfort",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "setInterval \u00d73 but clearInterval \u00d70"
+   },
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "window/document addEventListener \u00d75 but removeEventListener \u00d73"
+   },
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "7 observers created, 6 `.disconnect()` calls"
+   },
+   {
+    "sev": "info",
+    "code": "errors",
+    "msg": "5 hass.callService calls, none with .catch/try (a failure is silent)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/correctness/noUnusedFunctionParameters \u00d71 (src/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-smartlock-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noCommaOperator \u00d71 (test/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/performance/useDomNodeTextContent \u00d71 (test/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-solar-forecast-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-solar-roof-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-solar-router-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-speedtest-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-sports-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-stock-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-switch-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "size",
+    "msg": "src/core.js is 1786 lines"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/style/useTemplate \u00d71 (scripts/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (scripts/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-system-hub",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "31 observers created, 21 `.disconnect()` calls"
+   },
+   {
+    "sev": "info",
+    "code": "size",
+    "msg": "src/system-hub-panel/panel.js is 3903 lines"
+   },
+   {
+    "sev": "minor",
+    "code": "service-schema",
+    "msg": "service `SERVICE_NOTIFY` registered without a schema"
+   },
+   {
+    "sev": "info",
+    "code": "except",
+    "msg": "35 `except Exception` blocks"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noCommaOperator \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-tank-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-tapo",
+  "issues": []
+ },
+ {
+  "repo": "ha-tempo-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-timer-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-todo-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "5 observers created, 4 `.disconnect()` calls"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/suspicious/noTemplateCurlyInString \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-tracker-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/suspicious/noTemplateCurlyInString \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-train-board-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-ups-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/suspicious/noTemplateCurlyInString \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-uptime-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-utility-meter-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/suspicious/noTemplateCurlyInString \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-uv-card",
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "xss",
+    "msg": "innerHTML templates but no HTML-escape helper found"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/suspicious/noTemplateCurlyInString \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-vacuum-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/suspicious/noTemplateCurlyInString \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-vacuum-map",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "console",
+    "msg": "custom_components/vacuum_map/frontend/vendor/three.min.js:2 console.log left in shipped code"
+   },
+   {
+    "sev": "info",
+    "code": "size",
+    "msg": "custom_components/vacuum_map/frontend/vendor/three.min.js is 4226 lines"
+   }
+  ]
+ },
+ {
+  "repo": "ha-vehicle-card",
+  "issues": [
+   {
+    "sev": "major",
+    "code": "eval",
+    "msg": "vendor/maplibre-gl-worker.js:9 eval/new Function"
+   },
+   {
+    "sev": "info",
+    "code": "console",
+    "msg": "vendor/maplibre-gl-worker.js:5 console.log left in shipped code"
+   },
+   {
+    "sev": "info",
+    "code": "console",
+    "msg": "vendor/maplibre-gl-worker.js:5 console.log left in shipped code"
+   },
+   {
+    "sev": "info",
+    "code": "console",
+    "msg": "vendor/maplibre-gl-worker.js:5 console.log left in shipped code"
+   },
+   {
+    "sev": "info",
+    "code": "console",
+    "msg": "vendor/maplibre-gl-worker.js:5 console.log left in shipped code"
+   },
+   {
+    "sev": "info",
+    "code": "console",
+    "msg": "vendor/maplibre-gl-worker.js:5 console.log left in shipped code"
+   },
+   {
+    "sev": "info",
+    "code": "console",
+    "msg": "vendor/maplibre-gl-worker.js:5 console.log left in shipped code"
+   },
+   {
+    "sev": "info",
+    "code": "console",
+    "msg": "vendor/maplibre-gl-worker.js:5 console.log left in shipped code"
+   },
+   {
+    "sev": "info",
+    "code": "console",
+    "msg": "vendor/maplibre-gl-worker.js:5 console.log left in shipped code"
+   },
+   {
+    "sev": "info",
+    "code": "console",
+    "msg": "vendor/maplibre-gl-worker.js:5 console.log left in shipped code"
+   },
+   {
+    "sev": "info",
+    "code": "lifecycle",
+    "msg": "window/document addEventListener \u00d717 but removeEventListener \u00d716"
+   },
+   {
+    "sev": "info",
+    "code": "size",
+    "msg": "src/illustrated-header.js is 1518 lines"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/suspicious/noTemplateCurlyInString \u00d71 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-vehicle-consumption",
+  "issues": []
+ },
+ {
+  "repo": "ha-vivarium-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/style/useTemplate \u00d73 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/correctness/noUnusedVariables \u00d74 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/correctness/noUnusedFunctionParameters \u00d75 (src/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-wall-panel",
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "define",
+    "msg": "customElements.define without a customElements.get guard (double load throws)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-waste-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-water-heater-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-water-pump-card",
+  "issues": []
+ },
+ {
+  "repo": "ha-weather-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/correctness/noUnusedFunctionParameters \u00d71 (scripts/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-wero-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d72 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noCommaOperator \u00d76 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-wifi-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/useOptionalChain \u00d71 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/complexity/noCommaOperator \u00d72 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-zigbee-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/correctness/noUnusedFunctionParameters \u00d71 (scripts/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/correctness/noUnusedVariables \u00d71 (src/)"
+   },
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/correctness/noUnusedFunctionParameters \u00d72 (test/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-zlinky-card",
+  "issues": [
+   {
+    "sev": "info",
+    "code": "biome",
+    "msg": "lint/style/useTemplate \u00d73 (src/)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-zwave-card",
+  "issues": []
+ }
+]
