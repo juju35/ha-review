@@ -61,3 +61,13 @@ ha-pronote-card #33 no-auto
 ha-proxmox #39 no-auto
 ha-public-transport #43 no-auto
 ha-rain-card #21 no-auto
+ha-remote-card #17 no-auto
+ha-renault-picture #47 no-auto
+ha-reverse-proxy #85 auto
+ha-room-card #113 auto
+ha-router-card #33 auto
+ha-safety-card #28 auto
+ha-saint-of-the-day #26 no-auto
+ha-scene-card #18 auto
+ha-scheduler-card #31 auto
+ha-seedbox-card #25 no-auto
