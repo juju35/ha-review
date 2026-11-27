@@ -41,3 +41,13 @@ ha-liquid-glass #21 no-auto
 ha-mailbox-card #10 no-auto
 ha-maintenance #21 auto
 ha-matter-card #16 no-auto
+ha-meal-card #12 no-auto
+ha-media-card #42 no-auto
+ha-media-server-card #10 no-auto
+ha-mower-card #35 no-auto
+ha-nas-card #110 auto
+ha-neutral #8 no-auto
+ha-notify-hub #24 auto
+ha-opening-card #12 auto
+ha-orange-internet-on-the-move #16 no-auto
+ha-parcel #86 auto
