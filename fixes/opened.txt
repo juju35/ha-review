@@ -81,3 +81,13 @@ ha-solar-router-card #9 no-auto
 ha-speedtest-card #18 auto
 ha-sports-card #10 no-auto
 ha-stock-card #28 no-auto
+ha-switch-card #83 auto
+ha-system-hub #163 auto
+ha-tank-card #9 no-auto
+ha-tapo #22 no-auto
+ha-tempo-card #30 no-auto
+ha-timer-card #18 auto
+ha-todo-card #20 auto
+ha-tracker-card #18 auto
+ha-train-board-card #31 auto
+ha-ups-card #26 no-auto
