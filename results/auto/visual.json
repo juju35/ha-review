@@ -1,0 +1,4128 @@
+[
+ {
+  "repo": "ha-3d-printer-card",
+  "files": 12,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 46,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-alarm-card",
+  "files": 18,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "off": [
+     "var(--success-color, #43a047)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 44,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "20.0": 2
+   },
+   "important": 13
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-assist-card",
+  "files": 10,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 52,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 5
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "mini-zoom",
+    "msg": "detail button position not obviously top-right"
+   }
+  ]
+ },
+ {
+  "repo": "ha-backup-card",
+  "files": 13,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 32,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-calendar-card",
+  "files": 14,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 77,
+   "tile_radius": {},
+   "title_font": {
+    "20.0": 1,
+    "16.0": 1
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-camera",
+  "files": 19,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {
+    "40.0": 1
+   },
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 47,
+   "tile_radius": {
+    "12.0": 2
+   },
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 4
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-carburants-france",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 77,
+   "tile_radius": {},
+   "title_font": {},
+   "important": 16
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "mini-zoom",
+    "msg": "detail button position not obviously top-right"
+   },
+   {
+    "sev": "info",
+    "code": "css",
+    "msg": "16 `!important` in card CSS"
+   }
+  ]
+ },
+ {
+  "repo": "ha-certificate-card",
+  "files": 9,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 36,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 2,
+    "14.0": 1
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-chores-card",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 55,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "13.0": 1,
+    "14.0": 1
+   },
+   "important": 0
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-climate-air-card",
+  "files": 24,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 157,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 2,
+    "13.0": 1
+   },
+   "important": 5
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-cloud-card",
+  "files": 12,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 51,
+   "tile_radius": {
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 1
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-console-card",
+  "files": 16,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 77,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "13.0": 1,
+    "14.0": 1
+   },
+   "important": 0
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-countdown-card",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 42,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "13.0": 1,
+    "14.0": 1
+   },
+   "important": 0
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-cover-card",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 87,
+   "tile_radius": {
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 3
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "stale-comment",
+    "msg": "comments still describe the old `sun.sun` night rule"
+   }
+  ]
+ },
+ {
+  "repo": "ha-dashboard-header",
+  "files": 2,
+  "metrics": {
+   "banner": false,
+   "status_pill": true,
+   "mini": false,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 149,
+   "tile_radius": {},
+   "title_font": {
+    "20.0": 1,
+    "17.0": 1,
+    "18.0": 1
+   },
+   "important": 12
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "banner",
+    "msg": "no illustrated header found (plain header)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-device-card",
+  "files": 14,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 41,
+   "tile_radius": {
+    "10.0": 1,
+    "3.0": 2
+   },
+   "title_font": {
+    "16.0": 2,
+    "14.0": 1
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-dns-filter-card",
+  "files": 15,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "na": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [],
+   "distinct_hex": 43,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 1
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "stale-comment",
+    "msg": "comments still describe the old `sun.sun` night rule"
+   }
+  ]
+ },
+ {
+  "repo": "ha-docker-card",
+  "files": 10,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 46,
+   "tile_radius": {},
+   "title_font": {
+    "14.0": 1,
+    "16.0": 2
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-doorbell-card",
+  "files": 12,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 66,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 3
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "stale-comment",
+    "msg": "comments still describe the old `sun.sun` night rule"
+   }
+  ]
+ },
+ {
+  "repo": "ha-ecowatt-card",
+  "files": 12,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 40,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 2
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "stale-comment",
+    "msg": "comments still describe the old `sun.sun` night rule"
+   }
+  ]
+ },
+ {
+  "repo": "ha-energy-card",
+  "files": 13,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "${COLORS.solar}"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 86,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-energy-hub",
+  "files": 7,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": false,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 72,
+   "tile_radius": {
+    "12.0": 1
+   },
+   "title_font": {
+    "18.0": 1,
+    "14.0": 1,
+    "11.0": 1
+   },
+   "important": 0
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "night-mode",
+    "msg": "no `illustration_theme: day|night` override"
+   }
+  ]
+ },
+ {
+  "repo": "ha-ent-educartable",
+  "files": 15,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {
+    "44.0": 1
+   },
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 39,
+   "tile_radius": {
+    "12.0": 2
+   },
+   "title_font": {
+    "16.0": 1,
+    "20.0": 1
+   },
+   "important": 2
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "header-icon",
+    "msg": "round header icon not 40 px (44)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-ent-one",
+  "files": 16,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {
+    "44.0": 1
+   },
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 38,
+   "tile_radius": {
+    "12.0": 2
+   },
+   "title_font": {
+    "16.0": 1,
+    "20.0": 1
+   },
+   "important": 2
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "header-icon",
+    "msg": "round header icon not 40 px (44)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-ent-skolengo",
+  "files": 20,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 58,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 3
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-ev-charger-card",
+  "files": 15,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 116,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "13.0": 1,
+    "14.0": 1
+   },
+   "important": 0
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-family-day-card",
+  "files": 16,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "off": [
+     "#00897b"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 85,
+   "tile_radius": {},
+   "title_font": {
+    "14.0": 1,
+    "16.0": 1,
+    "15.0": 1
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-family-link",
+  "files": 8,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 49,
+   "tile_radius": {
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 2,
+    "15.0": 1
+   },
+   "important": 3
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-findmy",
+  "files": 0,
+  "metrics": {},
+  "issues": [],
+  "skipped": "no card/panel JS"
+ },
+ {
+  "repo": "ha-flight-board-card",
+  "files": 13,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    1.6,
+    3.0,
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "danger": [
+     "var(--error-color, #db4437)"
+    ],
+    "na": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [],
+   "distinct_hex": 61,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 3
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-garden-card",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 59,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 4
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "webkit",
+    "msg": "uses `subgrid` \u2014 check the :hover rendering under Safari/WebKit"
+   }
+  ]
+ },
+ {
+  "repo": "ha-github",
+  "files": 17,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "idle": [
+     "#8a94a0"
+    ]
+   },
+   "idle_token": [
+    "#8a94a0"
+   ],
+   "distinct_hex": 55,
+   "tile_radius": {
+    "12.0": 1,
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 3
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "webkit",
+    "msg": "uses `subgrid` \u2014 check the :hover rendering under Safari/WebKit"
+   }
+  ]
+ },
+ {
+  "repo": "ha-heating-card",
+  "files": 16,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ]
+   },
+   "idle_token": [],
+   "distinct_hex": 104,
+   "tile_radius": {
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-house-rules",
+  "files": 21,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [],
+   "ground_heights": [
+    5.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 40,
+   "tile_radius": {
+    "12.0": 2
+   },
+   "title_font": {},
+   "important": 1
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "ground-bar",
+    "msg": "ground bar 5px (charter: same thickness as flight/train, 10 px)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-hp",
+  "files": 0,
+  "metrics": {},
+  "issues": [],
+  "skipped": "no card/panel JS"
+ },
+ {
+  "repo": "ha-internet-box-card",
+  "files": 10,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ]
+   },
+   "idle_token": [],
+   "distinct_hex": 161,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 0
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-iptv",
+  "files": 15,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ]
+   },
+   "idle_token": [],
+   "distinct_hex": 41,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 1,
+    "20.0": 1,
+    "18.0": 1,
+    "22.0": 1
+   },
+   "important": 4
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "mini-zoom",
+    "msg": "detail button position not obviously top-right"
+   }
+  ]
+ },
+ {
+  "repo": "ha-light-card",
+  "files": 17,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 109,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "13.0": 1,
+    "14.0": 1
+   },
+   "important": 0
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-liquid-glass",
+  "files": 0,
+  "metrics": {},
+  "issues": [],
+  "skipped": "no card/panel JS"
+ },
+ {
+  "repo": "ha-mailbox-card",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 41,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "13.0": 1,
+    "14.0": 1
+   },
+   "important": 0
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-maintenance",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    6.0
+   ],
+   "status_pill": true,
+   "mini": false,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #f59e0b)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #727272)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #727272)"
+   ],
+   "distinct_hex": 30,
+   "tile_radius": {
+    "14.0": 1
+   },
+   "title_font": {
+    "20.0": 1,
+    "16.0": 1
+   },
+   "important": 2
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "ground-bar",
+    "msg": "ground bar 6px (charter: same thickness as flight/train, 10 px)"
+   },
+   {
+    "sev": "minor",
+    "code": "palette",
+    "msg": "`--*-warn` = `var(--warning-color, #f59e0b)` (charter: `var(--warning-color, #ffa600)`)"
+   },
+   {
+    "sev": "minor",
+    "code": "tile-radius",
+    "msg": "tile radius 14px (most cards: 10 or 12 px)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-matter-card",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 34,
+   "tile_radius": {
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 1
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-meal-card",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 57,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "13.0": 1,
+    "14.0": 1
+   },
+   "important": 0
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-media-card",
+  "files": 8,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 65,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-media-server-card",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 60,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "13.0": 1,
+    "14.0": 1
+   },
+   "important": 0
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-mower-card",
+  "files": 12,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 88,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 3
+   },
+   "important": 4
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-nas-card",
+  "files": 12,
+  "metrics": {
+   "banner": false,
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "na": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [],
+   "distinct_hex": 95,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 0
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "banner",
+    "msg": "illustrated header built with its own class names (scene/hero/header), not the shared `.banner` structure \u2014 height and ground bar not checked automatically"
+   },
+   {
+    "sev": "info",
+    "code": "webkit",
+    "msg": "uses `subgrid` \u2014 check the :hover rendering under Safari/WebKit"
+   }
+  ]
+ },
+ {
+  "repo": "ha-neutral",
+  "files": 0,
+  "metrics": {},
+  "issues": [],
+  "skipped": "no card/panel JS"
+ },
+ {
+  "repo": "ha-notify-hub",
+  "files": 9,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    6.0
+   ],
+   "status_pill": true,
+   "mini": false,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #f59e0b)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #727272)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #727272)"
+   ],
+   "distinct_hex": 27,
+   "tile_radius": {
+    "14.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "20.0": 1,
+    "16.0": 1
+   },
+   "important": 1
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "ground-bar",
+    "msg": "ground bar 6px (charter: same thickness as flight/train, 10 px)"
+   },
+   {
+    "sev": "minor",
+    "code": "palette",
+    "msg": "`--*-warn` = `var(--warning-color, #f59e0b)` (charter: `var(--warning-color, #ffa600)`)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-opening-card",
+  "files": 16,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ],
+    "off": [
+     "#121016",
+     "#2b2118"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 65,
+   "tile_radius": {
+    "14.0": 1
+   },
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 2
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "tile-radius",
+    "msg": "tile radius 14px (most cards: 10 or 12 px)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-orange-internet-on-the-move",
+  "files": 0,
+  "metrics": {},
+  "issues": [],
+  "skipped": "no card/panel JS"
+ },
+ {
+  "repo": "ha-parcel",
+  "files": 9,
+  "metrics": {
+   "banner": false,
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 49,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 1,
+    "17.0": 1
+   },
+   "important": 2
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "banner",
+    "msg": "illustrated header built with its own class names (scene/hero/header), not the shared `.banner` structure \u2014 height and ground bar not checked automatically"
+   }
+  ]
+ },
+ {
+  "repo": "ha-pc-card",
+  "files": 16,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 53,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "13.0": 1,
+    "14.0": 1
+   },
+   "important": 0
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-pet-card",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 76,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 3
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-pool-card",
+  "files": 13,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 92,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-power-device-card",
+  "files": 16,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 260,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "13.0": 1,
+    "14.0": 1
+   },
+   "important": 0
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-presence-card",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ]
+   },
+   "idle_token": [],
+   "distinct_hex": 70,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 1,
+    "18.0": 1
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-printer-scanner-card",
+  "files": 12,
+  "metrics": {
+   "banner": false,
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 75,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 0
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "banner",
+    "msg": "illustrated header built with its own class names (scene/hero/header), not the shared `.banner` structure \u2014 height and ground bar not checked automatically"
+   }
+  ]
+ },
+ {
+  "repo": "ha-pronote-card",
+  "files": 20,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 59,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 3
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-proxmox",
+  "files": 20,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ]
+   },
+   "idle_token": [],
+   "distinct_hex": 34,
+   "tile_radius": {},
+   "title_font": {
+    "14.0": 1
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-public-transport",
+  "files": 8,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 57,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 2
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "mini-zoom",
+    "msg": "detail button position not obviously top-right"
+   }
+  ]
+ },
+ {
+  "repo": "ha-rain-card",
+  "files": 17,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 42,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-remote-card",
+  "files": 9,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 89,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 5
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-renault-picture",
+  "files": 0,
+  "metrics": {},
+  "issues": [],
+  "skipped": "no card/panel JS"
+ },
+ {
+  "repo": "ha-reverse-proxy",
+  "files": 8,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ]
+   },
+   "idle_token": [],
+   "distinct_hex": 67,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 0
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-room-card",
+  "files": 49,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 157,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 2,
+    "14.0": 2,
+    "13.0": 1
+   },
+   "important": 2
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "stale-comment",
+    "msg": "comments still describe the old `sun.sun` night rule"
+   }
+  ]
+ },
+ {
+  "repo": "ha-router-card",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ]
+   },
+   "idle_token": [],
+   "distinct_hex": 73,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 1
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-safety-card",
+  "files": 16,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 51,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "13.0": 1,
+    "14.0": 1
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-saint-of-the-day",
+  "files": 8,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    64.0
+   ],
+   "classic_header_h": 64.0,
+   "ground_heights": [
+    0.0,
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 42,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 2
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "banner-height",
+    "msg": "`illustration: false` header is 64 px (other cards: no banner at all) \u2014 harmonise the non-illustrated header"
+   }
+  ]
+ },
+ {
+  "repo": "ha-scene-card",
+  "files": 12,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 52,
+   "tile_radius": {
+    "10.0": 2
+   },
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-scheduler-card",
+  "files": 14,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "danger": [
+     "var(--error-color, #db4437)"
+    ],
+    "na": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [],
+   "distinct_hex": 59,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 1
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "night-mode",
+    "msg": "`sun.sun` read (verified use: content such as solar production or sun times, not the banner look \u2014 recheck if it changes)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-seedbox-card",
+  "files": 10,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 41,
+   "tile_radius": {},
+   "title_font": {
+    "14.0": 1,
+    "16.0": 2
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-sky-card",
+  "files": 16,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 101,
+   "tile_radius": {
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 3
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-smart-appliance-card",
+  "files": 9,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 137,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 7
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-smart-comfort",
+  "files": 40,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 141,
+   "tile_radius": {
+    "12.0": 1,
+    "14.0": 1
+   },
+   "title_font": {},
+   "important": 6
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-smartlock-card",
+  "files": 12,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 60,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 3
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-solar-forecast-card",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 56,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "13.0": 1,
+    "14.0": 1
+   },
+   "important": 0
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "night-mode",
+    "msg": "`sun.sun` read (verified use: content such as solar production or sun times, not the banner look \u2014 recheck if it changes)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-solar-roof-card",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 61,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "13.0": 1,
+    "14.0": 1
+   },
+   "important": 0
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "night-mode",
+    "msg": "`sun.sun` read (verified use: content such as solar production or sun times, not the banner look \u2014 recheck if it changes)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-solar-router-card",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 59,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "13.0": 1,
+    "14.0": 1
+   },
+   "important": 0
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "night-mode",
+    "msg": "`sun.sun` read (verified use: content such as solar production or sun times, not the banner look \u2014 recheck if it changes)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-speedtest-card",
+  "files": 13,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 50,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 3
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-sports-card",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 39,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "13.0": 1,
+    "14.0": 1
+   },
+   "important": 0
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-stock-card",
+  "files": 10,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 42,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 2
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "webkit",
+    "msg": "uses `subgrid` \u2014 check the :hover rendering under Safari/WebKit"
+   }
+  ]
+ },
+ {
+  "repo": "ha-switch-card",
+  "files": 3,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 41,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "11.0": 1,
+    "16.0": 1
+   },
+   "important": 1
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-system-hub",
+  "files": 99,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ],
+    "off": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [],
+   "distinct_hex": 223,
+   "tile_radius": {
+    "12.0": 1,
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 11,
+    "13.0": 7,
+    "18.0": 1,
+    "12.0": 1,
+    "17.0": 1,
+    "15.0": 1,
+    "12.5": 1
+   },
+   "important": 349
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "webkit",
+    "msg": "uses `subgrid` \u2014 check the :hover rendering under Safari/WebKit"
+   },
+   {
+    "sev": "info",
+    "code": "css",
+    "msg": "349 `!important` in card CSS"
+   }
+  ]
+ },
+ {
+  "repo": "ha-tank-card",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 42,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "13.0": 1,
+    "14.0": 1
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-tapo",
+  "files": 0,
+  "metrics": {},
+  "issues": [],
+  "skipped": "no card/panel JS"
+ },
+ {
+  "repo": "ha-tempo-card",
+  "files": 9,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 61,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 3
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-timer-card",
+  "files": 13,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 41,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 3
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-todo-card",
+  "files": 18,
+  "metrics": {
+   "banner": false,
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 55,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "20.0": 1,
+    "16.0": 1
+   },
+   "important": 4
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "banner",
+    "msg": "illustrated header built with its own class names (scene/hero/header), not the shared `.banner` structure \u2014 height and ground bar not checked automatically"
+   }
+  ]
+ },
+ {
+  "repo": "ha-tracker-card",
+  "files": 13,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 34,
+   "tile_radius": {
+    "10.0": 1,
+    "6.0": 1
+   },
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-train-board-card",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "danger": [
+     "var(--error-color, #db4437)"
+    ]
+   },
+   "idle_token": [],
+   "distinct_hex": 73,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 3
+   },
+   "important": 3
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-ups-card",
+  "files": 14,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 39,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-uptime-card",
+  "files": 13,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 35,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 3
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-utility-meter-card",
+  "files": 8,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 113,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 2
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-uv-card",
+  "files": 5,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": false,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 33,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 3
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-vacuum-card",
+  "files": 16,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 112,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 3
+   },
+   "important": 3
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-vacuum-map",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": false,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 96,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 1
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-vehicle-card",
+  "files": 12,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 64,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 12
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-vehicle-consumption",
+  "files": 7,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--primary-color, #03a9f4)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [],
+   "distinct_hex": 47,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 1,
+    "13.0": 1
+   },
+   "important": 3
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "palette",
+    "msg": "`--*-ok` = `var(--primary-color, #03a9f4)` (charter: `var(--success-color, #43a047)`)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-vivarium-card",
+  "files": 13,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 789,
+   "tile_radius": {
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 1
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-wall-panel",
+  "files": 12,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": false,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 238,
+   "tile_radius": {
+    "16.0": 1,
+    "2.0": 2,
+    "20.0": 1,
+    "3.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "20.0": 1
+   },
+   "important": 8
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "stale-comment",
+    "msg": "comments still describe the old `sun.sun` night rule"
+   },
+   {
+    "sev": "info",
+    "code": "tile-radius",
+    "msg": "tile radius 16px, 2px, 20px, 3px (most cards: 10 or 12 px)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-waste-card",
+  "files": 10,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    1.6,
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "idle": [
+     "var(--disabled-text-color, #9e9e9e)"
+    ],
+    "active": [
+     "var(--info-color, #039be5)"
+    ]
+   },
+   "idle_token": [
+    "var(--disabled-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 45,
+   "tile_radius": {
+    "10.0": 1
+   },
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 3
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-water-heater-card",
+  "files": 17,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 85,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "13.0": 1,
+    "14.0": 1
+   },
+   "important": 0
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "night-mode",
+    "msg": "`sun.sun` read (verified use: content such as solar production or sun times, not the banner look \u2014 recheck if it changes)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-water-pump-card",
+  "files": 19,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 74,
+   "tile_radius": {
+    "10.0": 1,
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1,
+    "13.0": 1,
+    "14.0": 1
+   },
+   "important": 0
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-weather-card",
+  "files": 30,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 74,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 1,
+    "18.0": 1
+   },
+   "important": 7
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-wero-card",
+  "files": 9,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {
+    "40.0": 1
+   },
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 35,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 1
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-wifi-card",
+  "files": 9,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 39,
+   "tile_radius": {},
+   "title_font": {
+    "16.0": 3
+   },
+   "important": 1
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-zigbee-card",
+  "files": 15,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 33,
+   "tile_radius": {
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 1
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-zlinky-card",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [],
+   "ground_heights": [
+    10.0
+   ],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {},
+   "idle_token": [],
+   "distinct_hex": 71,
+   "tile_radius": {
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 1
+   },
+   "important": 1
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-zwave-card",
+  "files": 11,
+  "metrics": {
+   "banner": true,
+   "banner_heights": [
+    90.0
+   ],
+   "ground_heights": [],
+   "status_pill": true,
+   "mini": true,
+   "round_icon_sizes": {},
+   "disconnected": true,
+   "palette": {
+    "ok": [
+     "var(--success-color, #43a047)"
+    ],
+    "warn": [
+     "var(--warning-color, #ffa600)"
+    ],
+    "alert": [
+     "var(--error-color, #db4437)"
+    ],
+    "idle": [
+     "var(--secondary-text-color, #9e9e9e)"
+    ],
+    "na": [
+     "var(--disabled-color, #9e9e9e)"
+    ]
+   },
+   "idle_token": [
+    "var(--secondary-text-color, #9e9e9e)"
+   ],
+   "distinct_hex": 36,
+   "tile_radius": {
+    "12.0": 1
+   },
+   "title_font": {
+    "16.0": 2
+   },
+   "important": 1
+  },
+  "issues": []
+ }
+]
