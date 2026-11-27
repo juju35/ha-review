@@ -21,3 +21,13 @@ ha-ecowatt-card #17 auto
 ha-energy-card #40 no-auto
 ha-energy-hub #27 auto
 ha-wero-card #71 auto
+ha-ent-educartable #17 auto
+ha-ent-one #42 no-auto
+ha-ent-skolengo #5 auto
+ha-ev-charger-card #25 auto
+ha-family-day-card #32 no-auto
+ha-family-link #24 no-auto
+ha-findmy #14 auto
+ha-flight-board-card #26 auto
+ha-garden-card #29 no-auto
+ha-github #73 no-auto
