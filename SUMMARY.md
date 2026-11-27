@@ -23,6 +23,16 @@ Details: [INDEX.md](results/INDEX.md) (one report per repo), [CONVENTIONS.md](re
 | wero-card, camera | Mini card: reset `_zoomed` in `disconnectedCallback` (the card comes back expanded after a view change) |
 | safety-card | Remove the dead `hide_when_off` / `only_on` branch copied from a light/power card (`src/shared/base-card.js:486`) |
 
+### 1b. Scroll / redraw on card updates ([details](results/SCROLL.md))
+Dynamic test in Chrome (201 cards, 96 repos; screenshot mocks reused where they exist): 177 ok, 24 flagged.
+| Repo | Problem |
+|---|---|
+| cover-card, timer-card | Whole card rewritten on **every** `hass` update, even with no state change |
+| room-card (`room-card`) | 64 % of the DOM rewritten on every update |
+| 3d-printer, energy, github, light, mower, pool, power-device, tempo, water-heater | Whole card rewritten on each state change (no in-place redraw like room/flight/alarm) — animations restart, the page can move |
+| vivarium-card | Partial rewrite; the mini card moves the page by 21 px on update |
+The static check lists the other repos still redrawing with `innerHTML` (to migrate to the in-place redraw already used by most repos).
+
 ### 2. Security hardening ([details](results/SECURITY-REVIEW.md))
 | Repo | Fix |
 |---|---|

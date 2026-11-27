@@ -18,6 +18,7 @@ Revision reviewed: the `main` HEAD of each repo at clone time, recorded in `prog
 | 3 | Visual consistency audit (automatic) | `results/auto/visual.json`, `results/VISUAL.md` | `scripts/audit_visual.py` |
 | 4 | Code review — lint + risky patterns (automatic) | `results/auto/code.json`, `results/CODE.md` | `scripts/audit_code.py`, biome, ruff |
 | 4c | Security audit (backend, frontend, CI / supply chain, secrets) | `results/auto/security.json`, `results/SECURITY.md`, `results/SECURITY-REVIEW.md` | `scripts/audit_security.py` + triage |
+| 4d | Scroll & DOM stability on card updates (dynamic, Chrome) | `results/auto/scroll.json`, `results/auto/render.json`, `results/SCROLL.md` | `scripts/dump_fixtures.mjs`, `scripts/test_scroll_update.py`, `scripts/audit_render.py` |
 | 5 | Code review — manual reading of flagged spots | `results/repos/<repo>.md` | by hand, per repo |
 | 6 | Summary & action list | `SUMMARY.md` | from phases 2–5 |
 

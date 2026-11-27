@@ -1,0 +1,5917 @@
+[
+ {
+  "repo": "ha-3d-printer-card",
+  "bundles": [
+   "dist/3d-printer-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "printer-3d-card",
+    "config": {
+     "device": "mk4",
+     "type": "custom:printer-3d-card"
+    },
+    "nodes": 123,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 123
+    },
+    "update": {
+     "kept": 1,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 123
+    },
+    "height_min": 562,
+    "height_dip": 0,
+    "errors": [],
+    "result": "full rewrite on state update (1% nodes kept)"
+   },
+   {
+    "type": "printer-3d-mini-card",
+    "config": {
+     "device": "mk4",
+     "type": "custom:printer-3d-mini-card"
+    },
+    "nodes": 96,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 96
+    },
+    "update": {
+     "kept": 1,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 96
+    },
+    "height_min": 174,
+    "height_dip": 0,
+    "errors": [],
+    "result": "full rewrite on state update (1% nodes kept)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-alarm-card",
+  "bundles": [
+   "custom_components/alarm_card/frontend/alarm-card.js",
+   "custom_components/alarm_card/frontend/alarm-panel.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "alarm-card",
+    "config": {
+     "entity": "alarm_control_panel.alarmo",
+     "type": "custom:alarm-card"
+    },
+    "nodes": 157,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 157
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 157
+    },
+    "height_min": 167,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "alarm-mini-card",
+    "config": {
+     "entity": "alarm_control_panel.alarmo",
+     "type": "custom:alarm-mini-card"
+    },
+    "nodes": 147,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 147
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 147
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-assist-card",
+  "bundles": [
+   "dist/assist-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "assist-card",
+    "config": {
+     "type": "custom:assist-card"
+    },
+    "nodes": 65,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 65
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 65
+    },
+    "height_min": 311,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "assist-mini-card",
+    "config": {
+     "type": "custom:assist-mini-card"
+    },
+    "nodes": 63,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 63
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 63
+    },
+    "height_min": 188,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-backup-card",
+  "bundles": [
+   "dist/backup-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "backup-card",
+    "config": {
+     "type": "custom:backup-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 50,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "backup-mini-card",
+    "config": {
+     "type": "custom:backup-mini-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 50,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-calendar-card",
+  "bundles": [
+   "dist/calendar-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "calendar-agenda-card",
+    "config": {
+     "entities": [
+      "calendar.family"
+     ],
+     "type": "custom:calendar-agenda-card"
+    },
+    "nodes": 50,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 50
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 50
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "calendar-agenda-mini-card",
+    "config": {
+     "entities": [
+      "calendar.family"
+     ],
+     "type": "custom:calendar-agenda-mini-card"
+    },
+    "nodes": 52,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 52
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 52
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-camera",
+  "bundles": [
+   "dist/home-camera-card.js",
+   "dist/home-camera-panel.js",
+   "custom_components/home_camera/frontend/home-camera-card.js",
+   "custom_components/home_camera/frontend/home-camera-panel.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "home-camera-card",
+    "config": {
+     "cameras": [
+      "camera.front"
+     ],
+     "type": "custom:home-camera-card"
+    },
+    "nodes": 51,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 51
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 51
+    },
+    "height_min": 371,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Identifier 'HOME_CAMERA_CARD_VERSION' has already been declared",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Identifier 'homeCameraPanel_FOLD_CSS' has already been declared"
+    ],
+    "result": "ok"
+   },
+   {
+    "type": "home-camera-mini-card",
+    "config": {
+     "cameras": [
+      "camera.front"
+     ],
+     "type": "custom:home-camera-mini-card"
+    },
+    "nodes": 41,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 41
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 41
+    },
+    "height_min": 378,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Identifier 'HOME_CAMERA_CARD_VERSION' has already been declared",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Identifier 'homeCameraPanel_FOLD_CSS' has already been declared"
+    ],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-certificate-card",
+  "bundles": [
+   "dist/certificate-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "certificate-card",
+    "config": {
+     "type": "custom:certificate-card"
+    },
+    "nodes": 155,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 155
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 155
+    },
+    "height_min": 658,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "certificate-mini-card",
+    "config": {
+     "type": "custom:certificate-mini-card"
+    },
+    "nodes": 80,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 80
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 80
+    },
+    "height_min": 206,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-chores-card",
+  "bundles": [
+   "dist/ha-chores-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "chores-card",
+    "config": {
+     "type": "custom:chores-card"
+    },
+    "nodes": 44,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 44
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 44
+    },
+    "height_min": 231,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "chores-mini-card",
+    "config": {
+     "type": "custom:chores-mini-card"
+    },
+    "nodes": 36,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 36
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 36
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-climate-air-card",
+  "bundles": [
+   "dist/ha-climate-air-card.brand.baf.js",
+   "dist/ha-climate-air-card.brand.bond.js",
+   "dist/ha-climate-air-card.brand.cozytouch.js",
+   "dist/ha-climate-air-card.brand.daikin_onecta.js",
+   "dist/ha-climate-air-card.brand.dyson_local.js",
+   "dist/ha-climate-air-card.brand.esphome.js",
+   "dist/ha-climate-air-card.brand.hitachi_yutaki.js",
+   "dist/ha-climate-air-card.brand.homekit.js",
+   "dist/ha-climate-air-card.brand.matter.js",
+   "dist/ha-climate-air-card.brand.melcloud.js",
+   "dist/ha-climate-air-card.brand.midea_ac_lan.js",
+   "dist/ha-climate-air-card.brand.modern_forms.js",
+   "dist/ha-climate-air-card.brand.myuplink.js",
+   "dist/ha-climate-air-card.brand.panasonic.js",
+   "dist/ha-climate-air-card.brand.rituals.js",
+   "dist/ha-climate-air-card.brand.switchbot.js",
+   "dist/ha-climate-air-card.brand.vicare.js",
+   "dist/ha-climate-air-card.brand.vocolinc.js",
+   "dist/ha-climate-air-card.brand.xiaomi_home.js",
+   "dist/ha-climate-air-card.brand.xiaomi_miio.js",
+   "dist/ha-climate-air-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "climate-air-purifier-card",
+    "config": {
+     "entity": "fan.purifier",
+     "type": "custom:climate-air-purifier-card"
+    },
+    "nodes": 280,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 280
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 280
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'"
+    ],
+    "result": "ok"
+   },
+   {
+    "type": "climate-air-purifier-mini-card",
+    "config": {
+     "entity": "fan.purifier",
+     "type": "custom:climate-air-purifier-mini-card"
+    },
+    "nodes": 286,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 286
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 286
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'"
+    ],
+    "result": "ok"
+   },
+   {
+    "type": "climate-air-fan-card",
+    "config": {
+     "type": "custom:climate-air-fan-card"
+    },
+    "nodes": 5,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 5
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 5
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'"
+    ],
+    "result": "ok"
+   },
+   {
+    "type": "climate-air-fan-mini-card",
+    "config": {
+     "type": "custom:climate-air-fan-mini-card"
+    },
+    "nodes": 5,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 5
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 5
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'"
+    ],
+    "result": "ok"
+   },
+   {
+    "type": "climate-air-aircon-card",
+    "config": {
+     "type": "custom:climate-air-aircon-card"
+    },
+    "nodes": 5,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 5
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 5
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'"
+    ],
+    "result": "ok"
+   },
+   {
+    "type": "climate-air-aircon-mini-card",
+    "config": {
+     "type": "custom:climate-air-aircon-mini-card"
+    },
+    "nodes": 5,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 5
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 5
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'"
+    ],
+    "result": "ok"
+   },
+   {
+    "type": "climate-air-heatpump-card",
+    "config": {
+     "type": "custom:climate-air-heatpump-card"
+    },
+    "nodes": 5,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 5
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 5
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'"
+    ],
+    "result": "ok"
+   },
+   {
+    "type": "climate-air-heatpump-mini-card",
+    "config": {
+     "type": "custom:climate-air-heatpump-mini-card"
+    },
+    "nodes": 5,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 5
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 5
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'"
+    ],
+    "result": "ok"
+   },
+   {
+    "type": "climate-air-humidifier-card",
+    "config": {
+     "entity": "humidifier.bedroom",
+     "type": "custom:climate-air-humidifier-card"
+    },
+    "nodes": 65,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 65
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 65
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'"
+    ],
+    "result": "ok"
+   },
+   {
+    "type": "climate-air-humidifier-mini-card",
+    "config": {
+     "entity": "humidifier.bedroom",
+     "type": "custom:climate-air-humidifier-mini-card"
+    },
+    "nodes": 60,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 60
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 60
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'"
+    ],
+    "result": "ok"
+   },
+   {
+    "type": "climate-air-ventilation-card",
+    "config": {
+     "type": "custom:climate-air-ventilation-card"
+    },
+    "nodes": 5,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 5
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 5
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'"
+    ],
+    "result": "ok"
+   },
+   {
+    "type": "climate-air-ventilation-mini-card",
+    "config": {
+     "type": "custom:climate-air-ventilation-mini-card"
+    },
+    "nodes": 5,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 5
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 5
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'"
+    ],
+    "result": "ok"
+   },
+   {
+    "type": "climate-air-overview-card",
+    "config": {
+     "type": "custom:climate-air-overview-card"
+    },
+    "nodes": 603,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 603
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 603
+    },
+    "height_min": 213,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'"
+    ],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-cloud-card",
+  "bundles": [
+   "dist/cloud-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "cloud-card",
+    "config": {
+     "type": "custom:cloud-card"
+    },
+    "nodes": 39,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 39
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 39
+    },
+    "height_min": 200,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "cloud-mini-card",
+    "config": {
+     "type": "custom:cloud-mini-card"
+    },
+    "nodes": 39,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 39
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 39
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-console-card",
+  "bundles": [
+   "dist/ha-console-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "console-card",
+    "config": {
+     "type": "custom:console-card"
+    },
+    "nodes": 65,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 65
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 65
+    },
+    "height_min": 164,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "console-mini-card",
+    "config": {
+     "type": "custom:console-mini-card"
+    },
+    "nodes": 66,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 66
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 66
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-countdown-card",
+  "bundles": [
+   "dist/ha-countdown-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "countdown-card",
+    "config": {
+     "type": "custom:countdown-card"
+    },
+    "nodes": 42,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 42
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 42
+    },
+    "height_min": 160,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "countdown-mini-card",
+    "config": {
+     "type": "custom:countdown-mini-card"
+    },
+    "nodes": 17,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 17
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 17
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-cover-card",
+  "bundles": [
+   "dist/cover-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "cover-card",
+    "config": {
+     "entity": "cover.living_room",
+     "type": "custom:cover-card"
+    },
+    "nodes": 114,
+    "scrollers": 0,
+    "noop": {
+     "kept": 0,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 114
+    },
+    "update": {
+     "kept": 0,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 114
+    },
+    "height_min": 235,
+    "height_dip": 0,
+    "errors": [],
+    "result": "rewrites on a no-op hass (0% nodes kept); full rewrite on state update (0% nodes kept)"
+   },
+   {
+    "type": "cover-mini-card",
+    "config": {
+     "area": "living_room",
+     "type": "custom:cover-mini-card"
+    },
+    "nodes": 296,
+    "scrollers": 0,
+    "noop": {
+     "kept": 0,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 296
+    },
+    "update": {
+     "kept": 0,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 296
+    },
+    "height_min": 246,
+    "height_dip": 0,
+    "errors": [],
+    "result": "rewrites on a no-op hass (0% nodes kept); full rewrite on state update (0% nodes kept)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-dashboard-header",
+  "bundles": [
+   "dist/dashboard-header.js"
+  ],
+  "load_errors": [],
+  "cards": []
+ },
+ {
+  "repo": "ha-device-card",
+  "bundles": [
+   "dist/device-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "device-card",
+    "config": {
+     "type": "custom:device-card"
+    },
+    "nodes": 126,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 126
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 126
+    },
+    "height_min": 364,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "device-mini-card",
+    "config": {
+     "type": "custom:device-mini-card"
+    },
+    "nodes": 95,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 95
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 95
+    },
+    "height_min": 200,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-dns-filter-card",
+  "bundles": [
+   "dist/dns-filter-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "dns-filter-card",
+    "config": {
+     "device": "adguard_home_1",
+     "type": "custom:dns-filter-card"
+    },
+    "nodes": 116,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 116
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 116
+    },
+    "height_min": 401,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "dns-filter-mini-card",
+    "config": {
+     "device": "adguard_home_1",
+     "type": "custom:dns-filter-mini-card"
+    },
+    "nodes": 73,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 73
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 73
+    },
+    "height_min": 193,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-docker-card",
+  "bundles": [
+   "dist/docker-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "docker-card",
+    "config": {
+     "environment": "env",
+     "type": "custom:docker-card"
+    },
+    "nodes": 119,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 119
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 119
+    },
+    "height_min": 285,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "docker-mini-card",
+    "config": {
+     "environment": "env",
+     "type": "custom:docker-mini-card"
+    },
+    "nodes": 81,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 81
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 81
+    },
+    "height_min": 207,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-doorbell-card",
+  "bundles": [
+   "dist/doorbell-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "doorbell-card",
+    "config": {
+     "device": "dev_entrance",
+     "type": "custom:doorbell-card"
+    },
+    "nodes": 81,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 81
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 81
+    },
+    "height_min": 585,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "doorbell-mini-card",
+    "config": {
+     "device": "dev_entrance",
+     "type": "custom:doorbell-mini-card"
+    },
+    "nodes": 56,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 56
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 56
+    },
+    "height_min": 147,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-ecowatt-card",
+  "bundles": [
+   "dist/ecowatt-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "ecowatt-card",
+    "config": {
+     "type": "custom:ecowatt-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 68,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "ecowatt-mini-card",
+    "config": {
+     "type": "custom:ecowatt-mini-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 68,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-energy-card",
+  "bundles": [
+   "dist/energy-card.js",
+   "dist/energy-card.logo.anker.js",
+   "dist/energy-card.logo.apsystems.js",
+   "dist/energy-card.logo.beem.js",
+   "dist/energy-card.logo.ecoflow.js",
+   "dist/energy-card.logo.enphase.js",
+   "dist/energy-card.logo.foxess.js",
+   "dist/energy-card.logo.fronius.js",
+   "dist/energy-card.logo.goodwe.js",
+   "dist/energy-card.logo.growatt.js",
+   "dist/energy-card.logo.hoymiles.js",
+   "dist/energy-card.logo.huawei.js",
+   "dist/energy-card.logo.marstek.js",
+   "dist/energy-card.logo.sma.js",
+   "dist/energy-card.logo.solaredge.js",
+   "dist/energy-card.logo.solax.js",
+   "dist/energy-card.logo.tesla.js",
+   "dist/energy-card.logo.zendure.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "energy-card",
+    "config": {
+     "integration": "enphase_envoy",
+     "type": "custom:energy-card"
+    },
+    "nodes": 179,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 179
+    },
+    "update": {
+     "kept": 1,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 179
+    },
+    "height_min": 858,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'"
+    ],
+    "result": "full rewrite on state update (1% nodes kept)"
+   },
+   {
+    "type": "energy-mini-card",
+    "config": {
+     "integration": "enphase_envoy",
+     "type": "custom:energy-mini-card"
+    },
+    "nodes": 85,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 85
+    },
+    "update": {
+     "kept": 1,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 85
+    },
+    "height_min": 181,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'"
+    ],
+    "result": "full rewrite on state update (1% nodes kept)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-energy-hub",
+  "bundles": [
+   "custom_components/energy_hub/frontend/energy-hub-panel.js"
+  ],
+  "load_errors": [],
+  "cards": []
+ },
+ {
+  "repo": "ha-ent-one",
+  "bundles": [
+   "custom_components/ent_one/frontend/ent-one-icons.js"
+  ],
+  "load_errors": [],
+  "cards": []
+ },
+ {
+  "repo": "ha-ent-skolengo",
+  "bundles": [
+   "dist/skolengo-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "skolengo-card",
+    "config": {
+     "type": "custom:skolengo-card"
+    },
+    "nodes": 171,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 171
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 171
+    },
+    "height_min": 538,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "skolengo-mini-card",
+    "config": {
+     "type": "custom:skolengo-mini-card"
+    },
+    "nodes": 128,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 128
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 128
+    },
+    "height_min": 409,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-ev-charger-card",
+  "bundles": [
+   "dist/ha-ev-charger-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "ev-charger-card",
+    "config": {
+     "type": "custom:ev-charger-card"
+    },
+    "nodes": 8,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 8
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 8
+    },
+    "height_min": 126,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "ev-charger-mini-card",
+    "config": {
+     "type": "custom:ev-charger-mini-card"
+    },
+    "nodes": 100,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 100
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 100
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-family-day-card",
+  "bundles": [
+   "dist/family-day-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "family-day-card",
+    "config": {
+     "type": "custom:family-day-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 68,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "family-day-mini-card",
+    "config": {
+     "type": "custom:family-day-mini-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 68,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-family-link",
+  "bundles": [
+   "custom_components/family_link/frontend/family-link-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "family-link-card",
+    "config": {
+     "type": "custom:family-link-card"
+    },
+    "nodes": 10,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 10
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 10
+    },
+    "height_min": 136,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "family-link-mini-card",
+    "config": {
+     "type": "custom:family-link-mini-card"
+    },
+    "nodes": 10,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 10
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 10
+    },
+    "height_min": 136,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-flight-board-card",
+  "bundles": [
+   "dist/flight-board-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "flight-board-card",
+    "config": {
+     "type": "custom:flight-board-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 68,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "flight-board-mini-card",
+    "config": {
+     "type": "custom:flight-board-mini-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 68,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-garden-card",
+  "bundles": [
+   "dist/garden-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "garden-card",
+    "config": {
+     "type": "custom:garden-card"
+    },
+    "nodes": 275,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 275
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 275
+    },
+    "height_min": 778,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "garden-mini-card",
+    "config": {
+     "type": "custom:garden-mini-card"
+    },
+    "nodes": 48,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 48
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 48
+    },
+    "height_min": 146,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-github",
+  "bundles": [
+   "custom_components/github_card/frontend/github-card.js",
+   "custom_components/github_card/frontend/github-panel.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "github-card",
+    "config": {
+     "type": "custom:github-card"
+    },
+    "nodes": 138,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 138
+    },
+    "update": {
+     "kept": 0,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 139
+    },
+    "height_min": 378,
+    "height_dip": 0,
+    "errors": [],
+    "result": "full rewrite on state update (0% nodes kept)"
+   },
+   {
+    "type": "github-mini-card",
+    "config": {
+     "type": "custom:github-mini-card"
+    },
+    "nodes": 113,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 113
+    },
+    "update": {
+     "kept": 0,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 114
+    },
+    "height_min": 241,
+    "height_dip": 0,
+    "errors": [],
+    "result": "full rewrite on state update (0% nodes kept)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-heating-card",
+  "bundles": [
+   "dist/heating-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "heating-card",
+    "config": {
+     "type": "custom:heating-card"
+    },
+    "nodes": 150,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 150
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 150
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "heating-mini-card",
+    "config": {
+     "type": "custom:heating-mini-card"
+    },
+    "nodes": 121,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 121
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 121
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "heating-overview-card",
+    "config": {
+     "type": "custom:heating-overview-card"
+    },
+    "nodes": 401,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 401
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 401
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-house-rules",
+  "bundles": [
+   "custom_components/house_rules/frontend/house-rules-icons.js"
+  ],
+  "load_errors": [],
+  "cards": []
+ },
+ {
+  "repo": "ha-internet-box-card",
+  "bundles": [
+   "dist/internet-box-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "internet-box-card",
+    "config": {
+     "box": "dev_router",
+     "type": "custom:internet-box-card"
+    },
+    "nodes": 270,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 270
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 270
+    },
+    "height_min": 483,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "internet-box-mini-card",
+    "config": {
+     "box": "dev_router",
+     "type": "custom:internet-box-mini-card"
+    },
+    "nodes": 184,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 184
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 184
+    },
+    "height_min": 182,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-light-card",
+  "bundles": [
+   "dist/ha-light-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "light-card",
+    "config": {
+     "entity": "light.living_room",
+     "type": "custom:light-card"
+    },
+    "nodes": 71,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 71
+    },
+    "update": {
+     "kept": 0,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 71
+    },
+    "height_min": 302,
+    "height_dip": 0,
+    "errors": [],
+    "result": "full rewrite on state update (0% nodes kept)"
+   },
+   {
+    "type": "light-mini-card",
+    "config": {
+     "entity": "light.living_room",
+     "type": "custom:light-mini-card"
+    },
+    "nodes": 37,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 37
+    },
+    "update": {
+     "kept": 0,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 37
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "full rewrite on state update (0% nodes kept)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-mailbox-card",
+  "bundles": [
+   "dist/ha-mailbox-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "mailbox-card",
+    "config": {
+     "type": "custom:mailbox-card"
+    },
+    "nodes": 36,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 36
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 36
+    },
+    "height_min": 160,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "mailbox-mini-card",
+    "config": {
+     "type": "custom:mailbox-mini-card"
+    },
+    "nodes": 15,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 15
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 15
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-matter-card",
+  "bundles": [
+   "dist/matter-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "matter-card",
+    "config": {
+     "type": "custom:matter-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 50,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "matter-mini-card",
+    "config": {
+     "type": "custom:matter-mini-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 50,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-meal-card",
+  "bundles": [
+   "dist/ha-meal-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "meal-card",
+    "config": {
+     "type": "custom:meal-card"
+    },
+    "nodes": 36,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 36
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 36
+    },
+    "height_min": 160,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "meal-mini-card",
+    "config": {
+     "type": "custom:meal-mini-card"
+    },
+    "nodes": 40,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 40
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 40
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-media-card",
+  "bundles": [
+   "dist/media-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "media-card",
+    "config": {
+     "entity": "media_player.bathroom",
+     "type": "custom:media-card"
+    },
+    "nodes": 101,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 101
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 101
+    },
+    "height_min": 356,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "media-mini-card",
+    "config": {
+     "entity": "media_player.bathroom",
+     "type": "custom:media-mini-card"
+    },
+    "nodes": 98,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 98
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 98
+    },
+    "height_min": 219,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-media-server-card",
+  "bundles": [
+   "dist/ha-media-server-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "media-server-card",
+    "config": {
+     "type": "custom:media-server-card"
+    },
+    "nodes": 29,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 29
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 29
+    },
+    "height_min": 160,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "media-server-mini-card",
+    "config": {
+     "type": "custom:media-server-mini-card"
+    },
+    "nodes": 33,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 33
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 33
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-mower-card",
+  "bundles": [
+   "dist/mower-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "mower-card",
+    "config": {
+     "device": "automower",
+     "type": "custom:mower-card"
+    },
+    "nodes": 165,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 165
+    },
+    "update": {
+     "kept": 1,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 165
+    },
+    "height_min": 528,
+    "height_dip": 0,
+    "errors": [],
+    "result": "full rewrite on state update (1% nodes kept)"
+   },
+   {
+    "type": "mower-mini-card",
+    "config": {
+     "device": "automower",
+     "type": "custom:mower-mini-card"
+    },
+    "nodes": 74,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 74
+    },
+    "update": {
+     "kept": 3,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 74
+    },
+    "height_min": 147,
+    "height_dip": 0,
+    "errors": [],
+    "result": "full rewrite on state update (3% nodes kept)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-nas-card",
+  "bundles": [
+   "dist/nas-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "nas-card",
+    "config": {
+     "nas": "diskstation",
+     "type": "custom:nas-card"
+    },
+    "nodes": 182,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 182
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 182
+    },
+    "height_min": 495,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "nas-mini-card",
+    "config": {
+     "nas": "diskstation",
+     "type": "custom:nas-mini-card"
+    },
+    "nodes": 117,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 117
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 117
+    },
+    "height_min": 283,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-notify-hub",
+  "bundles": [
+   "custom_components/notify_hub/frontend/notify-hub-card.js",
+   "custom_components/notify_hub/frontend/notify-hub-panel.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "notify-hub-card",
+    "config": {
+     "type": "custom:notify-hub-card"
+    },
+    "nodes": 25,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 25
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 25
+    },
+    "height_min": 154,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-opening-card",
+  "bundles": [
+   "dist/opening-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "opening-card",
+    "config": {
+     "entity": "binary_sensor.front_door",
+     "type": "custom:opening-card"
+    },
+    "nodes": 56,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 56
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 56
+    },
+    "height_min": 330,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "opening-mini-card",
+    "config": {
+     "entity": "binary_sensor.front_door",
+     "type": "custom:opening-mini-card"
+    },
+    "nodes": 32,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 32
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 32
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "opening-overview-card",
+    "config": {
+     "type": "custom:opening-overview-card"
+    },
+    "nodes": 78,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 78
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 78
+    },
+    "height_min": 266,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "opening-journal-card",
+    "config": {
+     "type": "custom:opening-journal-card"
+    },
+    "nodes": 93,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 93
+    },
+    "update": {
+     "kept": 99,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 92
+    },
+    "height_min": 313,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-parcel",
+  "bundles": [
+   "custom_components/parcel/frontend/parcel-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "parcel-card",
+    "config": {
+     "type": "custom:parcel-card"
+    },
+    "nodes": 90,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 90
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 90
+    },
+    "height_min": 132,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "parcel-mini-card",
+    "config": {
+     "type": "custom:parcel-mini-card"
+    },
+    "nodes": 93,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 93
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 93
+    },
+    "height_min": 132,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-pc-card",
+  "bundles": [
+   "dist/ha-pc-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "pc-card",
+    "config": {
+     "type": "custom:pc-card"
+    },
+    "nodes": 33,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 33
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 33
+    },
+    "height_min": 160,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "pc-mini-card",
+    "config": {
+     "type": "custom:pc-mini-card"
+    },
+    "nodes": 39,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 39
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 39
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-pet-card",
+  "bundles": [
+   "dist/pet-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "pet-card",
+    "config": {
+     "type": "custom:pet-card"
+    },
+    "nodes": 1541,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 1541
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 1541
+    },
+    "height_min": 2756,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "pet-mini-card",
+    "config": {
+     "type": "custom:pet-mini-card"
+    },
+    "nodes": 491,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 491
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 491
+    },
+    "height_min": 351,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-pool-card",
+  "bundles": [
+   "dist/pool-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "pool-card",
+    "config": {
+     "device": "spa",
+     "type": "custom:pool-card"
+    },
+    "nodes": 188,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 188
+    },
+    "update": {
+     "kept": 0,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 200
+    },
+    "height_min": 517,
+    "height_dip": 0,
+    "errors": [],
+    "result": "full rewrite on state update (0% nodes kept)"
+   },
+   {
+    "type": "pool-mini-card",
+    "config": {
+     "device": "spa",
+     "type": "custom:pool-mini-card"
+    },
+    "nodes": 115,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 115
+    },
+    "update": {
+     "kept": 0,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 115
+    },
+    "height_min": 152,
+    "height_dip": 0,
+    "errors": [],
+    "result": "full rewrite on state update (0% nodes kept)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-power-device-card",
+  "bundles": [
+   "dist/ha-power-device-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "power-device-card",
+    "config": {
+     "entity": "sensor.power",
+     "type": "custom:power-device-card"
+    },
+    "nodes": 67,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 67
+    },
+    "update": {
+     "kept": 0,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 67
+    },
+    "height_min": 369,
+    "height_dip": 0,
+    "errors": [],
+    "result": "full rewrite on state update (0% nodes kept)"
+   },
+   {
+    "type": "power-device-mini-card",
+    "config": {
+     "entity": "sensor.power",
+     "type": "custom:power-device-mini-card"
+    },
+    "nodes": 47,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 47
+    },
+    "update": {
+     "kept": 0,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 47
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "full rewrite on state update (0% nodes kept)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-presence-card",
+  "bundles": [
+   "dist/presence-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "presence-card",
+    "config": {
+     "type": "custom:presence-card"
+    },
+    "nodes": 154,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 154
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 154
+    },
+    "height_min": 384,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "presence-mini-card",
+    "config": {
+     "type": "custom:presence-mini-card"
+    },
+    "nodes": 103,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 103
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 103
+    },
+    "height_min": 144,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-printer-scanner-card",
+  "bundles": [
+   "dist/printer-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "printer-card",
+    "config": {
+     "type": "custom:printer-card"
+    },
+    "nodes": 4,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 4
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 4
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "printer-mini-card",
+    "config": {
+     "type": "custom:printer-mini-card"
+    },
+    "nodes": 4,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 4
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 4
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-pronote-card",
+  "bundles": [
+   "dist/pronote-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "pronote-card",
+    "config": {
+     "type": "custom:pronote-card"
+    },
+    "nodes": 175,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 175
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 175
+    },
+    "height_min": 538,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "pronote-mini-card",
+    "config": {
+     "type": "custom:pronote-mini-card"
+    },
+    "nodes": 128,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 128
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 128
+    },
+    "height_min": 409,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-proxmox",
+  "bundles": [
+   "custom_components/proxmox_panel/frontend/proxmox-cards.js",
+   "custom_components/proxmox_panel/frontend/proxmox-common.js",
+   "custom_components/proxmox_panel/frontend/proxmox-icons.js",
+   "custom_components/proxmox_panel/frontend/proxmox-panel.js"
+  ],
+  "load_errors": [],
+  "cards": []
+ },
+ {
+  "repo": "ha-public-transport",
+  "bundles": [
+   "custom_components/public_transport/frontend/public-transport-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "public-transport-card",
+    "config": {
+     "type": "custom:public-transport-card"
+    },
+    "nodes": 4,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 4
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 4
+    },
+    "height_min": 48,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "public-transport-mini-card",
+    "config": {
+     "type": "custom:public-transport-mini-card"
+    },
+    "nodes": 4,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 4
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 4
+    },
+    "height_min": 48,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-rain-card",
+  "bundles": [
+   "dist/rain-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "rain-card",
+    "config": {
+     "type": "custom:rain-card"
+    },
+    "nodes": 63,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 63
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 63
+    },
+    "height_min": 272,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "rain-mini-card",
+    "config": {
+     "type": "custom:rain-mini-card"
+    },
+    "nodes": 58,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 58
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 58
+    },
+    "height_min": 130,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-remote-card",
+  "bundles": [
+   "dist/remote-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "remote-card",
+    "config": {
+     "entity": "remote.living_room_apple_tv",
+     "type": "custom:remote-card"
+    },
+    "nodes": 137,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 137
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 137
+    },
+    "height_min": 447,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "remote-mini-card",
+    "config": {
+     "entity": "remote.living_room_apple_tv",
+     "type": "custom:remote-mini-card"
+    },
+    "nodes": 113,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 113
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 113
+    },
+    "height_min": 153,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-reverse-proxy",
+  "bundles": [
+   "custom_components/reverse_proxy/frontend/reverse-proxy-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "reverse-proxy-card",
+    "config": {
+     "proxy_url": "http://zoraxy.local:8000",
+     "type": "custom:reverse-proxy-card"
+    },
+    "nodes": 118,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 118
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 118
+    },
+    "height_min": 340,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "reverse-proxy-mini-card",
+    "config": {
+     "proxy_url": "http://zoraxy.local:8000",
+     "type": "custom:reverse-proxy-mini-card"
+    },
+    "nodes": 61,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 61
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 61
+    },
+    "height_min": 128,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-room-card",
+  "bundles": [
+   "dist/ha-room-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "room-sensors-card",
+    "config": {
+     "area": "living_room",
+     "type": "custom:room-sensors-card"
+    },
+    "nodes": 67,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 67
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 67
+    },
+    "height_min": 212,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "room-sensors-mini-card",
+    "config": {
+     "area": "living_room",
+     "type": "custom:room-sensors-mini-card"
+    },
+    "nodes": 52,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 52
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 52
+    },
+    "height_min": 142,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "room-lights-card",
+    "config": {
+     "area": "living_room",
+     "type": "custom:room-lights-card"
+    },
+    "nodes": 45,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 45
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 45
+    },
+    "height_min": 196,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "room-lights-mini-card",
+    "config": {
+     "area": "living_room",
+     "type": "custom:room-lights-mini-card"
+    },
+    "nodes": 33,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 33
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 33
+    },
+    "height_min": 142,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "room-switch-card",
+    "config": {
+     "area": "living_room",
+     "type": "custom:room-switch-card"
+    },
+    "nodes": 70,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 70
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 70
+    },
+    "height_min": 165,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "room-switch-mini-card",
+    "config": {
+     "area": "living_room",
+     "type": "custom:room-switch-mini-card"
+    },
+    "nodes": 69,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 69
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 69
+    },
+    "height_min": 142,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "room-environment-card",
+    "config": {
+     "area": "living_room",
+     "type": "custom:room-environment-card"
+    },
+    "nodes": 72,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 72
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 72
+    },
+    "height_min": 212,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "room-environment-mini-card",
+    "config": {
+     "area": "living_room",
+     "type": "custom:room-environment-mini-card"
+    },
+    "nodes": 59,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 59
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 59
+    },
+    "height_min": 143,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "room-environment-overview-card",
+    "config": {
+     "type": "custom:room-environment-overview-card"
+    },
+    "nodes": 48,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 48
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 48
+    },
+    "height_min": 102,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "room-card",
+    "config": {
+     "area": "living_room",
+     "type": "custom:room-card"
+    },
+    "nodes": 169,
+    "scrollers": 0,
+    "noop": {
+     "kept": 36,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 169
+    },
+    "update": {
+     "kept": 36,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 169
+    },
+    "height_min": 571,
+    "height_dip": 0,
+    "errors": [],
+    "result": "rewrites on a no-op hass (36% nodes kept); full rewrite on state update (36% nodes kept)"
+   },
+   {
+    "type": "room-mini-card",
+    "config": {
+     "area": "living_room",
+     "type": "custom:room-mini-card"
+    },
+    "nodes": 72,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 72
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 72
+    },
+    "height_min": 143,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "room-overview-card",
+    "config": {
+     "type": "custom:room-overview-card"
+    },
+    "nodes": 90,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 90
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 90
+    },
+    "height_min": 187,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-router-card",
+  "bundles": [
+   "dist/router-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "router-card",
+    "config": {
+     "device": "udm",
+     "type": "custom:router-card"
+    },
+    "nodes": 268,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 268
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 268
+    },
+    "height_min": 528,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "router-mini-card",
+    "config": {
+     "device": "udm",
+     "type": "custom:router-mini-card"
+    },
+    "nodes": 184,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 184
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 184
+    },
+    "height_min": 177,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-safety-card",
+  "bundles": [
+   "dist/ha-safety-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "safety-card",
+    "config": {
+     "type": "custom:safety-card"
+    },
+    "nodes": 50,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 50
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 50
+    },
+    "height_min": 163,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "safety-mini-card",
+    "config": {
+     "type": "custom:safety-mini-card"
+    },
+    "nodes": 45,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 45
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 45
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "safety-overview-card",
+    "config": {
+     "type": "custom:safety-overview-card"
+    },
+    "nodes": 48,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 48
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 48
+    },
+    "height_min": 114,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-scene-card",
+  "bundles": [
+   "dist/scene-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "scene-card",
+    "config": {
+     "type": "custom:scene-card"
+    },
+    "nodes": 110,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 110
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 110
+    },
+    "height_min": 323,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "scene-mini-card",
+    "config": {
+     "type": "custom:scene-mini-card"
+    },
+    "nodes": 71,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 71
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 71
+    },
+    "height_min": 150,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-scheduler-card",
+  "bundles": [
+   "dist/scheduler-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "scheduler-card",
+    "config": {
+     "type": "custom:scheduler-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 50,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "scheduler-mini-card",
+    "config": {
+     "type": "custom:scheduler-mini-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 50,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-seedbox-card",
+  "bundles": [
+   "dist/seedbox-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "seedbox-card",
+    "config": {
+     "client": "dl",
+     "type": "custom:seedbox-card"
+    },
+    "nodes": 176,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 176
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 176
+    },
+    "height_min": 289,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "seedbox-mini-card",
+    "config": {
+     "client": "dl",
+     "type": "custom:seedbox-mini-card"
+    },
+    "nodes": 165,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 165
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 165
+    },
+    "height_min": 183,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-sky-card",
+  "bundles": [
+   "dist/sky-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "sky-card",
+    "config": {
+     "type": "custom:sky-card"
+    },
+    "nodes": 187,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 187
+    },
+    "update": {
+     "kept": 85,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 189
+    },
+    "height_min": 462,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "sky-mini-card",
+    "config": {
+     "type": "custom:sky-mini-card"
+    },
+    "nodes": 103,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 103
+    },
+    "update": {
+     "kept": 84,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 104
+    },
+    "height_min": 136,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-smart-appliance-card",
+  "bundles": [
+   "dist/home-connect-card.js",
+   "dist/smart-appliance-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "smart-appliance-card",
+    "config": {
+     "type": "custom:smart-appliance-card"
+    },
+    "nodes": 4,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 4
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 4
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Identifier 'PILL_GROUND_PX' has already been declared"
+    ],
+    "result": "ok"
+   },
+   {
+    "type": "smart-appliance-mini-card",
+    "config": {
+     "type": "custom:smart-appliance-mini-card"
+    },
+    "nodes": 4,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 4
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 4
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Identifier 'PILL_GROUND_PX' has already been declared"
+    ],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-smart-comfort",
+  "bundles": [
+   "custom_components/smart_comfort/frontend/smart-comfort-activity-card.js",
+   "custom_components/smart_comfort/frontend/smart-comfort-icons.js",
+   "custom_components/smart_comfort/frontend/smart-comfort-mini-card.js",
+   "custom_components/smart_comfort/frontend/smart-comfort-panel.js"
+  ],
+  "load_errors": [],
+  "cards": []
+ },
+ {
+  "repo": "ha-smartlock-card",
+  "bundles": [
+   "dist/smartlock-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "smartlock-card",
+    "config": {
+     "entity": "lock.porte_entree",
+     "type": "custom:smartlock-card"
+    },
+    "nodes": 120,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 120
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 120
+    },
+    "height_min": 362,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "smartlock-mini-card",
+    "config": {
+     "entity": "lock.porte_entree",
+     "type": "custom:smartlock-mini-card"
+    },
+    "nodes": 78,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 78
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 78
+    },
+    "height_min": 144,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-solar-forecast-card",
+  "bundles": [
+   "dist/ha-solar-forecast-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "solar-forecast-card",
+    "config": {
+     "type": "custom:solar-forecast-card"
+    },
+    "nodes": 37,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 37
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 37
+    },
+    "height_min": 160,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "solar-forecast-mini-card",
+    "config": {
+     "type": "custom:solar-forecast-mini-card"
+    },
+    "nodes": 44,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 44
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 44
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-solar-roof-card",
+  "bundles": [
+   "dist/ha-solar-roof-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "solar-roof-card",
+    "config": {
+     "type": "custom:solar-roof-card"
+    },
+    "nodes": 51,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 51
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 51
+    },
+    "height_min": 160,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "solar-roof-mini-card",
+    "config": {
+     "type": "custom:solar-roof-mini-card"
+    },
+    "nodes": 58,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 58
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 58
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-solar-router-card",
+  "bundles": [
+   "dist/ha-solar-router-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "solar-router-card",
+    "config": {
+     "type": "custom:solar-router-card"
+    },
+    "nodes": 26,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 26
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 26
+    },
+    "height_min": 160,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "solar-router-mini-card",
+    "config": {
+     "type": "custom:solar-router-mini-card"
+    },
+    "nodes": 33,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 33
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 33
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-speedtest-card",
+  "bundles": [
+   "dist/speedtest-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "speedtest-card",
+    "config": {
+     "type": "custom:speedtest-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 68,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "speedtest-mini-card",
+    "config": {
+     "type": "custom:speedtest-mini-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 68,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-sports-card",
+  "bundles": [
+   "dist/ha-sports-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "sports-card",
+    "config": {
+     "type": "custom:sports-card"
+    },
+    "nodes": 48,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 48
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 48
+    },
+    "height_min": 164,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "sports-mini-card",
+    "config": {
+     "type": "custom:sports-mini-card"
+    },
+    "nodes": 52,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 52
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 52
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-stock-card",
+  "bundles": [
+   "dist/stock-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "stock-card",
+    "config": {
+     "type": "custom:stock-card"
+    },
+    "nodes": 130,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 130
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 130
+    },
+    "height_min": 403,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "stock-mini-card",
+    "config": {
+     "type": "custom:stock-mini-card"
+    },
+    "nodes": 98,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 98
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 98
+    },
+    "height_min": 269,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-switch-card",
+  "bundles": [
+   "dist/ha-switch-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "ha-switch-card",
+    "config": {
+     "name": "Switch",
+     "switch_entity": "switch.plug",
+     "type": "custom:ha-switch-card"
+    },
+    "nodes": 151,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 151
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 151
+    },
+    "height_min": 202,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "ha-switch-mini-card",
+    "config": {
+     "name": "Switch",
+     "switch_entity": "switch.plug",
+     "type": "custom:ha-switch-mini-card"
+    },
+    "nodes": 152,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 152
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 152
+    },
+    "height_min": 200,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-system-hub",
+  "bundles": [
+   "custom_components/system_hub/frontend/system-hub-icons.js"
+  ],
+  "load_errors": [],
+  "cards": []
+ },
+ {
+  "repo": "ha-tank-card",
+  "bundles": [
+   "dist/ha-tank-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "tank-card",
+    "config": {
+     "type": "custom:tank-card"
+    },
+    "nodes": 33,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 33
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 33
+    },
+    "height_min": 160,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "tank-mini-card",
+    "config": {
+     "type": "custom:tank-mini-card"
+    },
+    "nodes": 39,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 39
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 39
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-tempo-card",
+  "bundles": [
+   "dist/tempo-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "tempo-card",
+    "config": {
+     "type": "custom:tempo-card"
+    },
+    "nodes": 227,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 227
+    },
+    "update": {
+     "kept": 0,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 227
+    },
+    "height_min": 681,
+    "height_dip": 0,
+    "errors": [],
+    "result": "full rewrite on state update (0% nodes kept)"
+   },
+   {
+    "type": "tempo-mini-card",
+    "config": {
+     "type": "custom:tempo-mini-card"
+    },
+    "nodes": 136,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 136
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 136
+    },
+    "height_min": 152,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-timer-card",
+  "bundles": [
+   "dist/timer-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "timer-card",
+    "config": {
+     "type": "custom:timer-card"
+    },
+    "nodes": 116,
+    "scrollers": 0,
+    "noop": {
+     "kept": 0,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 116
+    },
+    "update": {
+     "kept": 0,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 116
+    },
+    "height_min": 234,
+    "height_dip": 0,
+    "errors": [],
+    "result": "rewrites on a no-op hass (0% nodes kept); full rewrite on state update (0% nodes kept)"
+   },
+   {
+    "type": "timer-mini-card",
+    "config": {
+     "type": "custom:timer-mini-card"
+    },
+    "nodes": 102,
+    "scrollers": 0,
+    "noop": {
+     "kept": 0,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 102
+    },
+    "update": {
+     "kept": 0,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 102
+    },
+    "height_min": 186,
+    "height_dip": 0,
+    "errors": [],
+    "result": "rewrites on a no-op hass (0% nodes kept); full rewrite on state update (0% nodes kept)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-todo-card",
+  "bundles": [
+   "dist/todo-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "todo-card",
+    "config": {
+     "type": "custom:todo-card"
+    },
+    "nodes": 60,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 60
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 60
+    },
+    "height_min": 220,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "todo-mini-card",
+    "config": {
+     "type": "custom:todo-mini-card"
+    },
+    "nodes": 58,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 58
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 58
+    },
+    "height_min": 146,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-tracker-card",
+  "bundles": [
+   "dist/tracker-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "tracker-card",
+    "config": {
+     "type": "custom:tracker-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 50,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "tracker-mini-card",
+    "config": {
+     "type": "custom:tracker-mini-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 50,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-train-board-card",
+  "bundles": [
+   "dist/train-board-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "train-board-card",
+    "config": {
+     "type": "custom:train-board-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 50,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "train-board-mini-card",
+    "config": {
+     "type": "custom:train-board-mini-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 50,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-ups-card",
+  "bundles": [
+   "dist/ups-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "ups-card",
+    "config": {
+     "device": "eaton",
+     "type": "custom:ups-card"
+    },
+    "nodes": 197,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 197
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 197
+    },
+    "height_min": 559,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "ups-mini-card",
+    "config": {
+     "device": "eaton",
+     "type": "custom:ups-mini-card"
+    },
+    "nodes": 81,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 81
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 81
+    },
+    "height_min": 170,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-uptime-card",
+  "bundles": [
+   "dist/uptime-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "uptime-card",
+    "config": {
+     "type": "custom:uptime-card"
+    },
+    "nodes": 770,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 770
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 770
+    },
+    "height_min": 1180,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "uptime-mini-card",
+    "config": {
+     "type": "custom:uptime-mini-card"
+    },
+    "nodes": 53,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 53
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 53
+    },
+    "height_min": 194,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-utility-meter-card",
+  "bundles": [
+   "dist/utility-meter-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "utility-meter-card",
+    "config": {
+     "entity": "sensor.cottage_water_meter",
+     "type": "custom:utility-meter-card"
+    },
+    "nodes": 110,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 110
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 110
+    },
+    "height_min": 386,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "utility-meter-mini-card",
+    "config": {
+     "entity": "sensor.cottage_water_meter",
+     "type": "custom:utility-meter-mini-card"
+    },
+    "nodes": 79,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 79
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 79
+    },
+    "height_min": 149,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-uv-card",
+  "bundles": [
+   "dist/ha-uv-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "ha-uv-card",
+    "config": {
+     "entity": "sensor.uv_index",
+     "type": "custom:ha-uv-card"
+    },
+    "nodes": 76,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 76
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 76
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-vacuum-card",
+  "bundles": [
+   "dist/roborock-card.js",
+   "dist/vacuum-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "vacuum-card",
+    "config": {
+     "device": "saros",
+     "type": "custom:vacuum-card"
+    },
+    "nodes": 170,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 170
+    },
+    "update": {
+     "kept": 99,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 170
+    },
+    "height_min": 540,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "vacuum-mini-card",
+    "config": {
+     "device": "saros",
+     "type": "custom:vacuum-mini-card"
+    },
+    "nodes": 54,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 54
+    },
+    "update": {
+     "kept": 98,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 54
+    },
+    "height_min": 168,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-vehicle-card",
+  "bundles": [
+   "dist/leaflet-maplibre-gl.js",
+   "dist/leaflet.js",
+   "dist/maplibre-gl-css.js",
+   "dist/maplibre-gl-worker.js",
+   "dist/maplibre-gl.js",
+   "dist/vehicle-card-brands.js",
+   "dist/vehicle-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "vehicle-card",
+    "config": {
+     "type": "custom:vehicle-card"
+    },
+    "nodes": 4,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 4
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 4
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught TypeError: Cannot read properties of undefined (reading 'extend')",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Cannot use 'import.meta' outside a module"
+    ],
+    "result": "ok"
+   },
+   {
+    "type": "vehicle-mini-card",
+    "config": {
+     "type": "custom:vehicle-mini-card"
+    },
+    "nodes": 4,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 4
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 4
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught TypeError: Cannot read properties of undefined (reading 'extend')",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Cannot use 'import.meta' outside a module"
+    ],
+    "result": "ok"
+   },
+   {
+    "type": "vehicle-map-card",
+    "config": {
+     "type": "custom:vehicle-map-card"
+    },
+    "nodes": 52,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 52
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 52
+    },
+    "height_min": 532,
+    "height_dip": 0,
+    "errors": [
+     "Uncaught TypeError: Cannot read properties of undefined (reading 'extend')",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
+     "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Cannot use 'import.meta' outside a module"
+    ],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-vivarium-card",
+  "bundles": [
+   "dist/vivarium-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "vivarium-card",
+    "config": {
+     "type": "custom:vivarium-card"
+    },
+    "nodes": 495,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 495
+    },
+    "update": {
+     "kept": 44,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 497
+    },
+    "height_min": 814,
+    "height_dip": 0,
+    "errors": [],
+    "result": "full rewrite on state update (44% nodes kept)"
+   },
+   {
+    "type": "vivarium-mini-card",
+    "config": {
+     "type": "custom:vivarium-mini-card"
+    },
+    "nodes": 327,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 327
+    },
+    "update": {
+     "kept": 16,
+     "inner_ok": true,
+     "page_dy": 21,
+     "nodes": 332
+    },
+    "height_min": 173,
+    "height_dip": 0,
+    "errors": [],
+    "result": "page scroll moved (0/21 px); full rewrite on state update (16% nodes kept)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-wall-panel",
+  "bundles": [
+   "dist/ha-wall-panel.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "wall-panel-card",
+    "config": {
+     "type": "custom:wall-panel-card"
+    },
+    "nodes": 88,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 88
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 88
+    },
+    "height_min": 644,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-waste-card",
+  "bundles": [
+   "dist/waste-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "waste-card",
+    "config": {
+     "entities": [
+      "calendar.waste_collection",
+      "sensor.waste_collection"
+     ],
+     "type": "custom:waste-card"
+    },
+    "nodes": 243,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 243
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 243
+    },
+    "height_min": 306,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "waste-mini-card",
+    "config": {
+     "entities": [
+      "calendar.waste_collection",
+      "sensor.waste_collection"
+     ],
+     "type": "custom:waste-mini-card"
+    },
+    "nodes": 202,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 202
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 202
+    },
+    "height_min": 160,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-water-heater-card",
+  "bundles": [
+   "dist/ha-water-heater-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "water-heater-card",
+    "config": {
+     "entity": "water_heater.tank",
+     "type": "custom:water-heater-card"
+    },
+    "nodes": 152,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 152
+    },
+    "update": {
+     "kept": 0,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 152
+    },
+    "height_min": 367,
+    "height_dip": 0,
+    "errors": [],
+    "result": "full rewrite on state update (0% nodes kept)"
+   },
+   {
+    "type": "water-heater-mini-card",
+    "config": {
+     "entity": "water_heater.tank",
+     "type": "custom:water-heater-mini-card"
+    },
+    "nodes": 111,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 111
+    },
+    "update": {
+     "kept": 0,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 111
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "full rewrite on state update (0% nodes kept)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-water-pump-card",
+  "bundles": [
+   "dist/ha-water-pump-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "water-pump-card",
+    "config": {
+     "type": "custom:water-pump-card"
+    },
+    "nodes": 33,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 33
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 33
+    },
+    "height_min": 164,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "water-pump-mini-card",
+    "config": {
+     "type": "custom:water-pump-mini-card"
+    },
+    "nodes": 33,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 33
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 33
+    },
+    "height_min": 90,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-weather-card",
+  "bundles": [
+   "dist/ha-weather-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "weather-plus-card",
+    "config": {
+     "entity": "weather.home",
+     "type": "custom:weather-plus-card"
+    },
+    "nodes": 146,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 146
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 146
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "weather-plus-mini-card",
+    "config": {
+     "entity": "weather.home",
+     "type": "custom:weather-plus-mini-card"
+    },
+    "nodes": 77,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 77
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 77
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-wero-card",
+  "bundles": [
+   "dist/wero-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "wero-card",
+    "config": {
+     "url": "https://share.weropay.eu/p/1/c/XXXXXXXXXX",
+     "type": "custom:wero-card"
+    },
+    "nodes": 77,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 77
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 77
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "wero-mini-card",
+    "config": {
+     "url": "https://share.weropay.eu/p/1/c/XXXXXXXXXX",
+     "type": "custom:wero-mini-card"
+    },
+    "nodes": 59,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 59
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 59
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-wifi-card",
+  "bundles": [
+   "dist/wifi-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "wifi-qr-card",
+    "config": {
+     "ssid": "MyNetwork-Guest",
+     "password": "MySecretPassword",
+     "type": "custom:wifi-qr-card"
+    },
+    "nodes": 58,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 58
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 58
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "wifi-qr-mini-card",
+    "config": {
+     "ssid": "MyNetwork-Guest",
+     "password": "MySecretPassword",
+     "type": "custom:wifi-qr-mini-card"
+    },
+    "nodes": 46,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 46
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 46
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-zigbee-card",
+  "bundles": [
+   "dist/zigbee-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "zigbee-card",
+    "config": {
+     "type": "custom:zigbee-card"
+    },
+    "nodes": 51,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 51
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 51
+    },
+    "height_min": 134,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "zigbee-mini-card",
+    "config": {
+     "type": "custom:zigbee-mini-card"
+    },
+    "nodes": 54,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 54
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 54
+    },
+    "height_min": 151,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-zlinky-card",
+  "bundles": [
+   "dist/zlinky-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "zlinky-card",
+    "config": {
+     "type": "custom:zlinky-card"
+    },
+    "nodes": 15,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 15
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 15
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "zlinky-mini-card",
+    "config": {
+     "type": "custom:zlinky-mini-card"
+    },
+    "nodes": 15,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 15
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 15
+    },
+    "height_min": 700,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ },
+ {
+  "repo": "ha-zwave-card",
+  "bundles": [
+   "dist/zwave-card.js"
+  ],
+  "load_errors": [],
+  "cards": [
+   {
+    "type": "zwave-card",
+    "config": {
+     "type": "custom:zwave-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 50,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   },
+   {
+    "type": "zwave-mini-card",
+    "config": {
+     "type": "custom:zwave-mini-card"
+    },
+    "nodes": 3,
+    "scrollers": 0,
+    "noop": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "update": {
+     "kept": 100,
+     "inner_ok": true,
+     "page_dy": 0,
+     "nodes": 3
+    },
+    "height_min": 50,
+    "height_dip": 0,
+    "errors": [],
+    "result": "ok"
+   }
+  ]
+ }
+]
