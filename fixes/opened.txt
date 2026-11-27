@@ -51,3 +51,13 @@ ha-notify-hub #24 auto
 ha-opening-card #12 auto
 ha-orange-internet-on-the-move #16 no-auto
 ha-parcel #86 auto
+ha-pc-card #12 no-auto
+ha-pet-card #28 no-auto
+ha-pool-card #36 no-auto
+ha-power-device-card #27 auto
+ha-presence-card #68 auto
+ha-printer-scanner-card #112 auto
+ha-pronote-card #33 no-auto
+ha-proxmox #39 no-auto
+ha-public-transport #43 no-auto
+ha-rain-card #21 no-auto
