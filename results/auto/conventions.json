@@ -1,0 +1,1565 @@
+[
+ {
+  "repo": "ha-3d-printer-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.3.0",
+   "package.json": "1.3.0",
+   "package-lock.json": "1.3.0",
+   "package-lock.json packages['']": "1.3.0"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-alarm-card",
+  "kind": "panel-integration",
+  "versions": {
+   "CHANGELOG.md": "2.1.3",
+   "manifest.json": "2.1.3",
+   "const.py": "2.1.3"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-assist-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.1.5",
+   "package.json": "1.1.5",
+   "package-lock.json": "1.1.5",
+   "package-lock.json packages['']": "1.1.5"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-backup-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.2.6",
+   "package.json": "1.2.6",
+   "package-lock.json": "1.2.6",
+   "package-lock.json packages['']": "1.2.6"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-calendar-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.14.3",
+   "package.json": "1.14.3",
+   "package-lock.json": "1.14.3",
+   "package-lock.json packages['']": "1.14.3"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-camera",
+  "kind": "panel-integration",
+  "versions": {
+   "CHANGELOG.md": "4.12.1",
+   "manifest.json": "4.12.1",
+   "const.py": "4.12.1",
+   "JS *_VERSION": "4.12.1"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-carburants-france",
+  "kind": "integration",
+  "versions": {
+   "CHANGELOG.md": "1.17.5",
+   "manifest.json": "1.17.5",
+   "const.py": "1.17.5",
+   "JS *_VERSION": "1.17.5"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-certificate-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.3.3",
+   "package.json": "1.3.3",
+   "package-lock.json": "1.3.3",
+   "package-lock.json packages['']": "1.3.3"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-chores-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.0.3",
+   "package.json": "1.0.3",
+   "package-lock.json": "1.0.3",
+   "package-lock.json packages['']": "1.0.3"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-climate-air-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "2.22.0",
+   "package.json": "2.22.0",
+   "package-lock.json": "2.22.0",
+   "package-lock.json packages['']": "2.22.0"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-cloud-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.1.5",
+   "package.json": "1.1.5",
+   "package-lock.json": "1.1.5",
+   "package-lock.json packages['']": "1.1.5"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-console-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.2.0",
+   "package.json": "1.2.0",
+   "package-lock.json": "1.2.0",
+   "package-lock.json packages['']": "1.2.0"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-countdown-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.0.4",
+   "package.json": "1.0.4",
+   "package-lock.json": "1.0.4",
+   "package-lock.json packages['']": "1.0.4"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-cover-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.11.3",
+   "package.json": "1.11.3",
+   "package-lock.json": "1.11.3",
+   "package-lock.json packages['']": "1.11.3"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-dashboard-header",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.6.0",
+   "package.json": "1.6.0",
+   "package-lock.json": "1.6.0",
+   "package-lock.json packages['']": "1.6.0"
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "readme",
+    "msg": "no `## Supported integrations` section (check whether relevant)"
+   },
+   {
+    "sev": "info",
+    "code": "i18n",
+    "msg": "translations inlined in the bundle (not split per language)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-device-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.1.5",
+   "package.json": "1.1.5",
+   "package-lock.json": "1.1.5",
+   "package-lock.json packages['']": "1.1.5"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-dns-filter-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.4.5",
+   "package.json": "1.4.5",
+   "package-lock.json": "1.4.5",
+   "package-lock.json packages['']": "1.4.5"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-docker-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "3.9.6",
+   "package.json": "3.9.6",
+   "package-lock.json": "3.9.6",
+   "package-lock.json packages['']": "3.9.6"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-doorbell-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.1.5",
+   "package.json": "1.1.5",
+   "package-lock.json": "1.1.5",
+   "package-lock.json packages['']": "1.1.5"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-ecowatt-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.2.5",
+   "package.json": "1.2.5",
+   "package-lock.json": "1.2.5",
+   "package-lock.json packages['']": "1.2.5"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-energy-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.8.3",
+   "package.json": "1.8.3",
+   "package-lock.json": "1.8.3",
+   "package-lock.json packages['']": "1.8.3"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-energy-hub",
+  "kind": "panel-integration",
+  "versions": {
+   "CHANGELOG.md": "1.8.0",
+   "manifest.json": "1.8.0",
+   "const.py": "1.8.0",
+   "JS *_VERSION": "1.8.0"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-ent-educartable",
+  "kind": "panel-integration",
+  "versions": {
+   "CHANGELOG.md": "1.2.0",
+   "manifest.json": "1.2.0",
+   "const.py": null,
+   "JS *_VERSION": "1.2.0"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-ent-one",
+  "kind": "panel-integration",
+  "versions": {
+   "CHANGELOG.md": "1.7.3",
+   "manifest.json": "1.7.3",
+   "const.py": null,
+   "JS *_VERSION": "1.7.3"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-ent-skolengo",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.0.0",
+   "package.json": "1.0.0",
+   "package-lock.json": "1.0.0",
+   "package-lock.json packages['']": "1.0.0"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-ev-charger-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.4.0",
+   "package.json": "1.4.0",
+   "package-lock.json": "1.4.0",
+   "package-lock.json packages['']": "1.4.0"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-family-day-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.5.3",
+   "package.json": "1.5.3",
+   "package-lock.json": "1.5.3",
+   "package-lock.json packages['']": "1.5.3"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-family-link",
+  "kind": "integration",
+  "versions": {
+   "CHANGELOG.md": "1.2.8",
+   "manifest.json": "1.2.8",
+   "const.py": null,
+   "JS *_VERSION": "1.2.8"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-findmy",
+  "kind": "integration",
+  "versions": {
+   "CHANGELOG.md": "1.0.5",
+   "manifest.json": "1.0.5",
+   "const.py": "1.0.5"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-flight-board-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.2.6",
+   "package.json": "1.2.6",
+   "package-lock.json": "1.2.6",
+   "package-lock.json packages['']": "1.2.6"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-garden-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.2.4",
+   "package.json": "1.2.4",
+   "package-lock.json": "1.2.4",
+   "package-lock.json packages['']": "1.2.4"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-github",
+  "kind": "panel-integration",
+  "versions": {
+   "CHANGELOG.md": "2.20.1",
+   "manifest.json": "2.20.1",
+   "const.py": "2.20.1",
+   "JS *_VERSION": "2.20.1"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "manifest",
+    "msg": "services.yaml present but no icons.json (service icons)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-heating-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.8.0",
+   "package.json": "1.8.0",
+   "package-lock.json": "1.8.0",
+   "package-lock.json packages['']": "1.8.0"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-house-rules",
+  "kind": "panel-integration",
+  "versions": {
+   "CHANGELOG.md": "1.8.7",
+   "manifest.json": "1.8.7",
+   "const.py": null,
+   "JS *_VERSION": "1.8.7"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-hp",
+  "kind": "integration",
+  "versions": {
+   "CHANGELOG.md": "1.2.4",
+   "manifest.json": "1.2.4",
+   "const.py": "1.2.4"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "screenshots",
+    "msg": "screenshots/ present but no screenshots.yml workflow \u2014 static copies that can drift from the card/theme they show"
+   }
+  ]
+ },
+ {
+  "repo": "ha-internet-box-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "3.7.3",
+   "package.json": "3.7.3",
+   "package-lock.json": "3.7.3",
+   "package-lock.json packages['']": "3.7.3"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-iptv",
+  "kind": "panel-integration",
+  "versions": {
+   "CHANGELOG.md": "3.38.5",
+   "manifest.json": "3.38.5",
+   "const.py": "3.38.5",
+   "JS *_VERSION": "3.38.5"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-light-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.0.6",
+   "package.json": "1.0.6",
+   "package-lock.json": "1.0.6",
+   "package-lock.json packages['']": "1.0.6"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-liquid-glass",
+  "kind": "theme",
+  "versions": {
+   "CHANGELOG.md": "1.1.1"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "screenshots",
+    "msg": "screenshots/ present but no screenshots.yml workflow \u2014 static copies that can drift from the card/theme they show"
+   },
+   {
+    "sev": "minor",
+    "code": "tests",
+    "msg": "no test suite (test/*.mjs or tests/*.py)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-mailbox-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.0.3",
+   "package.json": "1.0.3",
+   "package-lock.json": "1.0.3",
+   "package-lock.json packages['']": "1.0.3"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-maintenance",
+  "kind": "panel-integration",
+  "versions": {
+   "CHANGELOG.md": "0.5.4",
+   "manifest.json": "0.5.4",
+   "const.py": "0.5.4",
+   "JS *_VERSION": "0.5.4"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-matter-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.2.3",
+   "package.json": "1.2.3",
+   "package-lock.json": "1.2.3",
+   "package-lock.json packages['']": "1.2.3"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-meal-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.1.1",
+   "package.json": "1.1.1",
+   "package-lock.json": "1.1.1",
+   "package-lock.json packages['']": "1.1.1"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-media-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.8.0",
+   "package.json": "1.8.0",
+   "package-lock.json": "1.8.0",
+   "package-lock.json packages['']": "1.8.0"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-media-server-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.0.3",
+   "package.json": "1.0.3",
+   "package-lock.json": "1.0.3",
+   "package-lock.json packages['']": "1.0.3"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-mower-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.5.6",
+   "package.json": "1.5.6",
+   "package-lock.json": "1.5.6",
+   "package-lock.json packages['']": "1.5.6"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-nas-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.27.5",
+   "package.json": "1.27.5",
+   "package-lock.json": "1.27.5",
+   "package-lock.json packages['']": "1.27.5"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-neutral",
+  "kind": "theme",
+  "versions": {
+   "CHANGELOG.md": "1.0.2"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "screenshots",
+    "msg": "screenshots/ present but no screenshots.yml workflow \u2014 static copies that can drift from the card/theme they show"
+   },
+   {
+    "sev": "minor",
+    "code": "tests",
+    "msg": "no test suite (test/*.mjs or tests/*.py)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-notify-hub",
+  "kind": "panel-integration",
+  "versions": {
+   "CHANGELOG.md": "0.10.0",
+   "manifest.json": "0.10.0",
+   "const.py": "0.10.0",
+   "JS *_VERSION": "0.10.0"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-opening-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.0.4",
+   "package.json": "1.0.4",
+   "package-lock.json": "1.0.4",
+   "package-lock.json packages['']": "1.0.4"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-orange-internet-on-the-move",
+  "kind": "integration",
+  "versions": {
+   "CHANGELOG.md": "1.0.3",
+   "manifest.json": "1.0.3",
+   "const.py": null
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "screenshots",
+    "msg": "screenshots/ present but no screenshots.yml workflow \u2014 static copies that can drift from the card/theme they show"
+   },
+   {
+    "sev": "info",
+    "code": "hacs",
+    "msg": "`country` ['FR'] set \u2014 check it is intended"
+   },
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "own logo not centered at the top of the README"
+   }
+  ]
+ },
+ {
+  "repo": "ha-parcel",
+  "kind": "integration",
+  "versions": {
+   "CHANGELOG.md": "1.10.0",
+   "manifest.json": "1.10.0",
+   "const.py": null,
+   "JS *_VERSION": "1.10.0"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-pc-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.0.4",
+   "package.json": "1.0.4",
+   "package-lock.json": "1.0.4",
+   "package-lock.json packages['']": "1.0.4"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-pet-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.3.5",
+   "package.json": "1.3.5",
+   "package-lock.json": "1.3.5",
+   "package-lock.json packages['']": "1.3.5"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-pool-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.6.4",
+   "package.json": "1.6.4",
+   "package-lock.json": "1.6.4",
+   "package-lock.json packages['']": "1.6.4"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-power-device-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.3.3",
+   "package.json": "1.3.3",
+   "package-lock.json": "1.3.3",
+   "package-lock.json packages['']": "1.3.3"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-presence-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.14.4",
+   "package.json": "1.14.4",
+   "package-lock.json": "1.14.4",
+   "package-lock.json packages['']": "1.14.4"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-printer-scanner-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "2.18.0",
+   "package.json": "2.18.0",
+   "package-lock.json": "2.18.0",
+   "package-lock.json packages['']": "2.18.0"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-pronote-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.5.3",
+   "package.json": "1.5.3",
+   "package-lock.json": "1.5.3",
+   "package-lock.json packages['']": "1.5.3"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-proxmox",
+  "kind": "panel-integration",
+  "versions": {
+   "CHANGELOG.md": "1.7.1",
+   "manifest.json": "1.7.1",
+   "const.py": "1.7.1",
+   "JS *_VERSION": "1.7.1"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-public-transport",
+  "kind": "integration",
+  "versions": {
+   "CHANGELOG.md": "1.7.4",
+   "manifest.json": "1.7.4",
+   "const.py": null,
+   "JS *_VERSION": "1.7.4"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-rain-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.2.5",
+   "package.json": "1.2.5",
+   "package-lock.json": "1.2.5",
+   "package-lock.json packages['']": "1.2.5"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-remote-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.2.3",
+   "package.json": "1.2.3",
+   "package-lock.json": "1.2.3",
+   "package-lock.json packages['']": "1.2.3"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-renault-picture",
+  "kind": "integration",
+  "versions": {
+   "CHANGELOG.md": "1.2.4",
+   "manifest.json": "1.2.4",
+   "const.py": null
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "screenshots",
+    "msg": "screenshots/ present but no screenshots.yml workflow \u2014 static copies that can drift from the card/theme they show"
+   }
+  ]
+ },
+ {
+  "repo": "ha-reverse-proxy",
+  "kind": "integration",
+  "versions": {
+   "CHANGELOG.md": "2.5.5",
+   "manifest.json": "2.5.5",
+   "const.py": null,
+   "JS *_VERSION": "2.5.5"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-room-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "2.3.1",
+   "package.json": "2.3.1",
+   "package-lock.json": "2.3.1",
+   "package-lock.json packages['']": "2.3.1"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   },
+   {
+    "sev": "minor",
+    "code": "picker",
+    "msg": "customCards without `pickerDefine()` light previews"
+   }
+  ]
+ },
+ {
+  "repo": "ha-router-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.5.4",
+   "package.json": "1.5.4",
+   "package-lock.json": "1.5.4",
+   "package-lock.json packages['']": "1.5.4"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-safety-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.5.3",
+   "package.json": "1.5.3",
+   "package-lock.json": "1.5.3",
+   "package-lock.json packages['']": "1.5.3"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-saint-of-the-day",
+  "kind": "integration",
+  "versions": {
+   "CHANGELOG.md": "1.3.5",
+   "manifest.json": "1.3.5",
+   "const.py": null,
+   "JS *_VERSION": "1.3.5"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-scene-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.2.5",
+   "package.json": "1.2.5",
+   "package-lock.json": "1.2.5",
+   "package-lock.json packages['']": "1.2.5"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-scheduler-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.8.2",
+   "package.json": "1.8.2",
+   "package-lock.json": "1.8.2",
+   "package-lock.json packages['']": "1.8.2"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-seedbox-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.1.5",
+   "package.json": "1.1.5",
+   "package-lock.json": "1.1.5",
+   "package-lock.json packages['']": "1.1.5"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-sky-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.2.4",
+   "package.json": "1.2.4",
+   "package-lock.json": "1.2.4",
+   "package-lock.json packages['']": "1.2.4"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-smart-appliance-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "2.13.1",
+   "package.json": "2.13.1",
+   "package-lock.json": "2.13.1",
+   "package-lock.json packages['']": "2.13.1"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-smart-comfort",
+  "kind": "panel-integration",
+  "versions": {
+   "CHANGELOG.md": "2.4.0",
+   "manifest.json": "2.4.0",
+   "const.py": null
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "picker",
+    "msg": "`preview: false` still present in customCards"
+   }
+  ]
+ },
+ {
+  "repo": "ha-smartlock-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.12.5",
+   "package.json": "1.12.5",
+   "package-lock.json": "1.12.5",
+   "package-lock.json packages['']": "1.12.5"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-solar-forecast-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.0.4",
+   "package.json": "1.0.4",
+   "package-lock.json": "1.0.4",
+   "package-lock.json packages['']": "1.0.4"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-solar-roof-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.1.0",
+   "package.json": "1.1.0",
+   "package-lock.json": "1.1.0",
+   "package-lock.json packages['']": "1.1.0"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-solar-router-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.0.3",
+   "package.json": "1.0.3",
+   "package-lock.json": "1.0.3",
+   "package-lock.json packages['']": "1.0.3"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-speedtest-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.3.3",
+   "package.json": "1.3.3",
+   "package-lock.json": "1.3.3",
+   "package-lock.json packages['']": "1.3.3"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-sports-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.0.3",
+   "package.json": "1.0.3",
+   "package-lock.json": "1.0.3",
+   "package-lock.json packages['']": "1.0.3"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-stock-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.3.3",
+   "package.json": "1.3.3",
+   "package-lock.json": "1.3.3",
+   "package-lock.json packages['']": "1.3.3"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-switch-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.17.3",
+   "package.json": "1.17.3",
+   "package-lock.json": "1.17.3",
+   "package-lock.json packages['']": "1.17.3"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-system-hub",
+  "kind": "panel-integration",
+  "versions": {
+   "CHANGELOG.md": "3.15.2",
+   "manifest.json": "3.15.2",
+   "const.py": "3.15.2",
+   "JS *_VERSION": "1.0.0,2.11.0,3.15.2"
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "version",
+    "msg": "several JS *_VERSION values (sub-cards lag behind): 1.0.0,2.11.0,3.15.2"
+   },
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "stale HACS wording (1 lines), e.g. `| `show_system_updates` | `false` | Also list the **System updates** above the Marketplace`"
+   }
+  ]
+ },
+ {
+  "repo": "ha-tank-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.0.3",
+   "package.json": "1.0.3",
+   "package-lock.json": "1.0.3",
+   "package-lock.json packages['']": "1.0.3"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-tapo",
+  "kind": "integration",
+  "versions": {
+   "CHANGELOG.md": "1.3.3",
+   "manifest.json": "1.3.3",
+   "const.py": "1.3.3"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "screenshots",
+    "msg": "screenshots/ present but no screenshots.yml workflow \u2014 static copies that can drift from the card/theme they show"
+   }
+  ]
+ },
+ {
+  "repo": "ha-tempo-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.1.6",
+   "package.json": "1.1.6",
+   "package-lock.json": "1.1.6",
+   "package-lock.json packages['']": "1.1.6"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-timer-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.2.6",
+   "package.json": "1.2.6",
+   "package-lock.json": "1.2.6",
+   "package-lock.json packages['']": "1.2.6"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-todo-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.5.3",
+   "package.json": "1.5.3",
+   "package-lock.json": "1.5.3",
+   "package-lock.json packages['']": "1.5.3"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-tracker-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.2.5",
+   "package.json": "1.2.5",
+   "package-lock.json": "1.2.5",
+   "package-lock.json packages['']": "1.2.5"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-train-board-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.6.0",
+   "package.json": "1.6.0",
+   "package-lock.json": "1.6.0",
+   "package-lock.json packages['']": "1.6.0"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-ups-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.1.5",
+   "package.json": "1.1.5",
+   "package-lock.json": "1.1.5",
+   "package-lock.json packages['']": "1.1.5"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-uptime-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.3.3",
+   "package.json": "1.3.3",
+   "package-lock.json": "1.3.3",
+   "package-lock.json packages['']": "1.3.3"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-utility-meter-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.4.1",
+   "package.json": "1.4.1",
+   "package-lock.json": "1.4.1",
+   "package-lock.json packages['']": "1.4.1"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-uv-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.11.6",
+   "package.json": "1.11.6",
+   "package-lock.json": "1.11.6",
+   "package-lock.json packages['']": "1.11.6"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-vacuum-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "2.20.0",
+   "package.json": "2.20.0",
+   "package-lock.json": "2.20.0",
+   "package-lock.json packages['']": "2.20.0"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-vacuum-map",
+  "kind": "integration",
+  "versions": {
+   "CHANGELOG.md": "1.6.3",
+   "manifest.json": "1.6.3",
+   "const.py": "1.6.3",
+   "JS *_VERSION": "1.6.3"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "picker",
+    "msg": "customCards without `pickerDefine()` light previews"
+   },
+   {
+    "sev": "minor",
+    "code": "picker",
+    "msg": "`preview: false` still present in customCards"
+   },
+   {
+    "sev": "minor",
+    "code": "build",
+    "msg": "bundle is minified (convention: no minification)"
+   }
+  ]
+ },
+ {
+  "repo": "ha-vehicle-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "3.12.3",
+   "package.json": "3.12.3",
+   "package-lock.json": "3.12.3",
+   "package-lock.json packages['']": "3.12.3"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-vehicle-consumption",
+  "kind": "integration",
+  "versions": {
+   "CHANGELOG.md": "1.10.4",
+   "manifest.json": "1.10.4",
+   "const.py": "1.10.4",
+   "JS *_VERSION": "1.10.4"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-vivarium-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.0.6",
+   "package.json": "1.0.6",
+   "package-lock.json": "1.0.6",
+   "package-lock.json packages['']": "1.0.6"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-wall-panel",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.2.1",
+   "package.json": "1.2.1",
+   "package-lock.json": "1.2.1",
+   "package-lock.json packages['']": "1.2.1"
+  },
+  "issues": [
+   {
+    "sev": "info",
+    "code": "readme",
+    "msg": "no `## Supported integrations` section (check whether relevant)"
+   },
+   {
+    "sev": "minor",
+    "code": "picker",
+    "msg": "customCards without `pickerDefine()` light previews"
+   },
+   {
+    "sev": "minor",
+    "code": "picker",
+    "msg": "`preview: false` still present in customCards"
+   }
+  ]
+ },
+ {
+  "repo": "ha-waste-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.2.5",
+   "package.json": "1.2.5",
+   "package-lock.json": "1.2.5",
+   "package-lock.json packages['']": "1.2.5"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-water-heater-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.4.4",
+   "package.json": "1.4.4",
+   "package-lock.json": "1.4.4",
+   "package-lock.json packages['']": "1.4.4"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-water-pump-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.0.6",
+   "package.json": "1.0.6",
+   "package-lock.json": "1.0.6",
+   "package-lock.json packages['']": "1.0.6"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-weather-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.16.7",
+   "package.json": "1.16.7",
+   "package-lock.json": "1.16.7",
+   "package-lock.json packages['']": "1.16.7"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   },
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "18 README image(s) without width/height bound"
+   }
+  ]
+ },
+ {
+  "repo": "ha-wero-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.14.5",
+   "package.json": "1.14.5",
+   "package-lock.json": "1.14.5",
+   "package-lock.json packages['']": "1.14.5"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-wifi-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.18.0",
+   "package.json": "1.18.0",
+   "package-lock.json": "1.18.0",
+   "package-lock.json packages['']": "1.18.0"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-zigbee-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.2.4",
+   "package.json": "1.2.4",
+   "package-lock.json": "1.2.4",
+   "package-lock.json packages['']": "1.2.4"
+  },
+  "issues": []
+ },
+ {
+  "repo": "ha-zlinky-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.23.3",
+   "package.json": "1.23.3",
+   "package-lock.json": "1.23.3",
+   "package-lock.json packages['']": "1.23.3"
+  },
+  "issues": [
+   {
+    "sev": "minor",
+    "code": "readme",
+    "msg": "no `/local/community/` resource path in install section"
+   }
+  ]
+ },
+ {
+  "repo": "ha-zwave-card",
+  "kind": "card",
+  "versions": {
+   "CHANGELOG.md": "1.1.3",
+   "package.json": "1.1.3",
+   "package-lock.json": "1.1.3",
+   "package-lock.json packages['']": "1.1.3"
+  },
+  "issues": []
+ }
+]
