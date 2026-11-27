@@ -63,6 +63,15 @@ Three proposals each, day/night, normal/alert: [proposals/headers.png](proposals
 today's illustrations: **A · Workshop** (maintenance 0.6.0, #22) and **A · Post** (notify-hub 0.11.0, #25), card and
 panel, status pill moved next to the title on the cards. Both merged.
 
+## Follow-ups (27 Nov, afternoon) — the items first left aside
+| Repo | PR | Change |
+|---|---|---|
+| dashboard-header | #26 (1.6.1) | No more 1.5 s polling: `<html>` style/class observer (theme), `lovelace_updated` / `panels_updated` / `themes_updated` bus events (non-admin allowlist), `visibilitychange` |
+| public-transport | #44 (1.7.6) | GTFS cache as plain JSON (`<network>.cache.json`, HA `json_bytes` / `json_loads`), old pickle deleted unread; networks-list script stubs the JSON helpers |
+| saint-of-the-day | #27 (1.3.6) | `illustration: false` drops the banner for a plain header (`.titlebar`), as on the other cards |
+
+All three green; waiting for the merge go.
+
 ## Not done on purpose
    - shared header / detail-button markup across repos: the repos stay independent, so this is a big refactor with nothing visible for users;
    - dashboard-header 1.5 s polling: works today, and the change is risky on every dashboard;

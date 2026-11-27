@@ -1,0 +1,3 @@
+ha-dashboard-header #26 auto
+ha-public-transport #44 no-auto
+ha-saint-of-the-day #27 no-auto
