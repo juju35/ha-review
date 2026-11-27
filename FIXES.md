@@ -33,9 +33,13 @@ bump. Commits are authored by juju35, in English, conventional commits.
 ## Status
 | State | Repos |
 |---|---|
-| **Merged** (auto-merge) | wero-card, alarm-card, backup-card, camera, carburants-france, console-card, docker-card, ecowatt-card, energy-hub |
-| **Merged on request (27 Nov, 08:25)** | 3d-printer #31, assist #19, calendar #72, certificate #27, chores #9, climate-air #126, cloud #16, countdown #11, cover #47, device #18, doorbell #28, energy-card #40 (squash, title + description, CI green) |
-| **Ready as patches, not pushed yet** (87 repos) | `fixes/patches/<repo>.patch` — run `cd fixes && ./run.sh` (clone, apply, push, PR, auto-merge or merge when green) |
+| **Merged — all 110 repos** | every PR listed in [fixes/opened.txt](fixes/opened.txt) is merged (squash, title + description, CI green): auto-merge where the repo allows it, otherwise `scripts/fix/merge_green.sh` |
+
+Follow-up fixes pushed on the PR branches before merging (27 Nov):
+- hp, orange-internet-on-the-move, renault-picture, tapo: the integration-only screenshot filter in
+  `scripts/check_screenshots.py` used `%` formatting on a long line (ruff UP031 / E501 / format) → f-string, formatted.
+- safety-card: extra trailing newline in `src/shared/base-card.js` (end-of-file-fixer); rebased onto CI's screenshot refresh.
+- seedbox-card: render job hit a transient `curl: (16) HTTP2 framing` error → failed job re-run, green.
 
 ## Still to do (next session)
 1. **In-place redraw** ([SCROLL.md](results/SCROLL.md)) — migrate to `rcMorph` + `_rewire()` (as room/flight/alarm do):
