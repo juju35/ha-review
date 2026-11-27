@@ -119,10 +119,14 @@ window.__mkHass = (gen) => {
   }
   const entities = Object.fromEntries(list.map(([id]) => [id, { entity_id: id, device_id: "dev_" + id.split(".")[0], area_id: "living_room", platform: "demo" }]));
   if (fx) { Object.assign(entities, fx.entities || {}); }
-  return {
-    states, entities,
+  // As in Home Assistant: the registries keep their identity across state changes (new objects only on a registry change).
+  const reg = (window.__reg ||= {
+    entities,
     devices: fx && Object.keys(fx.devices || {}).length ? { ...fx.devices } : Object.fromEntries(list.map(([id]) => ["dev_" + id.split(".")[0], { id: "dev_" + id.split(".")[0], name: id, area_id: "living_room", manufacturer: "Demo", model: "X" }])),
     areas: fx && Object.keys(fx.areas || {}).length ? { ...fx.areas } : { living_room: { area_id: "living_room", name: "Living room" } }, floors: {},
+  });
+  return {
+    states, ...window.__reg,
     language: "en", selectedLanguage: "en", locale: { language: "en", number_format: "language", time_format: "24", date_format: "language", first_weekday: "monday" },
     themes: { darkMode: false, theme: "default", themes: {} }, selectedTheme: null,
     user: { id: "u1", name: "Admin", is_admin: true, is_owner: true },
@@ -132,7 +136,7 @@ window.__mkHass = (gen) => {
     formatEntityState: (s, st) => (st ?? s?.state ?? "") + (s?.attributes?.unit_of_measurement ? " " + s.attributes.unit_of_measurement : ""),
     formatEntityAttributeValue: (s, a) => String(s?.attributes?.[a] ?? ""), formatEntityAttributeName: (s, a) => a,
     formatEntityName: (s) => s?.attributes?.friendly_name ?? "",
-    callService: async () => ({}), callWS: async () => [], callApi: async () => ({}), fetchWithAuth: async () => new Response("{}"),
+    callService: async (...a) => { (window.__calls ||= []).push(a); return {}; }, callWS: async () => [], callApi: async () => ({}), fetchWithAuth: async () => new Response("{}"),
     hassUrl: (p) => p, auth: { data: { access_token: "x" } },
     connection: { subscribeMessage: async () => () => {}, subscribeEvents: async () => () => {}, sendMessagePromise: async () => [], addEventListener() {} },
   };
@@ -147,6 +151,7 @@ async ([type, mode]) => {
   let el;
   try {
     el = document.createElement(type);
+    window.__reg = null;
     let hass = window.__mkHass(0);
     const Cls = customElements.get(type);
     let cfg = { type: "custom:" + type };
@@ -170,6 +175,7 @@ async ([type, mode]) => {
     await sleep(50);
     const pos = scrollers.map((s) => [s.scrollTop, s.scrollLeft]);
     const y0 = window.scrollY;
+    const below0 = document.getElementById("below").getBoundingClientRect().top;
     res.scrollers = scrollers.length;
     const heights = []; const h0 = el.getBoundingClientRect().height;
     const ro = new ResizeObserver((e) => heights.push(Math.round(e.at(-1).contentRect.height)));
@@ -179,19 +185,63 @@ async ([type, mode]) => {
       const now = all(root);
       const kept = nodes0.filter((n) => n.isConnected).length / nodes0.length;
       const inner = scrollers.map((s, i) => s.isConnected && Math.abs(s.scrollTop - pos[i][0]) < 2 && Math.abs(s.scrollLeft - pos[i][1]) < 2);
-      return { kept: Math.round(kept * 100), inner_ok: inner.every(Boolean), page_dy: Math.round(window.scrollY - y0), nodes: now.length };
+      return { kept: Math.round(kept * 100), inner_ok: inner.every(Boolean), page_dy: Math.round(window.scrollY - y0), view_dy: Math.round(document.getElementById("below").getBoundingClientRect().top - below0), nodes: now.length };
     };
     // no-op update: new hass object, same states
     const h = window.__mkHass(0); h.states = hass.states; el.hass = h;
     await sleep(400);
     res.noop = measure();
+    res.noop_lost = nodes0.filter((n) => !n.isConnected).slice(0, 12).map((n) => (n.nodeType === 1 ? '<' + n.localName + ' ' + [...n.attributes].map((a) => a.name + '=' + a.value.slice(0, 30)).join(' ') + '> in ' + (n.parentNode?.localName ?? '?') : '#' + (n.textContent || '').slice(0, 30)));
     // state updates
-    for (let g = 1; g <= 3; g++) { el.hass = window.__mkHass(g); await sleep(400); }
+    let last = h;
+    for (let g = 1; g <= 3; g++) { last = window.__mkHass(g); el.hass = last; await sleep(400); }
     res.update = measure();
+    res.update_lost = nodes0.filter((n) => !n.isConnected).slice(0, 12).map((n) => (n.nodeType === 1 ? '<' + n.localName + ' ' + [...n.attributes].map((a) => a.name + '=' + a.value.slice(0, 30)).join(' ') + '> in ' + (n.parentNode?.localName ?? '?') : '#' + (n.textContent || '').slice(0, 30)));
     ro.disconnect();
+    // equivalence: a card drawn from scratch with the same last hass gives the same markup as the updated one
+    {
+      // per-instance ids (gradients, clip paths, aria links) renamed in order of appearance
+      const norm = (r) => {
+        let h = (r.innerHTML || "").replace(/<!--[\s\S]*?-->/g, "").replace(/\s+/g, " ").replace(/> </g, "><");
+        const ids = [...new Set([...h.matchAll(/\bid="([^"]+)"/g)].map((m) => m[1]))];
+        ids.sort((x, y) => y.length - x.length).forEach((id) => { h = h.split(id).join("ID" + ids.indexOf(id)); });
+        return h;
+      };
+      const fresh = document.createElement(type);
+      fresh.setConfig(cfg);
+      host.appendChild(fresh);
+      fresh.hass = last;
+      fresh.scrollIntoView();
+      el.scrollIntoView();
+      await sleep(400);
+      el.hass = { ...last };
+      await sleep(300);
+      const a = norm(el.shadowRoot || el), b = norm(fresh.shadowRoot || fresh);
+      res.fresh_equal = b.length < 20 ? null : a === b;
+      if (!res.fresh_equal) {
+        let i = 0;
+        while (i < a.length && a[i] === b[i]) i++;
+        res.fresh_diff = [a.slice(Math.max(0, i - 80), i + 120), b.slice(Math.max(0, i - 80), i + 120)];
+      }
+      fresh.remove();
+    }
     const hs = heights.filter((x) => x > 0);
     res.height_min = hs.length ? Math.min(...hs) : Math.round(h0);
     res.height_dip = Math.round(h0) - res.height_min;
+    // click-once: after the updates, a click on a service button (not one that opens a dialog) calls one service
+    {
+      const btns = all(root).filter((n) => n.nodeType === 1 && n.matches?.("button,[role=button]") && !/more|info|dialog|menu|edit|zoom|expand|toggle-list|tab/i.test((n.dataset?.action || "") + " " + (n.className?.baseVal ?? n.className ?? "")));
+      let max = 0;
+      for (const b of btns.slice(0, 6)) {
+        window.__calls = [];
+        b.dispatchEvent(new MouseEvent("click", { bubbles: true, composed: true, cancelable: true }));
+        await sleep(30);
+        max = Math.max(max, window.__calls.length);
+        document.querySelectorAll("ha-more-info-dialog,ha-dialog").forEach((d) => d.remove());
+      }
+      res.click_max_calls = max;
+      res.click_buttons = Math.min(btns.length, 6);
+    }
     res.errors = window.__errors.slice(-3);
   } catch (e) { res.verdict = "error"; res.error = String(e).slice(0, 200); }
   return res;
@@ -209,10 +259,17 @@ def verdict(r):
         issues.append("inner scroll reset on update")
     if not r["noop"]["inner_ok"] and r["scrollers"]:
         issues.append("inner scroll reset on no-op")
-    if abs(r["update"]["page_dy"]) > 1 or abs(r["noop"]["page_dy"]) > 1:
-        issues.append(f"page scroll moved ({r['noop']['page_dy']}/{r['update']['page_dy']} px)")
+    # What the user sees (the content below the card, which sits above the viewport) must not move: a scroll that only
+    # compensates the card growing above (scroll anchoring) is fine.
+    vd = lambda k: r[k].get("view_dy", r[k]["page_dy"])
+    if abs(vd("update")) > 1 or abs(vd("noop")) > 1:
+        issues.append(f"visible content moved ({vd('noop')}/{vd('update')} px)")
     if r.get("height_dip", 0) > 2:
         issues.append(f"height dips by {r['height_dip']} px during the update (page jump)")
+    if r.get("fresh_equal") is False:
+        issues.append("markup differs from a card drawn from scratch")
+    if r.get("click_max_calls", 0) > 1:
+        issues.append(f"one click made {r['click_max_calls']} service calls")
     if r["update"]["kept"] < 50:
         issues.append(f"full rewrite on state update ({r['update']['kept']}% nodes kept)")
     return "; ".join(issues) or "ok"
@@ -233,7 +290,7 @@ def main():
                 continue
             page = browser.new_page(viewport={"width": 900, "height": 700})
             page.set_content('<html><body style="margin:0"><div id="top" style="height:1500px"></div>'
-                             '<div id="host" style="width:500px"></div><div style="height:3000px"></div></body></html>')
+                             '<div id="host" style="width:500px"></div><div id="below" style="height:3000px"></div></body></html>')
             page.add_script_tag(content=STUBS)
             fxp = os.path.join(os.environ.get("FIXTURES", os.path.join(ROOT, "..", "fixtures")), f"{name}.json")
             if os.path.exists(fxp):

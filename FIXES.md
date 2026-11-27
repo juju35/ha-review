@@ -41,14 +41,28 @@ Follow-up fixes pushed on the PR branches before merging (27 Nov):
 - safety-card: extra trailing newline in `src/shared/base-card.js` (end-of-file-fixer); rebased onto CI's screenshot refresh.
 - seedbox-card: render job hit a transient `curl: (16) HTTP2 framing` error → failed job re-run, green.
 
-## Still to do (next session)
-1. **In-place redraw** ([SCROLL.md](results/SCROLL.md)) — migrate to `rcMorph` + `_rewire()` (as room/flight/alarm do):
-   - cover-card and timer-card: they rewrite on every update, so they come first;
-   - then 3d-printer, energy, github, light, mower, pool, power-device, tempo, water-heater, vivarium, and room-card's `room-card`.
-   Each migration needs every listener moved to the abort signal; check it with `scripts/test_scroll_update.py`
-   plus a click-once check after N updates. These are separate PRs, to review (not auto-merged).
-2. **maintenance / notify-hub headers**: 2–3 scene proposals to choose from (decided: proposals first).
-3. Not done on purpose:
+## In-place redraw (27 Nov, afternoon)
+Harness first (`scripts/test_scroll_update.py`): registries keep their identity across updates as in Home Assistant
+(room-card's flag was the mock's), visible content measured instead of `scrollY` (scroll anchoring is fine), plus a
+click-once check and a "same markup as a card drawn from scratch" check; `scripts/test_interactions.py` taps tiles
+and toggles the zoom after updates.
+
+Shared helper: `scripts/fix/in-place-redraw.js` (rcMorph, keys unique among siblings, live form values, script-placed
+nodes `data-rc-own`, `<img>` pictures set by script). Applied with `scripts/fix/apply_morph.py` (single render sink,
+delegated listeners) or `scripts/fix/morph_listeners.mjs` + `finish_rc_family.py` (room-card family: listeners carry
+the drawing's abort signal). PRs in [fixes/opened-morph.txt](fixes/opened-morph.txt):
+
+| State | Repos |
+|---|---|
+| Merged (auto-merge) | timer #19, light #19, power-device #28, water-heater #26 |
+| **Open, CI green, waiting for your go** | cover #48, 3d-printer #32, energy #41, github #74, mower #36, pool #37, tempo #31 |
+| No change needed | room-card (`room-card` flag came from the mock), vivarium (rebuilds its tank scene on purpose when a drawn part changes, so its animation restarts) |
+
+## Header scenes — maintenance / notify-hub
+Three proposals each, day/night, normal/alert: [proposals/headers.png](proposals/headers.png)
+(source [proposals/headers.html](proposals/headers.html)). Waiting for the choice.
+
+## Not done on purpose
    - shared header / detail-button markup across repos: the repos stay independent, so this is a big refactor with nothing visible for users;
    - dashboard-header 1.5 s polling: works today, and the change is risky on every dashboard;
    - public-transport pickle cache: local file written by the integration, acceptable;

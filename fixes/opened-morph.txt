@@ -1,0 +1,11 @@
+ha-cover-card #48 no-auto
+ha-timer-card #19 auto
+ha-3d-printer-card #32 no-auto
+ha-energy-card #41 no-auto
+ha-github #74 no-auto
+ha-light-card #19 auto
+ha-mower-card #36 no-auto
+ha-pool-card #37 no-auto
+ha-power-device-card #28 auto
+ha-tempo-card #31 no-auto
+ha-water-heater-card #26 auto

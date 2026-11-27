@@ -20,16 +20,20 @@
      "page_dy": 0,
      "nodes": 123
     },
+    "noop_lost": [],
     "update": {
-     "kept": 1,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 123
     },
+    "fresh_equal": true,
     "height_min": 562,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 6,
     "errors": [],
-    "result": "full rewrite on state update (1% nodes kept)"
+    "result": "ok"
    },
    {
     "type": "printer-3d-mini-card",
@@ -45,16 +49,20 @@
      "page_dy": 0,
      "nodes": 96
     },
+    "noop_lost": [],
     "update": {
-     "kept": 1,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 96
     },
+    "fresh_equal": true,
     "height_min": 174,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 4,
     "errors": [],
-    "result": "full rewrite on state update (1% nodes kept)"
+    "result": "ok"
    }
   ]
  },
@@ -80,14 +88,18 @@
      "page_dy": 0,
      "nodes": 157
     },
+    "noop_lost": [],
     "update": {
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 157
     },
+    "fresh_equal": true,
     "height_min": 167,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 5,
     "errors": [],
     "result": "ok"
    },
@@ -105,14 +117,18 @@
      "page_dy": 0,
      "nodes": 147
     },
+    "noop_lost": [],
     "update": {
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 147
     },
+    "fresh_equal": true,
     "height_min": 90,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 4,
     "errors": [],
     "result": "ok"
    }
@@ -1065,21 +1081,25 @@
     "nodes": 114,
     "scrollers": 0,
     "noop": {
-     "kept": 0,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 114
     },
+    "noop_lost": [],
     "update": {
-     "kept": 0,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 114
     },
+    "fresh_equal": true,
     "height_min": 235,
     "height_dip": 0,
+    "click_max_calls": 1,
+    "click_buttons": 6,
     "errors": [],
-    "result": "rewrites on a no-op hass (0% nodes kept); full rewrite on state update (0% nodes kept)"
+    "result": "ok"
    },
    {
     "type": "cover-mini-card",
@@ -1090,21 +1110,25 @@
     "nodes": 296,
     "scrollers": 0,
     "noop": {
-     "kept": 0,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 296
     },
+    "noop_lost": [],
     "update": {
-     "kept": 0,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 296
     },
+    "fresh_equal": true,
     "height_min": 246,
     "height_dip": 0,
+    "click_max_calls": 1,
+    "click_buttons": 6,
     "errors": [],
-    "result": "rewrites on a no-op hass (0% nodes kept); full rewrite on state update (0% nodes kept)"
+    "result": "ok"
    }
   ]
  },
@@ -1445,20 +1469,24 @@
      "page_dy": 0,
      "nodes": 179
     },
+    "noop_lost": [],
     "update": {
-     "kept": 1,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 179
     },
+    "fresh_equal": true,
     "height_min": 858,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 6,
     "errors": [
      "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
      "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
      "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'"
     ],
-    "result": "full rewrite on state update (1% nodes kept)"
+    "result": "ok"
    },
    {
     "type": "energy-mini-card",
@@ -1474,20 +1502,24 @@
      "page_dy": 0,
      "nodes": 85
     },
+    "noop_lost": [],
     "update": {
-     "kept": 1,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 85
     },
+    "fresh_equal": true,
     "height_min": 181,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 5,
     "errors": [
      "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
      "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'",
      "Uncaught SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token 'export'"
     ],
-    "result": "full rewrite on state update (1% nodes kept)"
+    "result": "ok"
    }
   ]
  },
@@ -1868,18 +1900,31 @@
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 138
     },
+    "noop_lost": [],
     "update": {
-     "kept": 0,
+     "kept": 99,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 139
     },
+    "update_lost": [
+     "<text y=2 font-size=5.6> in ?"
+    ],
+    "fresh_equal": false,
+    "fresh_diff": [
+     "mportant; } .gh-steam { opacity: .6; } } </style><ha-card><div class=\"banner gh-merge\" style=\"--ic:var(--gh-purple)\"><svg class=\"gh-scene\" viewBox=\"0 0 200 80\" preserveAspectRatio=\"xMaxYMax meet\" aria",
+     "mportant; } .gh-steam { opacity: .6; } } </style><ha-card><div class=\"banner gh-issues\" style=\"--ic:var(--gh-warn)\"><svg class=\"gh-scene\" viewBox=\"0 0 200 80\" preserveAspectRatio=\"xMaxYMax meet\" aria-"
+    ],
     "height_min": 378,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 6,
     "errors": [],
-    "result": "full rewrite on state update (0% nodes kept)"
+    "result": "markup differs from a card drawn from scratch"
    },
    {
     "type": "github-mini-card",
@@ -1892,18 +1937,31 @@
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 113
     },
+    "noop_lost": [],
     "update": {
-     "kept": 0,
+     "kept": 99,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 114
     },
+    "update_lost": [
+     "<text y=2 font-size=5.6> in ?"
+    ],
+    "fresh_equal": false,
+    "fresh_diff": [
+     "mportant; } .gh-steam { opacity: .6; } } </style><ha-card><div class=\"banner gh-merge\" style=\"--ic:var(--gh-purple)\"><svg class=\"gh-scene\" viewBox=\"0 0 200 80\" preserveAspectRatio=\"xMaxYMax meet\" aria",
+     "mportant; } .gh-steam { opacity: .6; } } </style><ha-card><div class=\"banner gh-issues\" style=\"--ic:var(--gh-warn)\"><svg class=\"gh-scene\" viewBox=\"0 0 200 80\" preserveAspectRatio=\"xMaxYMax meet\" aria-"
+    ],
     "height_min": 241,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 4,
     "errors": [],
-    "result": "full rewrite on state update (0% nodes kept)"
+    "result": "markup differs from a card drawn from scratch"
    }
   ]
  },
@@ -2074,18 +2132,25 @@
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 71
     },
+    "noop_lost": [],
     "update": {
-     "kept": 0,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 71
     },
+    "update_lost": [],
+    "fresh_equal": true,
     "height_min": 302,
     "height_dip": 0,
+    "click_max_calls": 1,
+    "click_buttons": 4,
     "errors": [],
-    "result": "full rewrite on state update (0% nodes kept)"
+    "result": "ok"
    },
    {
     "type": "light-mini-card",
@@ -2099,18 +2164,25 @@
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 37
     },
+    "noop_lost": [],
     "update": {
-     "kept": 0,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 37
     },
+    "update_lost": [],
+    "fresh_equal": true,
     "height_min": 90,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 0,
     "errors": [],
-    "result": "full rewrite on state update (0% nodes kept)"
+    "result": "ok"
    }
   ]
  },
@@ -2422,16 +2494,20 @@
      "page_dy": 0,
      "nodes": 165
     },
+    "noop_lost": [],
     "update": {
-     "kept": 1,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 165
     },
+    "fresh_equal": true,
     "height_min": 528,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 6,
     "errors": [],
-    "result": "full rewrite on state update (1% nodes kept)"
+    "result": "ok"
    },
    {
     "type": "mower-mini-card",
@@ -2447,16 +2523,20 @@
      "page_dy": 0,
      "nodes": 74
     },
+    "noop_lost": [],
     "update": {
-     "kept": 3,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 74
     },
+    "fresh_equal": true,
     "height_min": 147,
     "height_dip": 0,
+    "click_max_calls": 1,
+    "click_buttons": 5,
     "errors": [],
-    "result": "full rewrite on state update (3% nodes kept)"
+    "result": "ok"
    }
   ]
  },
@@ -2850,18 +2930,24 @@
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 188
     },
+    "noop_lost": [],
     "update": {
-     "kept": 0,
+     "kept": 100,
      "inner_ok": true,
-     "page_dy": 0,
+     "page_dy": 108,
+     "view_dy": 0,
      "nodes": 200
     },
+    "fresh_equal": true,
     "height_min": 517,
     "height_dip": 0,
+    "click_max_calls": 1,
+    "click_buttons": 6,
     "errors": [],
-    "result": "full rewrite on state update (0% nodes kept)"
+    "result": "ok"
    },
    {
     "type": "pool-mini-card",
@@ -2875,18 +2961,24 @@
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 115
     },
+    "noop_lost": [],
     "update": {
-     "kept": 0,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 115
     },
+    "fresh_equal": true,
     "height_min": 152,
     "height_dip": 0,
+    "click_max_calls": 1,
+    "click_buttons": 6,
     "errors": [],
-    "result": "full rewrite on state update (0% nodes kept)"
+    "result": "ok"
    }
   ]
  },
@@ -2909,18 +3001,25 @@
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 67
     },
+    "noop_lost": [],
     "update": {
-     "kept": 0,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 67
     },
+    "update_lost": [],
+    "fresh_equal": true,
     "height_min": 369,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 1,
     "errors": [],
-    "result": "full rewrite on state update (0% nodes kept)"
+    "result": "ok"
    },
    {
     "type": "power-device-mini-card",
@@ -2934,18 +3033,25 @@
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 47
     },
+    "noop_lost": [],
     "update": {
-     "kept": 0,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 47
     },
+    "update_lost": [],
+    "fresh_equal": true,
     "height_min": 90,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 3,
     "errors": [],
-    "result": "full rewrite on state update (0% nodes kept)"
+    "result": "ok"
    }
   ]
  },
@@ -3384,14 +3490,22 @@
      "page_dy": 0,
      "nodes": 67
     },
+    "noop_lost": [],
     "update": {
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 67
     },
+    "fresh_equal": null,
+    "fresh_diff": [
+     " <style> :host { --rc-ok: var(--success-color, #43a047); --rc-warn: var(--warning-color, #ffa600); --rc-alert: var(--err",
+     ""
+    ],
     "height_min": 212,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 1,
     "errors": [],
     "result": "ok"
    },
@@ -3409,14 +3523,22 @@
      "page_dy": 0,
      "nodes": 52
     },
+    "noop_lost": [],
     "update": {
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 52
     },
+    "fresh_equal": null,
+    "fresh_diff": [
+     " <style> :host { --rc-ok: var(--success-color, #43a047); --rc-warn: var(--warning-color, #ffa600); --rc-alert: var(--err",
+     ""
+    ],
     "height_min": 142,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 0,
     "errors": [],
     "result": "ok"
    },
@@ -3434,14 +3556,22 @@
      "page_dy": 0,
      "nodes": 45
     },
+    "noop_lost": [],
     "update": {
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 45
     },
+    "fresh_equal": null,
+    "fresh_diff": [
+     " <style> :host { --rc-ok: var(--success-color, #43a047); --rc-warn: var(--warning-color, #ffa600); --rc-alert: var(--err",
+     ""
+    ],
     "height_min": 196,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 1,
     "errors": [],
     "result": "ok"
    },
@@ -3459,14 +3589,22 @@
      "page_dy": 0,
      "nodes": 33
     },
+    "noop_lost": [],
     "update": {
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 33
     },
+    "fresh_equal": null,
+    "fresh_diff": [
+     " <style> :host { --rc-ok: var(--success-color, #43a047); --rc-warn: var(--warning-color, #ffa600); --rc-alert: var(--err",
+     ""
+    ],
     "height_min": 142,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 0,
     "errors": [],
     "result": "ok"
    },
@@ -3484,14 +3622,22 @@
      "page_dy": 0,
      "nodes": 70
     },
+    "noop_lost": [],
     "update": {
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 70
     },
+    "fresh_equal": null,
+    "fresh_diff": [
+     " <style> :host { --rc-ok: var(--success-color, #43a047); --rc-warn: var(--warning-color, #ffa600); --rc-alert: var(--err",
+     ""
+    ],
     "height_min": 165,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 1,
     "errors": [],
     "result": "ok"
    },
@@ -3509,14 +3655,22 @@
      "page_dy": 0,
      "nodes": 69
     },
+    "noop_lost": [],
     "update": {
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 69
     },
+    "fresh_equal": null,
+    "fresh_diff": [
+     " <style> :host { --rc-ok: var(--success-color, #43a047); --rc-warn: var(--warning-color, #ffa600); --rc-alert: var(--err",
+     ""
+    ],
     "height_min": 142,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 0,
     "errors": [],
     "result": "ok"
    },
@@ -3534,14 +3688,22 @@
      "page_dy": 0,
      "nodes": 72
     },
+    "noop_lost": [],
     "update": {
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 72
     },
+    "fresh_equal": null,
+    "fresh_diff": [
+     " <style> :host { --rc-ok: var(--success-color, #43a047); --rc-warn: var(--warning-color, #ffa600); --rc-alert: var(--err",
+     ""
+    ],
     "height_min": 212,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 1,
     "errors": [],
     "result": "ok"
    },
@@ -3559,14 +3721,22 @@
      "page_dy": 0,
      "nodes": 59
     },
+    "noop_lost": [],
     "update": {
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 59
     },
+    "fresh_equal": null,
+    "fresh_diff": [
+     " <style> :host { --rc-ok: var(--success-color, #43a047); --rc-warn: var(--warning-color, #ffa600); --rc-alert: var(--err",
+     ""
+    ],
     "height_min": 143,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 0,
     "errors": [],
     "result": "ok"
    },
@@ -3583,14 +3753,22 @@
      "page_dy": 0,
      "nodes": 48
     },
+    "noop_lost": [],
     "update": {
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 48
     },
+    "fresh_equal": null,
+    "fresh_diff": [
+     " <style> :host { --rc-ok: var(--success-color, #43a047); --rc-warn: var(--warning-color, #ffa600); --rc-alert: var(--err",
+     ""
+    ],
     "height_min": 102,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 0,
     "errors": [],
     "result": "ok"
    },
@@ -3603,21 +3781,29 @@
     "nodes": 169,
     "scrollers": 0,
     "noop": {
-     "kept": 36,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 169
     },
+    "noop_lost": [],
     "update": {
-     "kept": 36,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 169
     },
+    "fresh_equal": null,
+    "fresh_diff": [
+     " <style> :host { --rc-ok: var(--success-color, #43a047); --rc-warn: var(--warning-color, #ffa600); --rc-alert: var(--err",
+     ""
+    ],
     "height_min": 571,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 6,
     "errors": [],
-    "result": "rewrites on a no-op hass (36% nodes kept); full rewrite on state update (36% nodes kept)"
+    "result": "ok"
    },
    {
     "type": "room-mini-card",
@@ -3633,14 +3819,22 @@
      "page_dy": 0,
      "nodes": 72
     },
+    "noop_lost": [],
     "update": {
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 72
     },
+    "fresh_equal": null,
+    "fresh_diff": [
+     " <style> :host { --rc-ok: var(--success-color, #43a047); --rc-warn: var(--warning-color, #ffa600); --rc-alert: var(--err",
+     ""
+    ],
     "height_min": 143,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 0,
     "errors": [],
     "result": "ok"
    },
@@ -3657,14 +3851,22 @@
      "page_dy": 0,
      "nodes": 90
     },
+    "noop_lost": [],
     "update": {
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 90
     },
+    "fresh_equal": null,
+    "fresh_diff": [
+     " <style> :host { --rc-ok: var(--success-color, #43a047); --rc-warn: var(--warning-color, #ffa600); --rc-alert: var(--err",
+     ""
+    ],
     "height_min": 187,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 0,
     "errors": [],
     "result": "ok"
    }
@@ -4652,46 +4854,54 @@
     "config": {
      "type": "custom:tempo-card"
     },
-    "nodes": 227,
+    "nodes": 231,
     "scrollers": 0,
     "noop": {
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
-     "nodes": 227
+     "nodes": 231
     },
+    "noop_lost": [],
     "update": {
-     "kept": 0,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
-     "nodes": 227
+     "nodes": 231
     },
-    "height_min": 681,
+    "fresh_equal": true,
+    "height_min": 695,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 6,
     "errors": [],
-    "result": "full rewrite on state update (0% nodes kept)"
+    "result": "ok"
    },
    {
     "type": "tempo-mini-card",
     "config": {
      "type": "custom:tempo-mini-card"
     },
-    "nodes": 136,
+    "nodes": 140,
     "scrollers": 0,
     "noop": {
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
-     "nodes": 136
+     "nodes": 140
     },
+    "noop_lost": [],
     "update": {
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
-     "nodes": 136
+     "nodes": 140
     },
-    "height_min": 152,
+    "fresh_equal": true,
+    "height_min": 176,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 3,
     "errors": [],
     "result": "ok"
    }
@@ -4712,21 +4922,29 @@
     "nodes": 116,
     "scrollers": 0,
     "noop": {
-     "kept": 0,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 116
     },
+    "noop_lost": [],
     "update": {
-     "kept": 0,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 116
     },
+    "fresh_equal": false,
+    "fresh_diff": [
+     "\"48\" r=\"44\" stroke-width=\"8\" stroke-dasharray=\"276.46\" style=\"stroke-dashoffset: 275.56;\" data-end=\"1795772344073\" data-total=\"600000\" data-c=\"276.46\"></circle></svg><div class=\"sweep\" style=\"inset:11",
+     "\"48\" r=\"44\" stroke-width=\"8\" stroke-dasharray=\"276.46\" style=\"stroke-dashoffset:275.26\" data-end=\"1795772344073\" data-total=\"600000\" data-c=\"276.46\"></circle></svg><div class=\"sweep\" style=\"inset:11.4"
+    ],
     "height_min": 234,
     "height_dip": 0,
+    "click_max_calls": 1,
+    "click_buttons": 4,
     "errors": [],
-    "result": "rewrites on a no-op hass (0% nodes kept); full rewrite on state update (0% nodes kept)"
+    "result": "markup differs from a card drawn from scratch"
    },
    {
     "type": "timer-mini-card",
@@ -4736,21 +4954,29 @@
     "nodes": 102,
     "scrollers": 0,
     "noop": {
-     "kept": 0,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 102
     },
+    "noop_lost": [],
     "update": {
-     "kept": 0,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
      "nodes": 102
     },
+    "fresh_equal": false,
+    "fresh_diff": [
+     "\"48\" r=\"45\" stroke-width=\"6\" stroke-dasharray=\"282.74\" style=\"stroke-dashoffset: 281.82;\" data-end=\"1795772347277\" data-total=\"600000\" data-c=\"282.74\"></circle></svg><div class=\"sweep\" style=\"inset:9.",
+     "\"48\" r=\"45\" stroke-width=\"6\" stroke-dasharray=\"282.74\" style=\"stroke-dashoffset:281.52\" data-end=\"1795772347277\" data-total=\"600000\" data-c=\"282.74\"></circle></svg><div class=\"sweep\" style=\"inset:9.38"
+    ],
     "height_min": 186,
     "height_dip": 0,
+    "click_max_calls": 1,
+    "click_buttons": 2,
     "errors": [],
-    "result": "rewrites on a no-op hass (0% nodes kept); full rewrite on state update (0% nodes kept)"
+    "result": "markup differs from a card drawn from scratch"
    }
   ]
  },
@@ -5311,16 +5537,36 @@
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 495
     },
+    "noop_lost": [],
     "update": {
      "kept": 44,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 497
     },
+    "update_lost": [
+     "<div class=tank data-key=reef|true|true||reef|false|fal> in ?",
+     "<svg class=scene viewBox=0 0 400 80 preserveAspectRatio=xMaxYMax slice aria-hidden=true focusable=false> in div",
+     "<defs > in svg",
+     "<g id=aq-clown> in defs",
+     "<defs > in g",
+     "<linearGradient id=fa-clown x1=0 y1=0 x2=0 y2=1> in defs",
+     "<stop offset=0 stop-color=#e8650f> in linearGradient",
+     "<stop offset=.5 stop-color=#f57c1f> in linearGradient",
+     "<stop offset=1 stop-color=#ff9a3c> in linearGradient",
+     "<clipPath id=fa-clown-c> in defs",
+     "<path d=M13 0.66 C13 -4.12 6.24 -5.5 0> in clipPath",
+     "<pattern id=fa-clown-s width=2.42 height=1.76 patternUnits=userSpaceOnUse> in defs"
+    ],
+    "fresh_equal": true,
     "height_min": 814,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 6,
     "errors": [],
     "result": "full rewrite on state update (44% nodes kept)"
    },
@@ -5335,18 +5581,38 @@
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 327
     },
+    "noop_lost": [],
     "update": {
      "kept": 16,
      "inner_ok": true,
      "page_dy": 21,
+     "view_dy": 0,
      "nodes": 332
     },
+    "update_lost": [
+     "<div class=tank data-key=reef|true|true||reef|false|fal> in ?",
+     "<svg class=scene viewBox=0 0 400 80 preserveAspectRatio=xMaxYMax slice aria-hidden=true focusable=false> in div",
+     "<defs > in svg",
+     "<g id=aq-clown> in defs",
+     "<defs > in g",
+     "<linearGradient id=fa-clown x1=0 y1=0 x2=0 y2=1> in defs",
+     "<stop offset=0 stop-color=#e8650f> in linearGradient",
+     "<stop offset=.5 stop-color=#f57c1f> in linearGradient",
+     "<stop offset=1 stop-color=#ff9a3c> in linearGradient",
+     "<clipPath id=fa-clown-c> in defs",
+     "<path d=M13 0.66 C13 -4.12 6.24 -5.5 0> in clipPath",
+     "<pattern id=fa-clown-s width=2.42 height=1.76 patternUnits=userSpaceOnUse> in defs"
+    ],
+    "fresh_equal": true,
     "height_min": 173,
     "height_dip": 0,
+    "click_max_calls": 1,
+    "click_buttons": 6,
     "errors": [],
-    "result": "page scroll moved (0/21 px); full rewrite on state update (16% nodes kept)"
+    "result": "full rewrite on state update (16% nodes kept)"
    }
   ]
  },
@@ -5467,18 +5733,25 @@
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 152
     },
+    "noop_lost": [],
     "update": {
-     "kept": 0,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 152
     },
+    "update_lost": [],
+    "fresh_equal": true,
     "height_min": 367,
     "height_dip": 0,
+    "click_max_calls": 1,
+    "click_buttons": 5,
     "errors": [],
-    "result": "full rewrite on state update (0% nodes kept)"
+    "result": "ok"
    },
    {
     "type": "water-heater-mini-card",
@@ -5492,18 +5765,25 @@
      "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 111
     },
+    "noop_lost": [],
     "update": {
-     "kept": 0,
+     "kept": 100,
      "inner_ok": true,
      "page_dy": 0,
+     "view_dy": 0,
      "nodes": 111
     },
+    "update_lost": [],
+    "fresh_equal": true,
     "height_min": 90,
     "height_dip": 0,
+    "click_max_calls": 0,
+    "click_buttons": 2,
     "errors": [],
-    "result": "full rewrite on state update (0% nodes kept)"
+    "result": "ok"
    }
   ]
  },
