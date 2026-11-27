@@ -1,0 +1,127 @@
+From 276d43a368b5fcf64f2924a26cef3094733dca79 Mon Sep 17 00:00:00 2001
+From: juju35 <julienstephan29@gmail.com>
+Date: Fri, 27 Nov 2026 04:16:02 +0100
+Subject: [PATCH] fix: apply the november review fixes (1.2.1)
+
+Fixes from the review of the ha-* repositories (juju35/ha-review).
+
+- `SECURITY.md`: how to report a vulnerability privately.
+- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).
+- Opening a document: the new tab no longer keeps a link back to the Home Assistant page (`opener` cut).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01F4sAn1x21MmgHHeW1MLKJ5
+---
+ .pre-commit-config.yaml                     |  4 ++--
+ CHANGELOG.md                                |  5 +++++
+ SECURITY.md                                 | 17 +++++++++++++++++
+ biome.json                                  |  2 +-
+ custom_components/educartable/manifest.json |  2 +-
+ src/educartable-card/card-picker.js         |  2 +-
+ src/educartable-card/helpers.js             |  2 ++
+ 7 files changed, 29 insertions(+), 5 deletions(-)
+ create mode 100644 SECURITY.md
+
+diff --git a/.pre-commit-config.yaml b/.pre-commit-config.yaml
+index 91524ed..8c3f014 100644
+--- a/.pre-commit-config.yaml
++++ b/.pre-commit-config.yaml
+@@ -23,10 +23,10 @@ repos:
+         args: [--fix]
+       - id: ruff-format
+   - repo: https://github.com/biomejs/pre-commit
+-    rev: "v2.6.7"
++    rev: "v2.6.8"
+     hooks:
+       - id: biome-check
+-        additional_dependencies: ["@biomejs/biome@2.6.7"]
++        additional_dependencies: ["@biomejs/biome@2.6.8"]
+   - repo: local
+     hooks:
+       - id: card-js-syntax
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index f50ba0c..85068d8 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,10 @@
+ # Changelog
+ 
++## 1.2.1 - 2026-11-27
++
++### Fixes
++- Opening a document: the new tab no longer keeps a link back to the Home Assistant page (`opener` cut).
++
+ ## 1.2.0 - 2026-11-26
+ 
+ ### Features
+diff --git a/SECURITY.md b/SECURITY.md
+new file mode 100644
+index 0000000..cfdbe5b
+--- /dev/null
++++ b/SECURITY.md
+@@ -0,0 +1,17 @@
++# Security policy
++
++## Reporting a vulnerability
++
++Please **do not open a public issue** for a security problem.
++
++Report it privately with GitHub's
++[private vulnerability reporting](https://github.com/juju35/ha-ent-educartable/security/advisories/new)
++(Security tab → *Report a vulnerability*). Include what is affected, how to reproduce it and the
++version you use.
++
++You will get an answer within a few days. Once fixed, the fix ships in a release and the advisory
++is published with credit to the reporter, unless you prefer to stay anonymous.
++
++## Supported versions
++
++Only the latest release receives fixes. Update through the Home Assistant Marketplace.
+diff --git a/biome.json b/biome.json
+index 3b76bb3..9e911e7 100644
+--- a/biome.json
++++ b/biome.json
+@@ -1,5 +1,5 @@
+ {
+-  "$schema": "https://biomejs.dev/schemas/2.6.7/schema.json",
++  "$schema": "https://biomejs.dev/schemas/2.6.8/schema.json",
+   "files": {
+     "includes": ["**/*.js", "**/*.mjs", "!**/dist", "!**/vendor", "!**/node_modules", "!**/*.min.js"]
+   },
+diff --git a/custom_components/educartable/manifest.json b/custom_components/educartable/manifest.json
+index fe44284..68be112 100644
+--- a/custom_components/educartable/manifest.json
++++ b/custom_components/educartable/manifest.json
+@@ -20,5 +20,5 @@
+   "iot_class": "cloud_polling",
+   "issue_tracker": "https://github.com/juju35/ha-ent-educartable/issues",
+   "requirements": [],
+-  "version": "1.2.0"
++  "version": "1.2.1"
+ }
+diff --git a/src/educartable-card/card-picker.js b/src/educartable-card/card-picker.js
+index 45dd167..b88b2aa 100644
+--- a/src/educartable-card/card-picker.js
++++ b/src/educartable-card/card-picker.js
+@@ -66,4 +66,4 @@ export function pickerDefine(tag, Card, options) {
+   return customElements.define(tag, lazy, options);
+ }
+ 
+-export var EDUCARTABLE_CARD_VERSION = '1.2.0';
++export var EDUCARTABLE_CARD_VERSION = '1.2.1';
+diff --git a/src/educartable-card/helpers.js b/src/educartable-card/helpers.js
+index 0aa75a3..bd31f7d 100644
+--- a/src/educartable-card/helpers.js
++++ b/src/educartable-card/helpers.js
+@@ -334,6 +334,8 @@ export function educartableFileBlob(hass, entryId, media) {
+ // Opens an attachment in a new tab (PDF and images shown by the browser, other files downloaded).
+ export function educartableOpenFile(hass, entryId, media) {
+   var tab = window.open('', '_blank');
++  // The file opens in that tab later: cut its link back to this page (reverse tabnabbing).
++  if (tab) tab.opener = null;
+   return educartableFileUrl(hass, entryId, media)
+     .then((url) => {
+       if (tab) tab.location.href = url;
+-- 
+2.43.0
+

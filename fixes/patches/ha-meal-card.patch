@@ -1,0 +1,120 @@
+From 0f614089fd2c16525b19014ddfdb2fe53c0e2ea3 Mon Sep 17 00:00:00 2001
+From: juju35 <julienstephan29@gmail.com>
+Date: Fri, 27 Nov 2026 04:16:04 +0100
+Subject: [PATCH] fix: apply the november review fixes (1.1.2)
+
+Fixes from the review of the ha-* repositories (juju35/ha-review).
+
+- `SECURITY.md`: how to report a vulnerability privately.
+- Tiles have the 10 px corner radius shared by the ha-* cards.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01F4sAn1x21MmgHHeW1MLKJ5
+---
+ CHANGELOG.md                |  5 +++++
+ README.md                   |  2 +-
+ SECURITY.md                 | 17 +++++++++++++++++
+ package-lock.json           |  4 ++--
+ package.json                |  2 +-
+ src/shared/common-styles.js |  2 +-
+ 6 files changed, 27 insertions(+), 5 deletions(-)
+ create mode 100644 SECURITY.md
+
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index e119425..e841b9f 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,10 @@
+ # Changelog
+ 
++## 1.1.2 - 2026-11-27
++
++### Fixes
++- Tiles have the 10 px corner radius shared by the ha-* cards.
++
+ ## 1.1.1 - 2026-11-26
+ 
+ ### Fixes
+diff --git a/README.md b/README.md
+index 9cdac80..dce8315 100644
+--- a/README.md
++++ b/README.md
+@@ -73,7 +73,7 @@ Or manually:
+ 3. Open **Meal Card** and click **Install**
+ 4. Clear your browser cache and refresh
+ 
+-The Marketplace registers the dashboard resource for you.
++The Marketplace registers the dashboard resource for you: `/local/community/ha-meal-card/ha-meal-card.js`.
+ 
+ ### Manual
+ 
+diff --git a/SECURITY.md b/SECURITY.md
+new file mode 100644
+index 0000000..03db653
+--- /dev/null
++++ b/SECURITY.md
+@@ -0,0 +1,17 @@
++# Security policy
++
++## Reporting a vulnerability
++
++Please **do not open a public issue** for a security problem.
++
++Report it privately with GitHub's
++[private vulnerability reporting](https://github.com/juju35/ha-meal-card/security/advisories/new)
++(Security tab → *Report a vulnerability*). Include what is affected, how to reproduce it and the
++version you use.
++
++You will get an answer within a few days. Once fixed, the fix ships in a release and the advisory
++is published with credit to the reporter, unless you prefer to stay anonymous.
++
++## Supported versions
++
++Only the latest release receives fixes. Update through the Home Assistant Marketplace.
+diff --git a/package-lock.json b/package-lock.json
+index e6691d4..183318b 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -1,12 +1,12 @@
+ {
+   "name": "ha-meal-card",
+-  "version": "1.1.1",
++  "version": "1.1.2",
+   "lockfileVersion": 3,
+   "requires": true,
+   "packages": {
+     "": {
+       "name": "ha-meal-card",
+-      "version": "1.1.1",
++      "version": "1.1.2",
+       "license": "MIT",
+       "devDependencies": {
+         "@mdi/js": "^7.4.47",
+diff --git a/package.json b/package.json
+index 1c5cd39..c5afbd5 100644
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "ha-meal-card",
+-  "version": "1.1.1",
++  "version": "1.1.2",
+   "description": "A Lovelace card for Home Assistant's meal plans and shopping lists: tonight's dinner, the week as plates, and the shopping list to tick off.",
+   "repository": {
+     "type": "git",
+diff --git a/src/shared/common-styles.js b/src/shared/common-styles.js
+index 36cf261..0260d4a 100644
+--- a/src/shared/common-styles.js
++++ b/src/shared/common-styles.js
+@@ -93,7 +93,7 @@ export const RC_BASE_STYLES = `
+   @container (max-width: 260px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+   /* layout: tiles — the size of Home Assistant's Tile card — 56 px high, a 40 px icon, the name over the state. */
+   .layout-tiles .grid { gap: 8px; }
+-  .layout-tiles .tile { min-height: 56px; gap: 10px; padding: 8px 10px 8px 8px; border-radius: 12px; }
++  .layout-tiles .tile { min-height: 56px; gap: 10px; padding: 8px 10px 8px 8px; border-radius: 10px; }
+   .layout-tiles .ic { width: 40px; height: 40px; }
+   .layout-tiles .ic ha-icon { --mdc-icon-size: 24px; }
+   .layout-tiles .txt { gap: 2px; }
+-- 
+2.43.0
+

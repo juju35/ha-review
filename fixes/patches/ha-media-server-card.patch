@@ -1,0 +1,136 @@
+From 389ad60c3a8f9b8f7c284f38d7c2bbc640d3cc50 Mon Sep 17 00:00:00 2001
+From: juju35 <julienstephan29@gmail.com>
+Date: Fri, 27 Nov 2026 04:16:05 +0100
+Subject: [PATCH] fix: apply the november review fixes (1.0.4)
+
+Fixes from the review of the ha-* repositories (juju35/ha-review).
+
+- `SECURITY.md`: how to report a vulnerability privately.
+- Tiles have the 10 px corner radius shared by the ha-* cards.
+- Counters: neutral tile background, the colour stays on the icon and the figures (card charter).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01F4sAn1x21MmgHHeW1MLKJ5
+---
+ CHANGELOG.md                |  6 ++++++
+ README.md                   |  2 +-
+ SECURITY.md                 | 17 +++++++++++++++++
+ package-lock.json           |  4 ++--
+ package.json                |  2 +-
+ src/media-server-card.js    |  2 +-
+ src/shared/common-styles.js |  2 +-
+ 7 files changed, 29 insertions(+), 6 deletions(-)
+ create mode 100644 SECURITY.md
+
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index 5bc81cc..0f015bd 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,11 @@
+ # Changelog
+ 
++## 1.0.4 - 2026-11-27
++
++### Fixes
++- Tiles have the 10 px corner radius shared by the ha-* cards.
++- Counters: neutral tile background, the colour stays on the icon and the figures (card charter).
++
+ ## 1.0.3 - 2026-11-24
+ 
+ ### Maintenance
+diff --git a/README.md b/README.md
+index 09f49f3..761432a 100644
+--- a/README.md
++++ b/README.md
+@@ -74,7 +74,7 @@ Or manually:
+ 3. Open **Media Server Card** and click **Install**
+ 4. Clear your browser cache and refresh
+ 
+-The Marketplace registers the dashboard resource for you.
++The Marketplace registers the dashboard resource for you: `/local/community/ha-media-server-card/ha-media-server-card.js`.
+ 
+ ### Manual
+ 
+diff --git a/SECURITY.md b/SECURITY.md
+new file mode 100644
+index 0000000..0a9b6c2
+--- /dev/null
++++ b/SECURITY.md
+@@ -0,0 +1,17 @@
++# Security policy
++
++## Reporting a vulnerability
++
++Please **do not open a public issue** for a security problem.
++
++Report it privately with GitHub's
++[private vulnerability reporting](https://github.com/juju35/ha-media-server-card/security/advisories/new)
++(Security tab → *Report a vulnerability*). Include what is affected, how to reproduce it and the
++version you use.
++
++You will get an answer within a few days. Once fixed, the fix ships in a release and the advisory
++is published with credit to the reporter, unless you prefer to stay anonymous.
++
++## Supported versions
++
++Only the latest release receives fixes. Update through the Home Assistant Marketplace.
+diff --git a/package-lock.json b/package-lock.json
+index 9d3bfde..5ad9987 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -1,12 +1,12 @@
+ {
+   "name": "ha-media-server-card",
+-  "version": "1.0.3",
++  "version": "1.0.4",
+   "lockfileVersion": 3,
+   "requires": true,
+   "packages": {
+     "": {
+       "name": "ha-media-server-card",
+-      "version": "1.0.3",
++      "version": "1.0.4",
+       "license": "MIT",
+       "devDependencies": {
+         "@mdi/js": "^7.4.47",
+diff --git a/package.json b/package.json
+index 74ceecc..3fcafb7 100644
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "ha-media-server-card",
+-  "version": "1.0.3",
++  "version": "1.0.4",
+   "description": "A Lovelace card for Home Assistant media servers: streams, coming up, downloads and requests from Jellyfin, Plex, Emby, Tautulli, the *arr apps and Seerr.",
+   "repository": {
+     "type": "git",
+diff --git a/src/media-server-card.js b/src/media-server-card.js
+index 72f975b..f796d16 100644
+--- a/src/media-server-card.js
++++ b/src/media-server-card.js
+@@ -457,7 +457,7 @@ class MediaServerCard extends RcCard {
+     :host([hide-title]) .head .tt { visibility: hidden; }
+     .ctr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 12px; }
+     .cn { all: unset; box-sizing: border-box; cursor: pointer; min-width: 0; display: flex; flex-direction: column; gap: 3px; padding: 10px 12px; border-radius: 12px;
+-          --t: var(--ms-play); background: color-mix(in srgb, var(--t) 9%, var(--card-background-color, #fff)); box-shadow: inset 0 0 0 1px transparent; }
++          --t: var(--ms-play); background: var(--secondary-background-color, rgba(127,127,127,.08)); box-shadow: inset 0 0 0 1px transparent; }
+     .cn.c-coming { --t: var(--ms-coming); } .cn.c-queue { --t: var(--ms-dl); } .cn.c-requests { --t: var(--ms-req); }
+     .cn:hover { background: color-mix(in srgb, var(--t) 15%, var(--card-background-color, #fff)); }
+     .cn.on { box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--t) 70%, transparent); }
+diff --git a/src/shared/common-styles.js b/src/shared/common-styles.js
+index 36cf261..0260d4a 100644
+--- a/src/shared/common-styles.js
++++ b/src/shared/common-styles.js
+@@ -93,7 +93,7 @@ export const RC_BASE_STYLES = `
+   @container (max-width: 260px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+   /* layout: tiles — the size of Home Assistant's Tile card — 56 px high, a 40 px icon, the name over the state. */
+   .layout-tiles .grid { gap: 8px; }
+-  .layout-tiles .tile { min-height: 56px; gap: 10px; padding: 8px 10px 8px 8px; border-radius: 12px; }
++  .layout-tiles .tile { min-height: 56px; gap: 10px; padding: 8px 10px 8px 8px; border-radius: 10px; }
+   .layout-tiles .ic { width: 40px; height: 40px; }
+   .layout-tiles .ic ha-icon { --mdc-icon-size: 24px; }
+   .layout-tiles .txt { gap: 2px; }
+-- 
+2.43.0
+

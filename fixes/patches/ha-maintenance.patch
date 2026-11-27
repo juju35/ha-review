@@ -1,0 +1,189 @@
+From faca267eafe77011d1ca7b7926f320257452a057 Mon Sep 17 00:00:00 2001
+From: juju35 <julienstephan29@gmail.com>
+Date: Fri, 27 Nov 2026 04:16:04 +0100
+Subject: [PATCH] fix: apply the november review fixes (0.5.5)
+
+Fixes from the review of the ha-* repositories (juju35/ha-review).
+
+- `SECURITY.md`: how to report a vulnerability privately.
+- Tiles have the 10 px corner radius shared by the ha-* cards.
+- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).
+- Illustrated header (card and panel): the ground bar is 10 px thick and the warning colour is the theme's `--warning-color` (fallback `#ffa600`), like on the other ha-* cards.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01F4sAn1x21MmgHHeW1MLKJ5
+---
+ CHANGELOG.md                                |  6 ++++++
+ SECURITY.md                                 | 17 +++++++++++++++++
+ biome.json                                  |  2 +-
+ custom_components/maintenance/const.py      |  2 +-
+ custom_components/maintenance/manifest.json |  2 +-
+ src/maintenance-card/card.js                |  6 +++---
+ src/maintenance-card/header.js              |  2 +-
+ src/maintenance-panel/header.js             |  2 +-
+ src/maintenance-panel/panel.js              | 10 +++++-----
+ 9 files changed, 36 insertions(+), 13 deletions(-)
+ create mode 100644 SECURITY.md
+
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index 50a5e31..b8a778f 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,11 @@
+ # Changelog
+ 
++## 0.5.5 - 2026-11-27
++
++### Fixes
++- Tiles have the 10 px corner radius shared by the ha-* cards.
++- Illustrated header (card and panel): the ground bar is 10 px thick and the warning colour is the theme's `--warning-color` (fallback `#ffa600`), like on the other ha-* cards.
++
+ ## 0.5.4 - 2026-11-24
+ 
+ ### Fixes
+diff --git a/SECURITY.md b/SECURITY.md
+new file mode 100644
+index 0000000..0771351
+--- /dev/null
++++ b/SECURITY.md
+@@ -0,0 +1,17 @@
++# Security policy
++
++## Reporting a vulnerability
++
++Please **do not open a public issue** for a security problem.
++
++Report it privately with GitHub's
++[private vulnerability reporting](https://github.com/juju35/ha-maintenance/security/advisories/new)
++(Security tab → *Report a vulnerability*). Include what is affected, how to reproduce it and the
++version you use.
++
++You will get an answer within a few days. Once fixed, the fix ships in a release and the advisory
++is published with credit to the reporter, unless you prefer to stay anonymous.
++
++## Supported versions
++
++Only the latest release receives fixes. Update through the Home Assistant Marketplace.
+diff --git a/biome.json b/biome.json
+index 49b91bf..e35f71e 100644
+--- a/biome.json
++++ b/biome.json
+@@ -1,5 +1,5 @@
+ {
+-  "$schema": "https://biomejs.dev/schemas/2.6.4/schema.json",
++  "$schema": "https://biomejs.dev/schemas/2.6.8/schema.json",
+   "files": {
+     "includes": [
+       "**/*.js",
+diff --git a/custom_components/maintenance/const.py b/custom_components/maintenance/const.py
+index 10bcc21..b35db96 100644
+--- a/custom_components/maintenance/const.py
++++ b/custom_components/maintenance/const.py
+@@ -6,7 +6,7 @@ from typing import Final
+ 
+ DOMAIN: Final = "maintenance"
+ TITLE: Final = "Maintenance"
+-VERSION: Final = "0.5.4"
++VERSION: Final = "0.5.5"
+ 
+ # Status of an item, most urgent first.
+ STATUS_OVERDUE: Final = "overdue"
+diff --git a/custom_components/maintenance/manifest.json b/custom_components/maintenance/manifest.json
+index 5ad2b1b..6c33bc4 100644
+--- a/custom_components/maintenance/manifest.json
++++ b/custom_components/maintenance/manifest.json
+@@ -11,5 +11,5 @@
+   "issue_tracker": "https://github.com/juju35/ha-maintenance/issues",
+   "requirements": [],
+   "single_config_entry": true,
+-  "version": "0.5.4"
++  "version": "0.5.5"
+ }
+diff --git a/src/maintenance-card/card.js b/src/maintenance-card/card.js
+index db7ff69..a49677a 100644
+--- a/src/maintenance-card/card.js
++++ b/src/maintenance-card/card.js
+@@ -206,16 +206,16 @@ export class MaintenanceCard extends HTMLElement {
+ 
+   static styles() {
+     return `
+-      :host { --mt-ok: var(--success-color, #43a047); --mt-warn: var(--warning-color, #f59e0b); --mt-bad: var(--error-color, #db4437);
++      :host { --mt-ok: var(--success-color, #43a047); --mt-warn: var(--warning-color, #ffa600); --mt-bad: var(--error-color, #db4437);
+               --mt-idle: var(--secondary-text-color, #727272); --mt-accent: #0d9488; }
+       ha-card { overflow: hidden; container-type: inline-size; }
+       ha-card.tone-ok { --c: var(--mt-accent); } ha-card.tone-warn { --c: var(--mt-warn); } ha-card.tone-bad { --c: var(--mt-bad); }
+       ha-card.tone-idle { --c: var(--mt-idle); }
+       .banner { position: relative; height: 90px; overflow: hidden; background: linear-gradient(#ccfbf1, #f0fdfa); }
+       .night .banner { background: linear-gradient(#0c2626, #153838); }
+-      .ground { position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: #5eead4; }
++      .ground { position: absolute; left: 0; right: 0; bottom: 0; height: 10px; background: #5eead4; }
+       .night .ground { background: #2c6b66; }
+-      .scene { position: absolute; right: 14px; bottom: 6px; height: 44px; width: auto; max-width: 40%; }
++      .scene { position: absolute; right: 14px; bottom: 10px; height: 44px; width: auto; max-width: 40%; }
+       .board { fill: #fdf6e3; stroke: #e7d8b1; stroke-width: 2; } .holes circle { fill: #d6c49a; }
+       .night .board { fill: #2b3a3a; stroke: #3f5656; } .night .holes circle { fill: #4f6a6a; }
+       .gear path { fill: #5eead4; } .gear .hub { fill: #fdf6e3; } .night .gear path { fill: #2dd4bf; } .night .gear .hub { fill: #2b3a3a; }
+diff --git a/src/maintenance-card/header.js b/src/maintenance-card/header.js
+index 1fc7b2f..1407442 100644
+--- a/src/maintenance-card/header.js
++++ b/src/maintenance-card/header.js
+@@ -6,4 +6,4 @@
+  * resources by the integration.
+  * https://github.com/juju35/ha-maintenance
+  */
+-export var MAINTENANCE_CARD_VERSION = '0.5.4';
++export var MAINTENANCE_CARD_VERSION = '0.5.5';
+diff --git a/src/maintenance-panel/header.js b/src/maintenance-panel/header.js
+index f5716bd..8c069ef 100644
+--- a/src/maintenance-panel/header.js
++++ b/src/maintenance-panel/header.js
+@@ -6,4 +6,4 @@
+  * illustrated header across the whole width, the tabs under it, the current tab in the address.
+  * https://github.com/juju35/ha-maintenance
+  */
+-export var MAINTENANCE_PANEL_VERSION = '0.5.4';
++export var MAINTENANCE_PANEL_VERSION = '0.5.5';
+diff --git a/src/maintenance-panel/panel.js b/src/maintenance-panel/panel.js
+index c82ee2c..898d137 100644
+--- a/src/maintenance-panel/panel.js
++++ b/src/maintenance-panel/panel.js
+@@ -421,15 +421,15 @@ export class MaintenancePanel extends HTMLElement {
+ 
+   static styles() {
+     return `
+-      :host { display: block; --ok: var(--success-color, #43a047); --warn: var(--warning-color, #f59e0b); --bad: var(--error-color, #db4437);
++      :host { display: block; --ok: var(--success-color, #43a047); --warn: var(--warning-color, #ffa600); --bad: var(--error-color, #db4437);
+               --idle: var(--secondary-text-color, #727272); --accent: #0d9488; }
+       .page { min-height: 100vh; background: var(--primary-background-color); color: var(--primary-text-color); }
+       .page.tone-ok { --c: var(--accent); } .page.tone-warn { --c: var(--warn); } .page.tone-bad { --c: var(--bad); }
+       .top { position: relative; height: 90px; overflow: hidden; background: linear-gradient(#ccfbf1, #f0fdfa); }
+       .night .top { background: linear-gradient(#0c2626, #153838); }
+-      .ground { position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: #5eead4; } .night .ground { background: #2c6b66; }
++      .ground { position: absolute; left: 0; right: 0; bottom: 0; height: 10px; background: #5eead4; } .night .ground { background: #2c6b66; }
+       /* The illustration at the right, just left of the round button, as on the other ha-* panels. */
+-      .scene { position: absolute; right: 76px; bottom: 6px; height: 84px; width: auto; max-width: 40%; }
++      .scene { position: absolute; right: 76px; bottom: 10px; height: 84px; width: auto; max-width: 40%; }
+       @media (max-width: 700px) { .scene { opacity: .35; } }
+       .board { fill: #fdf6e3; stroke: #e7d8b1; stroke-width: 2; } .holes circle { fill: #d6c49a; }
+       .night .board { fill: #2b3a3a; stroke: #3f5656; } .night .holes circle { fill: #4f6a6a; }
+@@ -443,7 +443,7 @@ export class MaintenancePanel extends HTMLElement {
+       @keyframes mtp-spin { to { transform: rotate(360deg); } }
+       @keyframes mtp-turn { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(-24deg); } }
+       @media (prefers-reduced-motion: reduce) { .gear, .wrench.busy { animation: none; } }
+-      .bar { position: absolute; left: 24px; right: 24px; top: 0; bottom: 6px; display: flex; align-items: center; gap: 12px; }
++      .bar { position: absolute; left: 24px; right: 24px; top: 0; bottom: 10px; display: flex; align-items: center; gap: 12px; }
+       .menu { color: #1f2937; } .night .menu { color: #f3f4f6; }
+       .ico { flex: none; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; color: var(--c); --mdc-icon-size: 22px;
+              background: color-mix(in srgb, var(--c) 18%, #fff); }
+@@ -469,7 +469,7 @@ export class MaintenancePanel extends HTMLElement {
+       h2 { margin: 6px 0 0; font-size: 13px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--secondary-text-color); }
+       .tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; } .tiles.t3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+       @media (max-width: 700px) { .tiles, .tiles.t3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+-      .tile, .card { background: var(--card-background-color, #fff); border-radius: 14px; box-shadow: var(--ha-card-box-shadow, 0 1px 3px rgba(0,0,0,.08)); }
++      .tile, .card { background: var(--card-background-color, #fff); border-radius: 10px; box-shadow: var(--ha-card-box-shadow, 0 1px 3px rgba(0,0,0,.08)); }
+       .tile { padding: 14px; display: flex; flex-direction: column; gap: 4px; }
+       .tile .n { font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; } .tile .k { font-size: 13px; color: var(--secondary-text-color); }
+       .tile.t-bad .n { color: var(--bad); } .tile.t-warn .n { color: color-mix(in srgb, var(--warn) 80%, var(--primary-text-color)); }
+-- 
+2.43.0
+

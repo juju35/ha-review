@@ -1,0 +1,125 @@
+From 2b7af72e7d816cd77eaced4786977cd5eb1852df Mon Sep 17 00:00:00 2001
+From: juju35 <julienstephan29@gmail.com>
+Date: Fri, 27 Nov 2026 04:16:08 +0100
+Subject: [PATCH] fix: apply the november review fixes (2.4.1)
+
+Fixes from the review of the ha-* repositories (juju35/ha-review).
+
+- `SECURITY.md`: how to report a vulnerability privately.
+- Tiles have the 10 px corner radius shared by the ha-* cards.
+- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01F4sAn1x21MmgHHeW1MLKJ5
+---
+ .pre-commit-config.yaml                       |  4 ++--
+ CHANGELOG.md                                  |  5 +++++
+ SECURITY.md                                   | 17 +++++++++++++++++
+ biome.json                                    |  2 +-
+ custom_components/smart_comfort/manifest.json |  2 +-
+ src/smart-comfort-panel/styles.js             |  4 ++--
+ 6 files changed, 28 insertions(+), 6 deletions(-)
+ create mode 100644 SECURITY.md
+
+diff --git a/.pre-commit-config.yaml b/.pre-commit-config.yaml
+index dba295d..0a203f8 100644
+--- a/.pre-commit-config.yaml
++++ b/.pre-commit-config.yaml
+@@ -23,10 +23,10 @@ repos:
+         args: [--fix]
+       - id: ruff-format
+   - repo: https://github.com/biomejs/pre-commit
+-    rev: "v2.6.4"
++    rev: "v2.6.8"
+     hooks:
+       - id: biome-check
+-        additional_dependencies: ["@biomejs/biome@2.6.4"]
++        additional_dependencies: ["@biomejs/biome@2.6.8"]
+   - repo: local
+     hooks:
+       - id: js-syntax
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index cb2d8d0..82c81cb 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,10 @@
+ # Changelog
+ 
++## 2.4.1 - 2026-11-27
++
++### Fixes
++- Tiles have the 10 px corner radius shared by the ha-* cards.
++
+ ## 2.4.0 - 2026-11-27
+ 
+ ### Features
+diff --git a/SECURITY.md b/SECURITY.md
+new file mode 100644
+index 0000000..3e7d49f
+--- /dev/null
++++ b/SECURITY.md
+@@ -0,0 +1,17 @@
++# Security policy
++
++## Reporting a vulnerability
++
++Please **do not open a public issue** for a security problem.
++
++Report it privately with GitHub's
++[private vulnerability reporting](https://github.com/juju35/ha-smart-comfort/security/advisories/new)
++(Security tab → *Report a vulnerability*). Include what is affected, how to reproduce it and the
++version you use.
++
++You will get an answer within a few days. Once fixed, the fix ships in a release and the advisory
++is published with credit to the reporter, unless you prefer to stay anonymous.
++
++## Supported versions
++
++Only the latest release receives fixes. Update through the Home Assistant Marketplace.
+diff --git a/biome.json b/biome.json
+index 49b91bf..e35f71e 100644
+--- a/biome.json
++++ b/biome.json
+@@ -1,5 +1,5 @@
+ {
+-  "$schema": "https://biomejs.dev/schemas/2.6.4/schema.json",
++  "$schema": "https://biomejs.dev/schemas/2.6.8/schema.json",
+   "files": {
+     "includes": [
+       "**/*.js",
+diff --git a/custom_components/smart_comfort/manifest.json b/custom_components/smart_comfort/manifest.json
+index 4bae2f4..dd87447 100644
+--- a/custom_components/smart_comfort/manifest.json
++++ b/custom_components/smart_comfort/manifest.json
+@@ -11,5 +11,5 @@
+   "issue_tracker": "https://github.com/juju35/ha-smart-comfort/issues",
+   "requirements": ["ruamel.yaml==0.19.1"],
+   "single_config_entry": true,
+-  "version": "2.4.0"
++  "version": "2.4.1"
+ }
+diff --git a/src/smart-comfort-panel/styles.js b/src/smart-comfort-panel/styles.js
+index 1de50a5..487eac3 100644
+--- a/src/smart-comfort-panel/styles.js
++++ b/src/smart-comfort-panel/styles.js
+@@ -225,7 +225,7 @@ export const STYLE = `
+     color: inherit;
+     background: var(--ha-card-background, var(--card-background-color, #fff));
+     border: 1px solid var(--divider-color);
+-    border-radius: 12px;
++    border-radius: 10px;
+     padding: 14px;
+     display: grid;
+     grid-template-columns: auto 1fr;
+@@ -424,7 +424,7 @@ export const STYLE = `
+     .shbody { display:flex; flex-direction:column; gap:12px; padding:12px 16px 16px; }
+     .shbody > .card { border:0; padding:0; background:none; box-shadow:none; }
+     .summary { gap:10px; grid-template-columns:repeat(auto-fill, minmax(160px, 1fr)); }
+-    .tile { background:color-mix(in srgb, var(--primary-text-color) 5%, transparent); border:0; border-radius:14px; padding:10px 12px; min-height:56px; box-sizing:border-box; }
++    .tile { background:color-mix(in srgb, var(--primary-text-color) 5%, transparent); border:0; border-radius: 10px; padding:10px 12px; min-height:56px; box-sizing:border-box; }
+     button.tile:hover { background:color-mix(in srgb, var(--primary-color) 10%, transparent); }
+     .tile > ha-icon { width:36px; height:36px; border-radius:50%; --mdc-icon-size:20px;
+                       background:color-mix(in srgb, var(--primary-color) 14%, transparent); }
+-- 
+2.43.0
+

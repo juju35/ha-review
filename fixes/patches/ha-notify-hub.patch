@@ -1,0 +1,197 @@
+From 3702d359032e312808e4df7759a917e808f1e3f5 Mon Sep 17 00:00:00 2001
+From: juju35 <julienstephan29@gmail.com>
+Date: Fri, 27 Nov 2026 04:16:05 +0100
+Subject: [PATCH] fix: apply the november review fixes (0.10.1)
+
+Fixes from the review of the ha-* repositories (juju35/ha-review).
+
+- `SECURITY.md`: how to report a vulnerability privately.
+- Tiles have the 10 px corner radius shared by the ha-* cards.
+- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).
+- Illustrated header (card and panel): the ground bar is 10 px thick and the warning colour is the theme's `--warning-color` (fallback `#ffa600`), like on the other ha-* cards.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01F4sAn1x21MmgHHeW1MLKJ5
+---
+ CHANGELOG.md                               |  6 ++++++
+ SECURITY.md                                | 17 +++++++++++++++++
+ biome.json                                 |  2 +-
+ custom_components/notify_hub/const.py      |  2 +-
+ custom_components/notify_hub/manifest.json |  2 +-
+ src/notify-hub-card/card.js                | 10 +++++-----
+ src/notify-hub-panel/base.js               |  2 +-
+ src/notify-hub-panel/panel.js              | 10 +++++-----
+ 8 files changed, 37 insertions(+), 14 deletions(-)
+ create mode 100644 SECURITY.md
+
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index b6e972c..8522f91 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,11 @@
+ # Changelog
+ 
++## 0.10.1 - 2026-11-27
++
++### Fixes
++- Tiles have the 10 px corner radius shared by the ha-* cards.
++- Illustrated header (card and panel): the ground bar is 10 px thick and the warning colour is the theme's `--warning-color` (fallback `#ffa600`), like on the other ha-* cards.
++
+ ## 0.10.0 - 2026-11-26
+ 
+ ### Features
+diff --git a/SECURITY.md b/SECURITY.md
+new file mode 100644
+index 0000000..da64f5d
+--- /dev/null
++++ b/SECURITY.md
+@@ -0,0 +1,17 @@
++# Security policy
++
++## Reporting a vulnerability
++
++Please **do not open a public issue** for a security problem.
++
++Report it privately with GitHub's
++[private vulnerability reporting](https://github.com/juju35/ha-notify-hub/security/advisories/new)
++(Security tab → *Report a vulnerability*). Include what is affected, how to reproduce it and the
++version you use.
++
++You will get an answer within a few days. Once fixed, the fix ships in a release and the advisory
++is published with credit to the reporter, unless you prefer to stay anonymous.
++
++## Supported versions
++
++Only the latest release receives fixes. Update through the Home Assistant Marketplace.
+diff --git a/biome.json b/biome.json
+index 49b91bf..e35f71e 100644
+--- a/biome.json
++++ b/biome.json
+@@ -1,5 +1,5 @@
+ {
+-  "$schema": "https://biomejs.dev/schemas/2.6.4/schema.json",
++  "$schema": "https://biomejs.dev/schemas/2.6.8/schema.json",
+   "files": {
+     "includes": [
+       "**/*.js",
+diff --git a/custom_components/notify_hub/const.py b/custom_components/notify_hub/const.py
+index 114dfd2..86abdbe 100644
+--- a/custom_components/notify_hub/const.py
++++ b/custom_components/notify_hub/const.py
+@@ -7,7 +7,7 @@ from typing import Final
+ 
+ DOMAIN: Final = "notify_hub"
+ TITLE: Final = "Notify Hub"
+-VERSION: Final = "0.10.0"
++VERSION: Final = "0.10.1"
+ 
+ # Priorities, from the most to the least urgent.
+ PRIORITY_CRITICAL: Final = "critical"
+diff --git a/custom_components/notify_hub/manifest.json b/custom_components/notify_hub/manifest.json
+index 6d99822..44669f7 100644
+--- a/custom_components/notify_hub/manifest.json
++++ b/custom_components/notify_hub/manifest.json
+@@ -11,5 +11,5 @@
+   "issue_tracker": "https://github.com/juju35/ha-notify-hub/issues",
+   "requirements": [],
+   "single_config_entry": true,
+-  "version": "0.10.0"
++  "version": "0.10.1"
+ }
+diff --git a/src/notify-hub-card/card.js b/src/notify-hub-card/card.js
+index 2d6a4f2..6ed0550 100644
+--- a/src/notify-hub-card/card.js
++++ b/src/notify-hub-card/card.js
+@@ -10,7 +10,7 @@
+ import { pickerDefine } from "./card-picker.js";
+ import { NH_CARD_I18N } from "./i18n/nh-card-i18n.js";
+ 
+-export var NOTIFY_HUB_CARD_VERSION = '0.10.0';
++export var NOTIFY_HUB_CARD_VERSION = '0.10.1';
+ 
+ 
+ export var NH_DEFAULTS = { rows: 4, illustration_theme: 'auto' };
+@@ -273,15 +273,15 @@ export class NotifyHubCard extends HTMLElement {
+ 
+   static styles() {
+     return `
+-      :host { --nh-ok: var(--success-color, #43a047); --nh-warn: var(--warning-color, #f59e0b); --nh-bad: var(--error-color, #db4437);
++      :host { --nh-ok: var(--success-color, #43a047); --nh-warn: var(--warning-color, #ffa600); --nh-bad: var(--error-color, #db4437);
+               --nh-idle: var(--secondary-text-color, #727272); --nh-info: #2563eb; --nh-accent: #2563eb; }
+       ha-card { overflow: hidden; }
+       ha-card.tone-ok { --c: var(--nh-accent); } ha-card.tone-bad { --c: var(--nh-bad); } ha-card.tone-idle { --c: var(--nh-idle); }
+       .banner { position: relative; height: 90px; overflow: hidden; background: linear-gradient(#dbeafe, #f0f6ff); }
+       .night .banner { background: linear-gradient(#0f1b33, #1c2a48); }
+-      .ground { position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: #93c5fd; }
++      .ground { position: absolute; left: 0; right: 0; bottom: 0; height: 10px; background: #93c5fd; }
+       .night .ground { background: #36507e; }
+-      .scene { position: absolute; right: 8px; bottom: 6px; height: 70px; width: auto; max-width: 46%; }
++      .scene { position: absolute; right: 8px; bottom: 10px; height: 70px; width: auto; max-width: 46%; }
+       .letter rect { fill: #fff; stroke: #93c5fd; stroke-width: 2; } .letter path { fill: none; stroke: #93c5fd; stroke-width: 2; }
+       .night .letter rect { fill: #e6ebf3; stroke: #5b7bb3; } .night .letter path { stroke: #5b7bb3; }
+       .bbody { fill: #93c5fd; } .brim, .bclap { fill: #60a5fa; }
+@@ -310,7 +310,7 @@ export class NotifyHubCard extends HTMLElement {
+       .night .pill { color: color-mix(in srgb, var(--c) 45%, #fff); background: color-mix(in srgb, var(--c) 25%, #1c2a48); }
+       .body { container-type: inline-size; padding: 12px 16px 16px; display: flex; flex-direction: column; gap: 10px; }
+       .tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+-      .tile { position: relative; display: flex; flex-direction: column; gap: 2px; min-width: 0; padding: 10px; border-radius: 12px;
++      .tile { position: relative; display: flex; flex-direction: column; gap: 2px; min-width: 0; padding: 10px; border-radius: 10px;
+               background: var(--secondary-background-color, rgba(127,127,127,.08)); }
+       .tile .n { font-size: 20px; font-weight: 700; color: var(--primary-text-color); font-variant-numeric: tabular-nums; }
+       .tile .k { font-size: 12px; line-height: 1.2; color: var(--secondary-text-color); }
+diff --git a/src/notify-hub-panel/base.js b/src/notify-hub-panel/base.js
+index 1b10897..b8cc1e5 100644
+--- a/src/notify-hub-panel/base.js
++++ b/src/notify-hub-panel/base.js
+@@ -6,7 +6,7 @@
+  * under it, the current tab in the address.
+  * https://github.com/juju35/ha-notify-hub
+  */
+-export var NOTIFY_HUB_PANEL_VERSION = '0.10.0';
++export var NOTIFY_HUB_PANEL_VERSION = '0.10.1';
+ 
+ 
+ export var NHP_TABS = ['journal', 'routing', 'rules', 'sources', 'settings'];
+diff --git a/src/notify-hub-panel/panel.js b/src/notify-hub-panel/panel.js
+index 9595791..7134832 100644
+--- a/src/notify-hub-panel/panel.js
++++ b/src/notify-hub-panel/panel.js
+@@ -616,14 +616,14 @@ export class NotifyHubPanel extends HTMLElement {
+ 
+   static styles() {
+     return `
+-      :host { display: block; --ok: var(--success-color, #43a047); --warn: var(--warning-color, #f59e0b); --bad: var(--error-color, #db4437);
++      :host { display: block; --ok: var(--success-color, #43a047); --warn: var(--warning-color, #ffa600); --bad: var(--error-color, #db4437);
+               --idle: var(--secondary-text-color, #727272); --info: #2563eb; --accent: #2563eb; }
+       .page { min-height: 100vh; background: var(--primary-background-color); color: var(--primary-text-color); font-family: var(--paper-font-body1_-_font-family, inherit); }
+       .page.tone-ok { --c: var(--accent); } .page.tone-bad { --c: var(--bad); } .page.tone-idle { --c: var(--idle); }
+       .top { position: relative; height: 90px; overflow: hidden; background: linear-gradient(#dbeafe, #f0f6ff); }
+       .night .top { background: linear-gradient(#0f1b33, #1c2a48); }
+-      .ground { position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: #93c5fd; } .night .ground { background: #36507e; }
+-      .scene { position: absolute; right: 340px; bottom: 6px; height: 84px; width: auto; max-width: 40%; }
++      .ground { position: absolute; left: 0; right: 0; bottom: 0; height: 10px; background: #93c5fd; } .night .ground { background: #36507e; }
++      .scene { position: absolute; right: 340px; bottom: 10px; height: 84px; width: auto; max-width: 40%; }
+       @media (max-width: 900px) { .scene { right: 120px; opacity: .35; } }
+       .letter rect { fill: #fff; stroke: #93c5fd; stroke-width: 2; } .letter path { fill: none; stroke: #93c5fd; stroke-width: 2; }
+       .night .letter rect { fill: #e6ebf3; stroke: #5b7bb3; } .night .letter path { stroke: #5b7bb3; }
+@@ -637,7 +637,7 @@ export class NotifyHubPanel extends HTMLElement {
+       @keyframes nhp-wave { 0%, 100% { opacity: .2; } 50% { opacity: 1; } }
+       @keyframes nhp-ring { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(10deg); } 75% { transform: rotate(-10deg); } }
+       @media (prefers-reduced-motion: reduce) { .letter, .wave, .bell.ring { animation: none; } }
+-      .bar { position: absolute; left: 24px; right: 24px; top: 0; bottom: 6px; display: flex; align-items: center; gap: 12px; }
++      .bar { position: absolute; left: 24px; right: 24px; top: 0; bottom: 10px; display: flex; align-items: center; gap: 12px; }
+       .head { flex: 1; min-width: 0; display: flex; align-items: center; gap: 12px; }
+       .head .htxt { min-width: 84px; }
+       @media (max-width: 600px) { .pill .pl { display: none; } }
+@@ -669,7 +669,7 @@ export class NotifyHubPanel extends HTMLElement {
+       h2 { margin: 4px 0 0; font-size: 13px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--secondary-text-color); }
+       .tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+       @media (max-width: 700px) { .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+-      .tile, .card { position: relative; background: var(--card-background-color, #fff); border-radius: 14px; box-shadow: var(--ha-card-box-shadow, 0 1px 3px rgba(0,0,0,.08)); }
++      .tile, .card { position: relative; background: var(--card-background-color, #fff); border-radius: 10px; box-shadow: var(--ha-card-box-shadow, 0 1px 3px rgba(0,0,0,.08)); }
+       .tile { padding: 14px; display: flex; flex-direction: column; gap: 4px; }
+       .tile .n { font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; } .tile .k { font-size: 13px; color: var(--secondary-text-color); }
+       .tile.t-bad .n { color: var(--bad); }
+-- 
+2.43.0
+

@@ -1,0 +1,127 @@
+From a0dfbaea711c2e89ac79b212f4c14c5af8489cca Mon Sep 17 00:00:00 2001
+From: juju35 <julienstephan29@gmail.com>
+Date: Fri, 27 Nov 2026 04:16:02 +0100
+Subject: [PATCH] fix: apply the november review fixes (1.7.4)
+
+Fixes from the review of the ha-* repositories (juju35/ha-review).
+
+- `SECURITY.md`: how to report a vulnerability privately.
+- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).
+- Opening a document: the new tab no longer keeps a link back to the Home Assistant page (`opener` cut).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01F4sAn1x21MmgHHeW1MLKJ5
+---
+ .pre-commit-config.yaml                 |  4 ++--
+ CHANGELOG.md                            |  5 +++++
+ SECURITY.md                             | 17 +++++++++++++++++
+ biome.json                              |  2 +-
+ custom_components/ent_one/manifest.json |  2 +-
+ src/ent-one-card/card-picker.js         |  2 +-
+ src/ent-one-card/helpers.js             |  2 ++
+ 7 files changed, 29 insertions(+), 5 deletions(-)
+ create mode 100644 SECURITY.md
+
+diff --git a/.pre-commit-config.yaml b/.pre-commit-config.yaml
+index d0f18fa..02adf0f 100644
+--- a/.pre-commit-config.yaml
++++ b/.pre-commit-config.yaml
+@@ -23,10 +23,10 @@ repos:
+         args: [--fix]
+       - id: ruff-format
+   - repo: https://github.com/biomejs/pre-commit
+-    rev: "v2.6.7"
++    rev: "v2.6.8"
+     hooks:
+       - id: biome-check
+-        additional_dependencies: ["@biomejs/biome@2.6.7"]
++        additional_dependencies: ["@biomejs/biome@2.6.8"]
+   - repo: local
+     hooks:
+       - id: card-js-syntax
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index d845319..3966143 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,10 @@
+ # Changelog
+ 
++## 1.7.4 - 2026-11-27
++
++### Fixes
++- Opening a document: the new tab no longer keeps a link back to the Home Assistant page (`opener` cut).
++
+ ## 1.7.3 - 2026-11-24
+ 
+ ### Maintenance
+diff --git a/SECURITY.md b/SECURITY.md
+new file mode 100644
+index 0000000..c6537cc
+--- /dev/null
++++ b/SECURITY.md
+@@ -0,0 +1,17 @@
++# Security policy
++
++## Reporting a vulnerability
++
++Please **do not open a public issue** for a security problem.
++
++Report it privately with GitHub's
++[private vulnerability reporting](https://github.com/juju35/ha-ent-one/security/advisories/new)
++(Security tab → *Report a vulnerability*). Include what is affected, how to reproduce it and the
++version you use.
++
++You will get an answer within a few days. Once fixed, the fix ships in a release and the advisory
++is published with credit to the reporter, unless you prefer to stay anonymous.
++
++## Supported versions
++
++Only the latest release receives fixes. Update through the Home Assistant Marketplace.
+diff --git a/biome.json b/biome.json
+index 3b76bb3..9e911e7 100644
+--- a/biome.json
++++ b/biome.json
+@@ -1,5 +1,5 @@
+ {
+-  "$schema": "https://biomejs.dev/schemas/2.6.7/schema.json",
++  "$schema": "https://biomejs.dev/schemas/2.6.8/schema.json",
+   "files": {
+     "includes": ["**/*.js", "**/*.mjs", "!**/dist", "!**/vendor", "!**/node_modules", "!**/*.min.js"]
+   },
+diff --git a/custom_components/ent_one/manifest.json b/custom_components/ent_one/manifest.json
+index d68571e..5849c13 100644
+--- a/custom_components/ent_one/manifest.json
++++ b/custom_components/ent_one/manifest.json
+@@ -20,5 +20,5 @@
+   "iot_class": "cloud_polling",
+   "issue_tracker": "https://github.com/juju35/ha-ent-one/issues",
+   "requirements": [],
+-  "version": "1.7.3"
++  "version": "1.7.4"
+ }
+diff --git a/src/ent-one-card/card-picker.js b/src/ent-one-card/card-picker.js
+index c682685..7bb1ba1 100644
+--- a/src/ent-one-card/card-picker.js
++++ b/src/ent-one-card/card-picker.js
+@@ -66,4 +66,4 @@ export function pickerDefine(tag, Card, options) {
+   return customElements.define(tag, lazy, options);
+ }
+ 
+-export var ENT_ONE_CARD_VERSION = '1.7.3';
++export var ENT_ONE_CARD_VERSION = '1.7.4';
+diff --git a/src/ent-one-card/helpers.js b/src/ent-one-card/helpers.js
+index df4f8c0..6814b6e 100644
+--- a/src/ent-one-card/helpers.js
++++ b/src/ent-one-card/helpers.js
+@@ -352,6 +352,8 @@ export function entOneOpenFile(hass, entryId, path, name) {
+     return Promise.resolve();
+   }
+   var tab = window.open('', '_blank');
++  // The file opens in that tab later: cut its link back to this page (reverse tabnabbing).
++  if (tab) tab.opener = null;
+   return entOneFileUrl(hass, entryId, path, name)
+     .then((url) => {
+       if (tab) tab.location.href = url;
+-- 
+2.43.0
+

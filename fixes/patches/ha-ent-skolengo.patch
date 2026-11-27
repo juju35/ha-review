@@ -1,0 +1,122 @@
+From b248112ed5dd1b4405c4d29676c3974b34c7299b Mon Sep 17 00:00:00 2001
+From: juju35 <julienstephan29@gmail.com>
+Date: Fri, 27 Nov 2026 04:16:02 +0100
+Subject: [PATCH] fix: apply the november review fixes (1.0.1)
+
+Fixes from the review of the ha-* repositories (juju35/ha-review).
+
+- `SECURITY.md`: how to report a vulnerability privately.
+- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.
+- Opening a document: the new tab no longer keeps a link back to the Home Assistant page (`opener` cut).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01F4sAn1x21MmgHHeW1MLKJ5
+---
+ CHANGELOG.md                 |  6 ++++++
+ SECURITY.md                  | 17 +++++++++++++++++
+ package-lock.json            |  4 ++--
+ package.json                 |  2 +-
+ src/skolengo-card/lessons.js |  2 ++
+ src/skolengo-card/styles.js  |  2 +-
+ 6 files changed, 29 insertions(+), 4 deletions(-)
+ create mode 100644 SECURITY.md
+
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index b59113e..90cb92b 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,11 @@
+ # Changelog
+ 
++## 1.0.1 - 2026-11-27
++
++### Fixes
++- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.
++- Opening a document: the new tab no longer keeps a link back to the Home Assistant page (`opener` cut).
++
+ ## 1.0.0 - 2026-11-24
+ 
+ ### Features
+diff --git a/SECURITY.md b/SECURITY.md
+new file mode 100644
+index 0000000..962b48f
+--- /dev/null
++++ b/SECURITY.md
+@@ -0,0 +1,17 @@
++# Security policy
++
++## Reporting a vulnerability
++
++Please **do not open a public issue** for a security problem.
++
++Report it privately with GitHub's
++[private vulnerability reporting](https://github.com/juju35/ha-ent-skolengo/security/advisories/new)
++(Security tab → *Report a vulnerability*). Include what is affected, how to reproduce it and the
++version you use.
++
++You will get an answer within a few days. Once fixed, the fix ships in a release and the advisory
++is published with credit to the reporter, unless you prefer to stay anonymous.
++
++## Supported versions
++
++Only the latest release receives fixes. Update through the Home Assistant Marketplace.
+diff --git a/package-lock.json b/package-lock.json
+index e536727..85f99be 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -1,12 +1,12 @@
+ {
+   "name": "ha-ent-skolengo",
+-  "version": "1.0.0",
++  "version": "1.0.1",
+   "lockfileVersion": 3,
+   "requires": true,
+   "packages": {
+     "": {
+       "name": "ha-ent-skolengo",
+-      "version": "1.0.0",
++      "version": "1.0.1",
+       "license": "MIT",
+       "devDependencies": {
+         "acorn": "^8.19.0",
+diff --git a/package.json b/package.json
+index 7d2aa48..e79f917 100644
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "ha-ent-skolengo",
+-  "version": "1.0.0",
++  "version": "1.0.1",
+   "description": "Lovelace cards and optional sidebar panel for Home Assistant showing the timetable, homework, grades and school life of the Skolengo integration, for one or several students.",
+   "private": true,
+   "type": "module",
+diff --git a/src/skolengo-card/lessons.js b/src/skolengo-card/lessons.js
+index 4148b5a..1e28b1f 100644
+--- a/src/skolengo-card/lessons.js
++++ b/src/skolengo-card/lessons.js
+@@ -408,6 +408,8 @@ export class SkolengoBase extends HTMLElement {
+     // The tab is opened during the click (later, Safari blocks it), without `noopener` (window.open then returns
+     // null): the opener link is cut by hand before the signed address is loaded in it.
+     const win = window.open("", "_blank");
++    // The file opens in that tab later: cut its link back to this page (reverse tabnabbing).
++    if (win) win.opener = null;
+     if (win) win.opener = null;
+     try {
+       const { path: signed } = await this._hass.callWS({ type: "auth/sign_path", path, expires: 60 });
+diff --git a/src/skolengo-card/styles.js b/src/skolengo-card/styles.js
+index d100d87..1f6997d 100644
+--- a/src/skolengo-card/styles.js
++++ b/src/skolengo-card/styles.js
+@@ -3,7 +3,7 @@ import { ACCENTS } from "./core.js";
+ 
+ export const BASE_STYLE = `
+   :host { --pc-accent: ${ACCENTS[0]}; --pc-ok: var(--success-color, #43a047); --pc-warn: var(--warning-color, #ffa600);
+-          --pc-crit: var(--error-color, #db4437); --pc-idle: var(--disabled-text-color, #9e9e9e); --pc-active: var(--info-color, #039be5);
++          --pc-crit: var(--error-color, #db4437); --pc-idle: var(--secondary-text-color, #9e9e9e); --pc-active: var(--info-color, #039be5);
+           /* Text in a state or accent color is mixed with the text color so that it stays readable (4.5:1). */
+           --pc-accent-text: color-mix(in srgb, var(--pc-accent) 55%, var(--primary-text-color)); }
+   :host([dark]) { --pc-accent: ${ACCENTS[1]}; }
+-- 
+2.43.0
+

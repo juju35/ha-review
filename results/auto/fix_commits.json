@@ -1,0 +1,552 @@
+{
+ "ha-3d-printer-card": {
+  "bump": "1.3.1",
+  "title": "fix: apply the november review fixes (1.3.1)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-alarm-card": {
+  "bump": "2.1.4",
+  "title": "fix: apply the november review fixes (2.1.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- Open sensors: the tile background stays neutral, the tinted icon and the state line show the state (card charter)."
+ },
+ "ha-assist-card": {
+  "bump": "1.1.6",
+  "title": "fix: apply the november review fixes (1.1.6)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-backup-card": {
+  "bump": "1.2.7",
+  "title": "fix: apply the november review fixes (1.2.7)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-calendar-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-camera": {
+  "bump": "4.12.2",
+  "title": "fix: apply the november review fixes (4.12.2)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- Mini card: back to the compact view when it leaves the page (another view, a conditional card hidden), like the other mini cards."
+ },
+ "ha-carburants-france": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-certificate-card": {
+  "bump": "1.3.4",
+  "title": "fix: apply the november review fixes (1.3.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- README: the Marketplace section names the dashboard resource (`/local/community/\u2026`).\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-chores-card": {
+  "bump": "1.0.4",
+  "title": "fix: apply the november review fixes (1.0.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards."
+ },
+ "ha-climate-air-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-cloud-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-console-card": {
+  "bump": "1.2.1",
+  "title": "fix: apply the november review fixes (1.2.1)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-countdown-card": {
+  "bump": "1.0.5",
+  "title": "fix: apply the november review fixes (1.0.5)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards."
+ },
+ "ha-cover-card": {
+  "bump": "1.11.4",
+  "title": "fix: apply the november review fixes (1.11.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- Comments describe the current night rule (the HA theme alone, no `sun.sun`)."
+ },
+ "ha-dashboard-header": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n\nNo version bump: nothing users install changes."
+ },
+ "ha-device-card": {
+  "bump": "1.1.6",
+  "title": "fix: apply the november review fixes (1.1.6)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-dns-filter-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- README: the Marketplace section names the dashboard resource (`/local/community/\u2026`).\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- Comments describe the current night rule (the HA theme alone, no `sun.sun`).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-docker-card": {
+  "bump": "3.9.7",
+  "title": "fix: apply the november review fixes (3.9.7)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- README: the Marketplace section names the dashboard resource (`/local/community/\u2026`).\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-doorbell-card": {
+  "bump": "1.1.6",
+  "title": "fix: apply the november review fixes (1.1.6)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- Comments describe the current night rule (the HA theme alone, no `sun.sun`)."
+ },
+ "ha-ecowatt-card": {
+  "bump": "1.2.6",
+  "title": "fix: apply the november review fixes (1.2.6)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- Comments describe the current night rule (the HA theme alone, no `sun.sun`)."
+ },
+ "ha-energy-card": {
+  "bump": "1.8.4",
+  "title": "fix: apply the november review fixes (1.8.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- README: the Marketplace section names the dashboard resource (`/local/community/\u2026`).\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-energy-hub": {
+  "bump": "1.8.1",
+  "title": "fix: apply the november review fixes (1.8.1)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards."
+ },
+ "ha-ent-educartable": {
+  "bump": "1.2.1",
+  "title": "fix: apply the november review fixes (1.2.1)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- Opening a document: the new tab no longer keeps a link back to the Home Assistant page (`opener` cut)."
+ },
+ "ha-ent-one": {
+  "bump": "1.7.4",
+  "title": "fix: apply the november review fixes (1.7.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- Opening a document: the new tab no longer keeps a link back to the Home Assistant page (`opener` cut)."
+ },
+ "ha-ent-skolengo": {
+  "bump": "1.0.1",
+  "title": "fix: apply the november review fixes (1.0.1)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Opening a document: the new tab no longer keeps a link back to the Home Assistant page (`opener` cut)."
+ },
+ "ha-ev-charger-card": {
+  "bump": "1.4.1",
+  "title": "fix: apply the november review fixes (1.4.1)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-family-day-card": {
+  "bump": "1.5.4",
+  "title": "fix: apply the november review fixes (1.5.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-family-link": {
+  "bump": "1.2.9",
+  "title": "fix: apply the november review fixes (1.2.9)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- Screenshots named like every ha-* repo (light unsuffixed, `-dark` twins), light first in the README."
+ },
+ "ha-findmy": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n\nNo version bump: nothing users install changes."
+ },
+ "ha-flight-board-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-garden-card": {
+  "bump": "1.2.5",
+  "title": "fix: apply the november review fixes (1.2.5)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-github": {
+  "bump": "2.20.2",
+  "title": "fix: apply the november review fixes (2.20.2)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- Panel, Branches tab: the pull-request link only opens a github.com address.\n- The `create_repository` action has its icon (`icons.json`)."
+ },
+ "ha-heating-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-house-rules": {
+  "bump": "1.8.8",
+  "title": "fix: apply the november review fixes (1.8.8)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- Illustrated header (cards and panel): the ground bar is 10 px thick, like on the other ha-* cards.\n- README: which panel actions are for administrators, which for every user."
+ },
+ "ha-hp": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- README shows the Printer card captures from ha-printer-scanner-card instead of copies that could drift.\n\nNo version bump: nothing users install changes."
+ },
+ "ha-internet-box-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- README: the Marketplace section names the dashboard resource (`/local/community/\u2026`).\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-iptv": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- README: security note on Xtream credentials over `http://`.\n\nNo version bump: nothing users install changes."
+ },
+ "ha-light-card": {
+  "bump": "1.0.7",
+  "title": "fix: apply the november review fixes (1.0.7)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-liquid-glass": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n\nNo version bump: nothing users install changes."
+ },
+ "ha-mailbox-card": {
+  "bump": "1.0.4",
+  "title": "fix: apply the november review fixes (1.0.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards."
+ },
+ "ha-maintenance": {
+  "bump": "0.5.5",
+  "title": "fix: apply the november review fixes (0.5.5)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- Illustrated header (card and panel): the ground bar is 10 px thick and the warning colour is the theme's `--warning-color` (fallback `#ffa600`), like on the other ha-* cards."
+ },
+ "ha-matter-card": {
+  "bump": "1.2.4",
+  "title": "fix: apply the november review fixes (1.2.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-meal-card": {
+  "bump": "1.1.2",
+  "title": "fix: apply the november review fixes (1.1.2)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards."
+ },
+ "ha-media-card": {
+  "bump": "1.8.1",
+  "title": "fix: apply the november review fixes (1.8.1)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-media-server-card": {
+  "bump": "1.0.4",
+  "title": "fix: apply the november review fixes (1.0.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Counters: neutral tile background, the colour stays on the icon and the figures (card charter)."
+ },
+ "ha-mower-card": {
+  "bump": "1.5.7",
+  "title": "fix: apply the november review fixes (1.5.7)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- README: the Marketplace section names the dashboard resource (`/local/community/\u2026`).\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-nas-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- README: the Marketplace section names the dashboard resource (`/local/community/\u2026`).\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-neutral": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n\nNo version bump: nothing users install changes."
+ },
+ "ha-notify-hub": {
+  "bump": "0.10.1",
+  "title": "fix: apply the november review fixes (0.10.1)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- Illustrated header (card and panel): the ground bar is 10 px thick and the warning colour is the theme's `--warning-color` (fallback `#ffa600`), like on the other ha-* cards."
+ },
+ "ha-opening-card": {
+  "bump": "1.0.5",
+  "title": "fix: apply the november review fixes (1.0.5)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Tiles have the 10 px corner radius shared by the ha-* cards."
+ },
+ "ha-orange-internet-on-the-move": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- README shows the Vehicle card captures from ha-vehicle-card instead of copies that could drift.\n\nNo version bump: nothing users install changes."
+ },
+ "ha-parcel": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-pc-card": {
+  "bump": "1.0.5",
+  "title": "fix: apply the november review fixes (1.0.5)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards."
+ },
+ "ha-pet-card": {
+  "bump": "1.3.6",
+  "title": "fix: apply the november review fixes (1.3.6)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- README: the Marketplace section names the dashboard resource (`/local/community/\u2026`).\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-pool-card": {
+  "bump": "1.6.5",
+  "title": "fix: apply the november review fixes (1.6.5)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-power-device-card": {
+  "bump": "1.3.4",
+  "title": "fix: apply the november review fixes (1.3.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- Tests: the full-card test pins the clock in the afternoon (it failed between midnight and 05:30)."
+ },
+ "ha-presence-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- README: the Marketplace section names the dashboard resource (`/local/community/\u2026`).\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-printer-scanner-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-pronote-card": {
+  "bump": "1.5.4",
+  "title": "fix: apply the november review fixes (1.5.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-proxmox": {
+  "bump": "1.7.2",
+  "title": "fix: apply the november review fixes (1.7.2)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- Panel: the links to the Proxmox web interface only open http(s) addresses."
+ },
+ "ha-public-transport": {
+  "bump": "1.7.5",
+  "title": "fix: apply the november review fixes (1.7.5)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-rain-card": {
+  "bump": "1.2.6",
+  "title": "fix: apply the november review fixes (1.2.6)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-remote-card": {
+  "bump": "1.2.4",
+  "title": "fix: apply the november review fixes (1.2.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-renault-picture": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- README shows the Vehicle card captures from ha-vehicle-card instead of copies that could drift.\n\nNo version bump: nothing users install changes."
+ },
+ "ha-reverse-proxy": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-room-card": {
+  "bump": "2.3.2",
+  "title": "fix: apply the november review fixes (2.3.2)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- Comments describe the current night rule (the HA theme alone, no `sun.sun`)."
+ },
+ "ha-router-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- README: the Marketplace section names the dashboard resource (`/local/community/\u2026`).\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-safety-card": {
+  "bump": "1.5.4",
+  "title": "fix: apply the november review fixes (1.5.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- Dead code inherited from the light cards removed (`hide_when_off`, `only_on`, the toggle base card): nothing changes for users."
+ },
+ "ha-saint-of-the-day": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-scene-card": {
+  "bump": "1.2.6",
+  "title": "fix: apply the november review fixes (1.2.6)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-scheduler-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-seedbox-card": {
+  "bump": "1.1.6",
+  "title": "fix: apply the november review fixes (1.1.6)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- README: the Marketplace section names the dashboard resource (`/local/community/\u2026`).\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-sky-card": {
+  "bump": "1.2.5",
+  "title": "fix: apply the november review fixes (1.2.5)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-smart-appliance-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-smart-comfort": {
+  "bump": "2.4.1",
+  "title": "fix: apply the november review fixes (2.4.1)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-smartlock-card": {
+  "bump": "1.12.6",
+  "title": "fix: apply the november review fixes (1.12.6)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- README: the Marketplace section names the dashboard resource (`/local/community/\u2026`).\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-solar-forecast-card": {
+  "bump": "1.0.5",
+  "title": "fix: apply the november review fixes (1.0.5)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards."
+ },
+ "ha-solar-roof-card": {
+  "bump": "1.1.1",
+  "title": "fix: apply the november review fixes (1.1.1)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards."
+ },
+ "ha-solar-router-card": {
+  "bump": "1.0.4",
+  "title": "fix: apply the november review fixes (1.0.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards."
+ },
+ "ha-speedtest-card": {
+  "bump": "1.3.4",
+  "title": "fix: apply the november review fixes (1.3.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-sports-card": {
+  "bump": "1.0.4",
+  "title": "fix: apply the november review fixes (1.0.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards."
+ },
+ "ha-stock-card": {
+  "bump": "1.3.4",
+  "title": "fix: apply the november review fixes (1.3.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- README: the Marketplace section names the dashboard resource (`/local/community/\u2026`).\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-switch-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- README: the Marketplace section names the dashboard resource (`/local/community/\u2026`).\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-system-hub": {
+  "bump": "3.15.3",
+  "title": "fix: apply the november review fixes (3.15.3)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-tank-card": {
+  "bump": "1.0.4",
+  "title": "fix: apply the november review fixes (1.0.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards."
+ },
+ "ha-tapo": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- README shows the Camera card captures from ha-camera instead of copies that could drift.\n\nNo version bump: nothing users install changes."
+ },
+ "ha-tempo-card": {
+  "bump": "1.1.7",
+  "title": "fix: apply the november review fixes (1.1.7)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-timer-card": {
+  "bump": "1.2.7",
+  "title": "fix: apply the november review fixes (1.2.7)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-todo-card": {
+  "bump": "1.5.4",
+  "title": "fix: apply the november review fixes (1.5.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-tracker-card": {
+  "bump": "1.2.6",
+  "title": "fix: apply the november review fixes (1.2.6)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- Items away, with a low battery or not seen: the tile background stays neutral, the tinted icon, border and state show it (card charter)."
+ },
+ "ha-train-board-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-ups-card": {
+  "bump": "1.1.6",
+  "title": "fix: apply the november review fixes (1.1.6)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-uptime-card": {
+  "bump": "1.3.4",
+  "title": "fix: apply the november review fixes (1.3.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-utility-meter-card": {
+  "bump": "1.4.2",
+  "title": "fix: apply the november review fixes (1.4.2)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-uv-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-vacuum-card": {
+  "bump": "2.20.1",
+  "title": "fix: apply the november review fixes (2.20.1)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-vacuum-map": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-vehicle-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-vehicle-consumption": {
+  "bump": "1.10.5",
+  "title": "fix: apply the november review fixes (1.10.5)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- The OK level uses the theme's success colour (green) instead of the primary colour, like on the other ha-* cards."
+ },
+ "ha-vivarium-card": {
+  "bump": "1.0.7",
+  "title": "fix: apply the november review fixes (1.0.7)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-wall-panel": {
+  "bump": "1.2.2",
+  "title": "fix: apply the november review fixes (1.2.2)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Loading the card twice (two resources) no longer throws: its elements and picker entry are registered once.\n- Comments describe the current night rule (the HA theme alone, no `sun.sun`)."
+ },
+ "ha-waste-card": {
+  "bump": "1.2.6",
+  "title": "fix: apply the november review fixes (1.2.6)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-water-heater-card": {
+  "bump": "1.4.5",
+  "title": "fix: apply the november review fixes (1.4.5)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-water-pump-card": {
+  "bump": "1.0.7",
+  "title": "fix: apply the november review fixes (1.0.7)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-weather-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- README: the Marketplace section names the dashboard resource (`/local/community/\u2026`).\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- README: the animation GIFs have a bounded width.\n\nNo version bump: nothing users install changes."
+ },
+ "ha-wero-card": {
+  "bump": "1.14.6",
+  "title": "fix: apply the november review fixes (1.14.6)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- README: the Marketplace section names the dashboard resource (`/local/community/\u2026`).\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n- Mini card: back to the compact view when it leaves the page (another view, a conditional card hidden), like the other mini cards."
+ },
+ "ha-wifi-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-zigbee-card": {
+  "bump": "1.2.5",
+  "title": "fix: apply the november review fixes (1.2.5)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit)."
+ },
+ "ha-zlinky-card": {
+  "bump": null,
+  "title": "chore: apply the november review fixes",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).\n\nNo version bump: nothing users install changes."
+ },
+ "ha-zwave-card": {
+  "bump": "1.1.4",
+  "title": "fix: apply the november review fixes (1.1.4)",
+  "body": "Fixes from the review of the ha-* repositories (juju35/ha-review).\n\n- `SECURITY.md`: how to report a vulnerability privately.\n- Tiles have the 10 px corner radius shared by the ha-* cards."
+ }
+}

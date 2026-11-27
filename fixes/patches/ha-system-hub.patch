@@ -1,0 +1,232 @@
+From 301a8abebba3a74445ec2be65f886d8d6c52a788 Mon Sep 17 00:00:00 2001
+From: juju35 <julienstephan29@gmail.com>
+Date: Fri, 27 Nov 2026 04:16:09 +0100
+Subject: [PATCH] fix: apply the november review fixes (3.15.3)
+
+Fixes from the review of the ha-* repositories (juju35/ha-review).
+
+- `SECURITY.md`: how to report a vulnerability privately.
+- Tiles have the 10 px corner radius shared by the ha-* cards.
+- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01F4sAn1x21MmgHHeW1MLKJ5
+---
+ .pre-commit-config.yaml                    |  4 ++--
+ CHANGELOG.md                               |  5 +++++
+ SECURITY.md                                | 17 +++++++++++++++++
+ biome.json                                 |  2 +-
+ custom_components/system_hub/const.py      |  2 +-
+ custom_components/system_hub/manifest.json |  2 +-
+ src/battery-monitor-card/core.js           |  2 +-
+ src/git-sync-card/core.js                  |  2 +-
+ src/integration-watchdog-card/core.js      |  2 +-
+ src/marketplace-refresh-card/core.js       |  2 +-
+ src/orphan-entities-card/core.js           |  2 +-
+ src/security-card/core.js                  |  2 +-
+ src/system-hub-card/core.js                |  2 +-
+ src/system-hub-panel/banner-style.js       |  2 +-
+ src/system-hub-panel/core.js               |  2 +-
+ 15 files changed, 36 insertions(+), 14 deletions(-)
+ create mode 100644 SECURITY.md
+
+diff --git a/.pre-commit-config.yaml b/.pre-commit-config.yaml
+index e501ff3..dfbfed3 100644
+--- a/.pre-commit-config.yaml
++++ b/.pre-commit-config.yaml
+@@ -23,10 +23,10 @@ repos:
+         args: [--fix]
+       - id: ruff-format
+   - repo: https://github.com/biomejs/pre-commit
+-    rev: "v2.6.6"
++    rev: "v2.6.8"
+     hooks:
+       - id: biome-check
+-        additional_dependencies: ["@biomejs/biome@2.6.6"]
++        additional_dependencies: ["@biomejs/biome@2.6.8"]
+   - repo: local
+     hooks:
+       - id: js-syntax
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index 4473d74..0068435 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,10 @@
+ # Changelog
+ 
++## 3.15.3 - 2026-11-27
++
++### Fixes
++- Tiles have the 10 px corner radius shared by the ha-* cards.
++
+ ## 3.15.2 - 2026-11-25
+ 
+ ### Fixes
+diff --git a/SECURITY.md b/SECURITY.md
+new file mode 100644
+index 0000000..00ed2ac
+--- /dev/null
++++ b/SECURITY.md
+@@ -0,0 +1,17 @@
++# Security policy
++
++## Reporting a vulnerability
++
++Please **do not open a public issue** for a security problem.
++
++Report it privately with GitHub's
++[private vulnerability reporting](https://github.com/juju35/ha-system-hub/security/advisories/new)
++(Security tab → *Report a vulnerability*). Include what is affected, how to reproduce it and the
++version you use.
++
++You will get an answer within a few days. Once fixed, the fix ships in a release and the advisory
++is published with credit to the reporter, unless you prefer to stay anonymous.
++
++## Supported versions
++
++Only the latest release receives fixes. Update through the Home Assistant Marketplace.
+diff --git a/biome.json b/biome.json
+index 6bb9a0f..3a5bfcf 100644
+--- a/biome.json
++++ b/biome.json
+@@ -1,5 +1,5 @@
+ {
+-  "$schema": "https://biomejs.dev/schemas/2.6.6/schema.json",
++  "$schema": "https://biomejs.dev/schemas/2.6.8/schema.json",
+   "files": {
+     "includes": ["**/*.js", "**/*.mjs", "!**/dist", "!**/vendor", "!**/node_modules", "!**/*.min.js", "!custom_components/system_hub/frontend/system-hub-panel.js", "!custom_components/system_hub/frontend/cards"]
+   },
+diff --git a/custom_components/system_hub/const.py b/custom_components/system_hub/const.py
+index 261cc4f..7702727 100644
+--- a/custom_components/system_hub/const.py
++++ b/custom_components/system_hub/const.py
+@@ -6,7 +6,7 @@ from typing import Final
+ 
+ DOMAIN: Final = "system_hub"
+ # Same as manifest.json: the frontend URLs carry it, so that browsers load a new release.
+-VERSION: Final = "3.15.2"
++VERSION: Final = "3.15.3"
+ 
+ # Options: the modules turned on, then one dict of settings per module ({"watchdog": {...}}).
+ CONF_MODULES: Final = "modules"
+diff --git a/custom_components/system_hub/manifest.json b/custom_components/system_hub/manifest.json
+index 8813a80..c351e77 100644
+--- a/custom_components/system_hub/manifest.json
++++ b/custom_components/system_hub/manifest.json
+@@ -25,5 +25,5 @@
+   "issue_tracker": "https://github.com/juju35/ha-system-hub/issues",
+   "requirements": [],
+   "single_config_entry": true,
+-  "version": "3.15.2"
++  "version": "3.15.3"
+ }
+diff --git a/src/battery-monitor-card/core.js b/src/battery-monitor-card/core.js
+index 03ca26b..e7900c4 100644
+--- a/src/battery-monitor-card/core.js
++++ b/src/battery-monitor-card/core.js
+@@ -4,4 +4,4 @@
+  * Served and added to the dashboard resources by System Hub; the card types are those of Battery Monitor, so its
+  * dashboards keep working. https://github.com/juju35/ha-system-hub
+  */
+-export var BATTERY_MONITOR_CARD_VERSION = '2.11.0';
++export var BATTERY_MONITOR_CARD_VERSION = '3.15.3';
+diff --git a/src/git-sync-card/core.js b/src/git-sync-card/core.js
+index ddfa5f4..ee3ccf3 100644
+--- a/src/git-sync-card/core.js
++++ b/src/git-sync-card/core.js
+@@ -6,7 +6,7 @@
+  * integration, same card types: dashboards using it keep working.
+  * https://github.com/juju35/ha-system-hub
+  */
+-export var GIT_SYNC_CARD_VERSION = '2.11.0';
++export var GIT_SYNC_CARD_VERSION = '3.15.3';
+ // System Hub: its entities (platform system_hub, translation keys git_sync_*) and actions (system_hub.git_sync_*)
+ export var GS_DOMAIN = 'system_hub';
+ export var GS_PREFIX = 'git_sync_';
+diff --git a/src/integration-watchdog-card/core.js b/src/integration-watchdog-card/core.js
+index 7f557fe..19f271c 100644
+--- a/src/integration-watchdog-card/core.js
++++ b/src/integration-watchdog-card/core.js
+@@ -5,4 +5,4 @@
+  * Served and added to the dashboard resources by System Hub.
+  * https://github.com/juju35/ha-system-hub
+  */
+-export var INTEGRATION_WATCHDOG_CARD_VERSION = '2.11.0';
++export var INTEGRATION_WATCHDOG_CARD_VERSION = '3.15.3';
+diff --git a/src/marketplace-refresh-card/core.js b/src/marketplace-refresh-card/core.js
+index 8c71a72..dc04e99 100644
+--- a/src/marketplace-refresh-card/core.js
++++ b/src/marketplace-refresh-card/core.js
+@@ -6,7 +6,7 @@
+  */
+ // Requests left under which the card says the checks may wait for GitHub's limit to reset.
+ export const MR_RATE_LOW = 1500;
+-export var MARKETPLACE_REFRESH_CARD_VERSION = '2.11.0';
++export var MARKETPLACE_REFRESH_CARD_VERSION = '3.15.3';
+ // System Hub: its entities (platform system_hub, translation keys marketplace_*) and actions (system_hub.marketplace_*)
+ export var HR_DOMAIN = 'system_hub';
+ export var HR_PREFIX = 'marketplace_';
+diff --git a/src/orphan-entities-card/core.js b/src/orphan-entities-card/core.js
+index 2e14fc0..31ba997 100644
+--- a/src/orphan-entities-card/core.js
++++ b/src/orphan-entities-card/core.js
+@@ -5,6 +5,6 @@
+  * Served and added to the dashboard resources by System Hub (formerly bundled with Orphan Entities).
+  * https://github.com/juju35/ha-system-hub
+  */
+-export var ORPHAN_ENTITIES_CARD_VERSION = '2.11.0';
++export var ORPHAN_ENTITIES_CARD_VERSION = '3.15.3';
+ // The integration, its module and the prefix of the module's actions
+ export const OE_DOMAIN = 'system_hub';
+diff --git a/src/security-card/core.js b/src/security-card/core.js
+index cf555fa..bd0c763 100644
+--- a/src/security-card/core.js
++++ b/src/security-card/core.js
+@@ -5,4 +5,4 @@
+  * Served and added to the dashboard resources by System Hub.
+  * https://github.com/juju35/ha-system-hub
+  */
+-export var SECURITY_CARD_VERSION = '1.0.0';
++export var SECURITY_CARD_VERSION = '3.15.3';
+diff --git a/src/system-hub-card/core.js b/src/system-hub-card/core.js
+index 4cd8698..23cbab4 100644
+--- a/src/system-hub-card/core.js
++++ b/src/system-hub-card/core.js
+@@ -7,7 +7,7 @@
+ // unchanged. The status cards show the Status tab of the panel: they read it with the panel's own code (its module,
+ // without showing it), as the sidebar icon does, so the three always agree. Administrators only, as the panel.
+ 
+-export var SYSTEM_HUB_CARD_VERSION = '2.11.0';
++export var SYSTEM_HUB_CARD_VERSION = '3.15.3';
+ export var SH_CARD_MODULES = ['status', 'system', 'security', 'watchdog', 'marketplace', 'batteries', 'git_sync', 'automations', 'orphans'];
+ export var SH_MINI_MODULES = ['status', 'system', 'security', 'watchdog', 'batteries', 'git_sync', 'automations', 'orphans'];
+ export var SH_CARD_GROUPS = ['system', 'security', 'reliability', 'maintenance', 'devices'];
+diff --git a/src/system-hub-panel/banner-style.js b/src/system-hub-panel/banner-style.js
+index daf02e8..485af1d 100644
+--- a/src/system-hub-panel/banner-style.js
++++ b/src/system-hub-panel/banner-style.js
+@@ -69,7 +69,7 @@ export var SH_BANNER_STYLE = `
+     :host { --sh-sec: color-mix(in srgb, var(--primary-text-color) 6%, var(--card-background-color, #fff)); }
+     .shtop .shbody { padding:12px 16px 16px; display:flex; flex-direction:column; gap:12px; }
+     .tiles { gap:8px; }
+-    .tile { background:var(--sh-sec); box-shadow:none; border:1px solid transparent; border-radius:12px; min-height:56px; box-sizing:border-box;
++    .tile { background:var(--sh-sec); box-shadow:none; border:1px solid transparent; border-radius: 10px; min-height:56px; box-sizing:border-box;
+             padding:8px 10px 8px 8px; gap:10px; }
+     .tile .avatar { width:40px; height:40px; --mdc-icon-size:22px; }
+     .tile:not(.warn):not(.bad):not(.info) .avatar { color:var(--primary-text-color); background:color-mix(in srgb, var(--secondary-text-color) 14%, transparent); }
+diff --git a/src/system-hub-panel/core.js b/src/system-hub-panel/core.js
+index cbd7082..2844082 100644
+--- a/src/system-hub-panel/core.js
++++ b/src/system-hub-panel/core.js
+@@ -13,7 +13,7 @@
+  *
+  * https://github.com/juju35/ha-system-hub
+  */
+-export var SYSTEM_HUB_PANEL_VERSION = '3.15.2';
++export var SYSTEM_HUB_PANEL_VERSION = '3.15.3';
+ export var SH_DOMAIN = 'system_hub';
+ export var SH_REFRESH_MS = 10000;
+ // A state that could not be read (Home Assistant restarting, connection lost): read again after
+-- 
+2.43.0
+

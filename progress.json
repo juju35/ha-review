@@ -6,7 +6,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-alarm-card": {
   "sha": "45b835b70d95c12c7521e96abb6418653efc5d94",
@@ -15,7 +16,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-assist-card": {
   "sha": "9f8243e29ca43c35f015ec498fb59f3007788d9f",
@@ -24,7 +26,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-backup-card": {
   "sha": "cbcc15020b113c70ead0daef5e72ee3235b8c7fe",
@@ -33,7 +36,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-calendar-card": {
   "sha": "1ba92a660faec323f39175ca686e8e397cddfe24",
@@ -42,7 +46,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-camera": {
   "sha": "340070831f58994e8537989895ca34f8d8120679",
@@ -51,7 +56,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-carburants-france": {
   "sha": "1ac1d400131f865dfac06e6ecc7c55bb1d2fc65f",
@@ -60,7 +66,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-certificate-card": {
   "sha": "d6c774b40b12ebb03569dbe84c5b1be05284cc0c",
@@ -69,7 +76,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-chores-card": {
   "sha": "279dcd9d79224e72ede9ed69c06dc85656415681",
@@ -78,7 +86,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-climate-air-card": {
   "sha": "ae315090f7a8cf37f76c7843b88b2bac04eb9a61",
@@ -87,7 +96,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-cloud-card": {
   "sha": "990f79749d6c3b593d183d19ee6cd664e720c7e7",
@@ -96,7 +106,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-console-card": {
   "sha": "a68fd2bf65794824e4a7eec6d3375cd72bed68c5",
@@ -105,7 +116,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-countdown-card": {
   "sha": "e3a6e6aaa58378adbe0c772620c6b0409b8743e9",
@@ -114,7 +126,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-cover-card": {
   "sha": "faf44fc66881adb14cd6a87a2727cb8abcc89812",
@@ -123,7 +136,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-dashboard-header": {
   "sha": "ba64ea03a6aff915ec5c9b5b660c888362f3878f",
@@ -132,7 +146,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-device-card": {
   "sha": "a79ba82a2494fe18fecdf7918ecd2424abdea7e9",
@@ -141,7 +156,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-dns-filter-card": {
   "sha": "207f090ab216b8250a290a1afd895a585b52b577",
@@ -150,7 +166,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-docker-card": {
   "sha": "8037b08a2b77d19a5b1262ddc0aa0ebe1d984a6a",
@@ -159,7 +176,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-doorbell-card": {
   "sha": "1bebfbd74fe5c4b22d9331d2934a477c10900c1b",
@@ -168,7 +186,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-ecowatt-card": {
   "sha": "1e5dc5a9603b5f8438ad06d8c723efccaf18311f",
@@ -177,7 +196,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-energy-card": {
   "sha": "4939f31325524b91ae3b7d391457ce7c398e15a7",
@@ -186,7 +206,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-energy-hub": {
   "sha": "1ee9e8c51143566d1f59205f6b83554ec1cd11da",
@@ -195,7 +216,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-ent-educartable": {
   "sha": "cc3c99f609c01ce36f86b917c5af7ba75fe5b718",
@@ -204,7 +226,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-ent-one": {
   "sha": "f93c88fd05a9c486e834be519467e81f1ea9248c",
@@ -213,7 +236,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-ent-skolengo": {
   "sha": "9ab280a00071e661858cd90c9438c6292cd5526b",
@@ -222,7 +246,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-ev-charger-card": {
   "sha": "778f92c9cc96e2b84992d32f9f4d1721c12cdeee",
@@ -231,7 +256,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-family-day-card": {
   "sha": "949fe5944ccb3752d18b1b842bcfad386f51541a",
@@ -240,7 +266,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-family-link": {
   "sha": "63b6060094bff4cd9bf15c72503f81d9b297b667",
@@ -249,7 +276,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-findmy": {
   "sha": "0e5c137fbe9062d9fee850933ea4d649673be686",
@@ -258,7 +286,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-flight-board-card": {
   "sha": "0231c89b2689d64b25a998cdb9804aeb41c4f1c8",
@@ -267,7 +296,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-garden-card": {
   "sha": "22cb93b2d1816cffbd5253aac11e1911bb07ca80",
@@ -276,7 +306,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-github": {
   "sha": "10956365d53faeeebe90061ae1e856d6564e53e8",
@@ -285,7 +316,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-heating-card": {
   "sha": "fda0d5023c23118ce20cb1ab2c985cc63298f800",
@@ -294,7 +326,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-house-rules": {
   "sha": "c4b501b2257106ff01b81938f716499616e15b31",
@@ -303,7 +336,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-hp": {
   "sha": "5b1e84beef37a8ae7c492133f05b8db751fce452",
@@ -312,7 +346,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-internet-box-card": {
   "sha": "dd35043ecd6cb1acb35effb51b04a5336071df1c",
@@ -321,7 +356,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-iptv": {
   "sha": "c37baeaad4c4ff5fe5f6fec973dee2f80b9dbeb9",
@@ -330,7 +366,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-light-card": {
   "sha": "5ba3fc665d5156904de38e5287b4144ad4642bec",
@@ -339,7 +376,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-liquid-glass": {
   "sha": "4f5048c481991f63733be659f93c17beba66b766",
@@ -348,7 +386,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-mailbox-card": {
   "sha": "9e1df4125b26e9eacc386bec33f6d8a773efbfff",
@@ -357,7 +396,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-maintenance": {
   "sha": "bea3c3c6844f38fffd8aed1aa39206aad75b0438",
@@ -366,7 +406,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-matter-card": {
   "sha": "45d7d58aa72c9482283f64a3fee9619f588f49e4",
@@ -375,7 +416,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-meal-card": {
   "sha": "d6ae27ccc92fdd70d0442ab251ddc8b50909c763",
@@ -384,7 +426,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-media-card": {
   "sha": "dc675d6145fe8315396eecb619ad5fbc54910e11",
@@ -393,7 +436,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-media-server-card": {
   "sha": "8a1e03e424d1618b3be1fccb70578e1937ea8ddc",
@@ -402,7 +446,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-mower-card": {
   "sha": "daf3d11851ac945159c8ceb40b1f315958a86c50",
@@ -411,7 +456,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-nas-card": {
   "sha": "0cc5a6e78c7feb19901450c2c991cc07375fe5a9",
@@ -420,7 +466,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-neutral": {
   "sha": "b81531ae51fb94a0624f949279db6e0e6da6da29",
@@ -429,7 +476,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-notify-hub": {
   "sha": "2b9d23b265df48eabfc01e50886e17c562b10a16",
@@ -438,7 +486,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-opening-card": {
   "sha": "fc9403beac8bb48025d9efa271c66624739c6fd0",
@@ -447,7 +496,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-orange-internet-on-the-move": {
   "sha": "3e1d045263562e8d917157a3bfd20021a79cf3f7",
@@ -456,7 +506,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-parcel": {
   "sha": "537943caeb514bdf8329258bd8766e43b9b3a9f0",
@@ -465,7 +516,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-pc-card": {
   "sha": "b7e8aae5a4d81fe49baaeea34671777336e0d928",
@@ -474,7 +526,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-pet-card": {
   "sha": "168fe47f8526a49de3b9c54ad54d9b636570cd12",
@@ -483,7 +536,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-pool-card": {
   "sha": "baa565caaf604e111b1b3ac70cdf64182d519e2e",
@@ -492,7 +546,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-power-device-card": {
   "sha": "509fae8a3500db6730c78e3b3677c20c859b527f",
@@ -501,7 +556,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-presence-card": {
   "sha": "56e40b704cf9471231a783e46e9e06cf0d8959c5",
@@ -510,7 +566,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-printer-scanner-card": {
   "sha": "9133d48c6ee1875fe9083b3ae29b99c65e6d25c0",
@@ -519,7 +576,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-pronote-card": {
   "sha": "843595cac5b628db8fb1df6f32c50590d565fd9e",
@@ -528,7 +586,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-proxmox": {
   "sha": "3d05e0700050f558123d69b775b3f2b79cae47d9",
@@ -537,7 +596,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-public-transport": {
   "sha": "825b01dee221855ad7af754f832f34ceec2598d5",
@@ -546,7 +606,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-rain-card": {
   "sha": "6c14260afe322d20655bbf03f6335d7a5ef974c3",
@@ -555,7 +616,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-remote-card": {
   "sha": "ea8493f4acdeabf0602d10cfb3b28c7a00504767",
@@ -564,7 +626,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-renault-picture": {
   "sha": "b7934dd2f77f3dbc424f3341ba2b85c99e52a91d",
@@ -573,7 +636,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-reverse-proxy": {
   "sha": "8e73a4c0e2ab65bd4208716c5546c3dfdd98bbd5",
@@ -582,7 +646,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-room-card": {
   "sha": "c48e73b564fa11d34ea8e10200297058cdfecad1",
@@ -591,7 +656,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-router-card": {
   "sha": "9179da2aa3b3d6adb42adf3b2a58bcdc398a21b7",
@@ -600,7 +666,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-safety-card": {
   "sha": "26db83aa25d78e54550e94e4dd60aad73176714e",
@@ -609,7 +676,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-saint-of-the-day": {
   "sha": "ef548b24c7315f0083003d9bc5716b3be8d8dc1b",
@@ -618,7 +686,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-scene-card": {
   "sha": "e6491b52e35a676563ae9cf60f7bf3a124af6b35",
@@ -627,7 +696,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-scheduler-card": {
   "sha": "dbd878718efe45c78ba5aedf65187fdbad3ad678",
@@ -636,7 +706,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-seedbox-card": {
   "sha": "c1c98167a7be72fda1b914c8cff35565fe535c8b",
@@ -645,7 +716,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-sky-card": {
   "sha": "d859354dd70a5eb59ba6f3d98ba7ed2e60391768",
@@ -654,7 +726,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-smart-appliance-card": {
   "sha": "f7bae01ef776e9752ee73f842eb9c12e3a77eeee",
@@ -663,7 +736,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-smart-comfort": {
   "sha": "028c5c6ba7dd6a52244095929d7fb60588eb8af1",
@@ -672,7 +746,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-smartlock-card": {
   "sha": "11c6fb5bd56ed7782487d4c4dba14df955a00e00",
@@ -681,7 +756,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-solar-forecast-card": {
   "sha": "642ab45ec30f5dc30c31a8906aed5a4f6fcd57d2",
@@ -690,7 +766,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-solar-roof-card": {
   "sha": "8c4d5215212b845686af0aa07c3c75b7ac9c64ae",
@@ -699,7 +776,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-solar-router-card": {
   "sha": "db95134c3ec15d9e46d79fbb6b012be68b5d639c",
@@ -708,7 +786,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-speedtest-card": {
   "sha": "dfc3d685496ef9425dd5c95a17b71ba3f0997bf7",
@@ -717,7 +796,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-sports-card": {
   "sha": "0ae1a195f61c146a7a4d305d4d019c555e4e0f84",
@@ -726,7 +806,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-stock-card": {
   "sha": "1dc5339dc99eaa92ecd5091dc13e7db2978806f0",
@@ -735,7 +816,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-switch-card": {
   "sha": "7675e1d6f7fe29f1a280e3c3def64df69642331d",
@@ -744,7 +826,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-system-hub": {
   "sha": "37171b27b97771b4acf73ee8e0150979399a3f45",
@@ -753,7 +836,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-tank-card": {
   "sha": "7cf64e399c12d1935400cad7c8744765e39f09f8",
@@ -762,7 +846,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-tapo": {
   "sha": "436c6fed3815b4858df304bd4c75bd3114c688a6",
@@ -771,7 +856,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-tempo-card": {
   "sha": "bf0089a5138a0d83621cc48c71751231702f08bc",
@@ -780,7 +866,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-timer-card": {
   "sha": "6545919f0b367cd95ca8855b4d28fcadedfb9635",
@@ -789,7 +876,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-todo-card": {
   "sha": "7dfef30c23e633d29fb800018ae9eeaeaf0cef25",
@@ -798,7 +886,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-tracker-card": {
   "sha": "1c25ab83f4a235c7ce0f148aa1491e1b52b58383",
@@ -807,7 +896,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-train-board-card": {
   "sha": "ceda20b6a2a68b29203e54b72c45fcc041461dc9",
@@ -816,7 +906,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-ups-card": {
   "sha": "0d1fbadce8e8e4023d66dd64fbcc2d4a1467b57d",
@@ -825,7 +916,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-uptime-card": {
   "sha": "c7c1324524a8a1232f87ddd2db54e2a064695543",
@@ -834,7 +926,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-utility-meter-card": {
   "sha": "208a1e52726ba6f83a676e04b6e437fcfdf2bcaa",
@@ -843,7 +936,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-uv-card": {
   "sha": "46ff7070d98c79f9c926af83c738e252c3eecfeb",
@@ -852,7 +946,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-vacuum-card": {
   "sha": "7c5ec60434ea6b1f0f832a3606d1099ff3694088",
@@ -861,7 +956,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-vacuum-map": {
   "sha": "1682fe1852d4dcce31c9657475b2c3d9ca79a919",
@@ -870,7 +966,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-vehicle-card": {
   "sha": "122640d83413ea2e7d1206ae4d2d2c08519a273b",
@@ -879,7 +976,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-vehicle-consumption": {
   "sha": "b30578a171724166e7e6428b7f9570658a39e999",
@@ -888,7 +986,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-vivarium-card": {
   "sha": "ba6456a6fe08f388e5d6aec91fdf95095b87e7a3",
@@ -897,7 +996,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-wall-panel": {
   "sha": "9a0eb51da018b7c3b8bcb5f4a3f05bbd2511b714",
@@ -906,7 +1006,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-waste-card": {
   "sha": "3849e1619c16a8ae0d63a71417910ea7a8cacde3",
@@ -915,7 +1016,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-water-heater-card": {
   "sha": "ea4bd52fc5a9f4bb91aedee54a5972806b070921",
@@ -924,7 +1026,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-water-pump-card": {
   "sha": "8c508d38c14fee9f50073549d14e8145e943470c",
@@ -933,7 +1036,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-weather-card": {
   "sha": "d77d20b6960cf4b9f1b195d91ffe47eabf2fbd99",
@@ -942,7 +1046,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-wero-card": {
   "sha": "b0b917c15636a9bed1da6224f099349a1e075772",
@@ -951,7 +1056,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "pr-opened"
  },
  "ha-wifi-card": {
   "sha": "1a1cfca4a59c623594007507979eecc5339a9df8",
@@ -960,7 +1066,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-zigbee-card": {
   "sha": "17e708c95f6546f888741d040f12c46ec81f7d34",
@@ -969,7 +1076,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-zlinky-card": {
   "sha": "975b465a45cd0bbc5df300195b05b5ebf7ebe15b",
@@ -978,7 +1086,8 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  },
  "ha-zwave-card": {
   "sha": "821847e7bdabd653e5fe2e861b9e53fe91032d3b",
@@ -987,6 +1096,7 @@
   "code_auto": "done",
   "manual": "done",
   "security": "done",
-  "scroll": "done"
+  "scroll": "done",
+  "fix": "patch-ready"
  }
 }

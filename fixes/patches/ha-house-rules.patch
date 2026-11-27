@@ -1,0 +1,178 @@
+From 53603ff75e124afb0c728206f3ff6601df05d786 Mon Sep 17 00:00:00 2001
+From: juju35 <julienstephan29@gmail.com>
+Date: Fri, 27 Nov 2026 04:16:03 +0100
+Subject: [PATCH] fix: apply the november review fixes (1.8.8)
+
+Fixes from the review of the ha-* repositories (juju35/ha-review).
+
+- `SECURITY.md`: how to report a vulnerability privately.
+- Tiles have the 10 px corner radius shared by the ha-* cards.
+- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).
+- Illustrated header (cards and panel): the ground bar is 10 px thick, like on the other ha-* cards.
+- README: which panel actions are for administrators, which for every user.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01F4sAn1x21MmgHHeW1MLKJ5
+---
+ CHANGELOG.md                                |  6 ++++++
+ README.md                                   |  2 ++
+ SECURITY.md                                 | 17 +++++++++++++++++
+ biome.json                                  |  2 +-
+ custom_components/house_rules/manifest.json |  2 +-
+ src/house-rules-cards/core.js               |  2 +-
+ src/house-rules-cards/styles.js             |  6 +++---
+ src/house-rules-panel/constants.js          |  2 +-
+ src/house-rules-panel/styles.js             |  6 +++---
+ 9 files changed, 35 insertions(+), 10 deletions(-)
+ create mode 100644 SECURITY.md
+
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index 8b0a3ef..caa82ae 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,11 @@
+ # Changelog
+ 
++## 1.8.8 - 2026-11-27
++
++### Fixes
++- Tiles have the 10 px corner radius shared by the ha-* cards.
++- Illustrated header (cards and panel): the ground bar is 10 px thick, like on the other ha-* cards.
++
+ ## 1.8.7 - 2026-11-25
+ 
+ ### Fixes
+diff --git a/README.md b/README.md
+index 1d1a0fa..7a15721 100644
+--- a/README.md
++++ b/README.md
+@@ -128,6 +128,8 @@ The cards are added to the dashboard resources automatically (`/house_rules_stat
+ | YAML | The whole `house_rules.yaml`, as written, editable: saving checks the YAML and every rule first, keeps a `.bak`, refuses a file changed meanwhile and restarts only the changed rules. Without the file: the stored configuration as YAML (read only, copy) |
+ | Settings | Configuration source (YAML / storage, reload, switch to YAML), global conditions, notification target, import |
+ 
++Editing rules, the YAML, the import and the settings is for administrators. **+15 min** and **turn off** on a running timer or a room lit by presence are open to every user, like the entities' own switches on a dashboard.
++
+ ### house_rules.yaml
+ 
+ Three sections: `settings`, `rooms` and `rules`. Each can be moved to its own file with `!include file.yaml`, and `rules` can be spread over a folder with `!include_dir_merge_list folder` (one list per file). `!secret` works anywhere.
+diff --git a/SECURITY.md b/SECURITY.md
+new file mode 100644
+index 0000000..f13189d
+--- /dev/null
++++ b/SECURITY.md
+@@ -0,0 +1,17 @@
++# Security policy
++
++## Reporting a vulnerability
++
++Please **do not open a public issue** for a security problem.
++
++Report it privately with GitHub's
++[private vulnerability reporting](https://github.com/juju35/ha-house-rules/security/advisories/new)
++(Security tab → *Report a vulnerability*). Include what is affected, how to reproduce it and the
++version you use.
++
++You will get an answer within a few days. Once fixed, the fix ships in a release and the advisory
++is published with credit to the reporter, unless you prefer to stay anonymous.
++
++## Supported versions
++
++Only the latest release receives fixes. Update through the Home Assistant Marketplace.
+diff --git a/biome.json b/biome.json
+index 49b91bf..e35f71e 100644
+--- a/biome.json
++++ b/biome.json
+@@ -1,5 +1,5 @@
+ {
+-  "$schema": "https://biomejs.dev/schemas/2.6.4/schema.json",
++  "$schema": "https://biomejs.dev/schemas/2.6.8/schema.json",
+   "files": {
+     "includes": [
+       "**/*.js",
+diff --git a/custom_components/house_rules/manifest.json b/custom_components/house_rules/manifest.json
+index 47b6094..cab4e31 100644
+--- a/custom_components/house_rules/manifest.json
++++ b/custom_components/house_rules/manifest.json
+@@ -11,5 +11,5 @@
+   "issue_tracker": "https://github.com/juju35/ha-house-rules/issues",
+   "requirements": ["ruamel.yaml>=0.18.6"],
+   "single_config_entry": true,
+-  "version": "1.8.7"
++  "version": "1.8.8"
+ }
+diff --git a/src/house-rules-cards/core.js b/src/house-rules-cards/core.js
+index 4a8b18a..d6f5ba7 100644
+--- a/src/house-rules-cards/core.js
++++ b/src/house-rules-cards/core.js
+@@ -1,6 +1,6 @@
+ import { HR_STRINGS } from "./i18n/strings.js";
+ 
+-export const HR_VERSION = '1.8.7';
++export const HR_VERSION = '1.8.8';
+ 
+ 
+ export function hrLang(hass) {
+diff --git a/src/house-rules-cards/styles.js b/src/house-rules-cards/styles.js
+index 72386df..33a94dc 100644
+--- a/src/house-rules-cards/styles.js
++++ b/src/house-rules-cards/styles.js
+@@ -13,8 +13,8 @@ export const HR_CSS = `
+   :host { display: block; }
+   ha-card { overflow: hidden; }
+   .hdr { position: relative; height: 90px; overflow: hidden; background: var(--hr-sky); }
+-  .hdr .hr-scene { position: absolute; right: 16px; bottom: 5px; }
+-  .hdr .ground { position: absolute; left: 0; right: 0; bottom: 0; height: 5px; background: var(--hr-ground); }
++  .hdr .hr-scene { position: absolute; right: 16px; bottom: 10px; }
++  .hdr .ground { position: absolute; left: 0; right: 0; bottom: 0; height: 10px; background: var(--hr-ground); }
+   .hdrc { position: absolute; left: 16px; top: 16px; right: 16px; display: flex; align-items: flex-start; gap: 12px; }
+   .hdr.has-zoom .hdrc { right: 36px; }
+   .zoom { all: unset; position: absolute; z-index: 2; top: 5px; right: 5px; cursor: pointer; width: 24px; height: 24px; border-radius: 50%; box-sizing: border-box;
+@@ -34,7 +34,7 @@ export const HR_CSS = `
+   .dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+   .body { padding: 16px; }
+   .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+-  .tile { position: relative; display: flex; gap: 12px; align-items: center; padding: 12px; border-radius: 12px; background: var(--hr-tile); min-width: 0; }
++  .tile { position: relative; display: flex; gap: 12px; align-items: center; padding: 12px; border-radius: 10px; background: var(--hr-tile); min-width: 0; }
+   .tname { font-weight: 700; font-size: 14px; line-height: 18px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--primary-text-color); }
+   .tstate { font-size: 12px; line-height: 16px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+   .badge { position: absolute; top: 8px; right: 8px; width: 9px; height: 9px; border-radius: 50%; box-shadow: 0 0 0 2px var(--hr-tile); }
+diff --git a/src/house-rules-panel/constants.js b/src/house-rules-panel/constants.js
+index baef6a0..18a4aa3 100644
+--- a/src/house-rules-panel/constants.js
++++ b/src/house-rules-panel/constants.js
+@@ -1,7 +1,7 @@
+ // House Rules sidebar panel (administrators): Activity, Rules, Rooms, Journal, Settings.
+ // Plain web component (ES modules in src/house-rules-panel/, assembled by scripts/build-frontend.mjs). Data: house_rules/subscribe; writes: house_rules/* WebSocket commands.
+ // The panel draws its own content (it does not embed the Lovelace cards).
+-export const HOUSE_RULES_PANEL_VERSION = '1.8.7';
++export const HOUSE_RULES_PANEL_VERSION = '1.8.8';
+ 
+ // Rooms tab: the sections of a room (as on Smart Comfort's Rooms tab), the entities each field takes, the list fields.
+ export const HRP_WEEKDAYS = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+diff --git a/src/house-rules-panel/styles.js b/src/house-rules-panel/styles.js
+index 029ff09..41adef3 100644
+--- a/src/house-rules-panel/styles.js
++++ b/src/house-rules-panel/styles.js
+@@ -4,8 +4,8 @@ export const HRP_CSS = `
+   :host { display: block; height: 100%; background: var(--primary-background-color); color: var(--primary-text-color); }
+   .page { min-height: 100%; }
+   .hdr { position: relative; height: 96px; overflow: hidden; background: var(--hr-sky); container-type: inline-size; }
+-  .hdr .hr-scene { position: absolute; right: 24px; bottom: 5px; opacity: .9; }
+-  .hdr .ground { position: absolute; left: 0; right: 0; bottom: 0; height: 5px; background: var(--hr-ground); }
++  .hdr .hr-scene { position: absolute; right: 24px; bottom: 10px; opacity: .9; }
++  .hdr .ground { position: absolute; left: 0; right: 0; bottom: 0; height: 10px; background: var(--hr-ground); }
+   .hdrc { position: absolute; left: 16px; right: 24px; top: 22px; display: flex; align-items: center; gap: 12px; }
+   .hdrc .row { margin-right: min(360px, 30cqw); flex-shrink: 0; }
+   .hdrc .grow > * { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@@ -69,7 +69,7 @@ export const HRP_CSS = `
+   .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(520px, 100%), 1fr)); gap: 20px; align-items: start; }
+   .grid2.tight { gap: 10px; }
+   .tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+-  .tile { position: relative; display: flex; gap: 12px; align-items: center; padding: 12px; border-radius: 12px; background: var(--hr-tile); min-width: 0; }
++  .tile { position: relative; display: flex; gap: 12px; align-items: center; padding: 12px; border-radius: 10px; background: var(--hr-tile); min-width: 0; }
+   .rrow { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 12px; background: var(--hr-tile); }
+   .rrow .grow { flex: 1; min-width: 0; }
+   .rrow .acts { display: flex; align-items: center; gap: 8px; flex: none; }
+-- 
+2.43.0
+

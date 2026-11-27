@@ -1,0 +1,382 @@
+From 99057202e8a553da59ddf19d3bc874e01da1e131 Mon Sep 17 00:00:00 2001
+From: juju35 <julienstephan29@gmail.com>
+Date: Fri, 27 Nov 2026 04:16:03 +0100
+Subject: [PATCH] fix: apply the november review fixes (1.2.9)
+
+Fixes from the review of the ha-* repositories (juju35/ha-review).
+
+- `SECURITY.md`: how to report a vulnerability privately.
+- Tiles have the 10 px corner radius shared by the ha-* cards.
+- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).
+- Screenshots named like every ha-* repo (light unsuffixed, `-dark` twins), light first in the README.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01F4sAn1x21MmgHHeW1MLKJ5
+---
+ .pre-commit-config.yaml                       |   4 +-
+ CHANGELOG.md                                  |   5 +++
+ README.md                                     |  40 +++++++++---------
+ SECURITY.md                                   |  17 ++++++++
+ biome.json                                    |   2 +-
+ custom_components/family_link/manifest.json   |   2 +-
+ .../{anim-bonus.gif => anim-bonus-dark.gif}   | Bin
+ .../{anim-bonus-light.gif => anim-bonus.gif}  | Bin
+ ...devices.gif => anim-mini-devices-dark.gif} | Bin
+ ...evices-light.gif => anim-mini-devices.gif} | Bin
+ .../{anim-phone.gif => anim-phone-dark.gif}   | Bin
+ .../{anim-phone-light.gif => anim-phone.gif}  | Bin
+ ...locked.gif => anim-tablet-locked-dark.gif} | Bin
+ ...ocked-light.gif => anim-tablet-locked.gif} | Bin
+ .../{card-bonus.png => card-bonus-dark.png}   | Bin
+ .../{card-bonus-light.png => card-bonus.png}  | Bin
+ screenshots/{card.png => card-dark.png}       | Bin
+ ...-emergency.png => card-emergency-dark.png} | Bin
+ ...emergency-light.png => card-emergency.png} | Bin
+ ...rd-location.png => card-location-dark.png} | Bin
+ ...d-location-light.png => card-location.png} | Bin
+ .../{card-school.png => card-school-dark.png} | Bin
+ ...{card-school-light.png => card-school.png} | Bin
+ ...locked.png => card-tablet-locked-dark.png} | Bin
+ ...ocked-light.png => card-tablet-locked.png} | Bin
+ screenshots/{card-light.png => card.png}      | Bin
+ .../{mini-card.png => mini-card-dark.png}     | Bin
+ ...devices.png => mini-card-devices-dark.png} | Bin
+ ...evices-light.png => mini-card-devices.png} | Bin
+ ...d-locked.png => mini-card-locked-dark.png} | Bin
+ ...-locked-light.png => mini-card-locked.png} | Bin
+ ...-card-zoom.png => mini-card-zoom-dark.png} | Bin
+ ...card-zoom-light.png => mini-card-zoom.png} | Bin
+ .../{mini-card-light.png => mini-card.png}    | Bin
+ scripts/screenshots.py                        |   2 +-
+ src/family-link-card/card-picker.js           |   2 +-
+ src/family-link-card/card.js                  |   2 +-
+ 37 files changed, 49 insertions(+), 27 deletions(-)
+ create mode 100644 SECURITY.md
+ rename screenshots/{anim-bonus.gif => anim-bonus-dark.gif} (100%)
+ rename screenshots/{anim-bonus-light.gif => anim-bonus.gif} (100%)
+ rename screenshots/{anim-mini-devices.gif => anim-mini-devices-dark.gif} (100%)
+ rename screenshots/{anim-mini-devices-light.gif => anim-mini-devices.gif} (100%)
+ rename screenshots/{anim-phone.gif => anim-phone-dark.gif} (100%)
+ rename screenshots/{anim-phone-light.gif => anim-phone.gif} (100%)
+ rename screenshots/{anim-tablet-locked.gif => anim-tablet-locked-dark.gif} (100%)
+ rename screenshots/{anim-tablet-locked-light.gif => anim-tablet-locked.gif} (100%)
+ rename screenshots/{card-bonus.png => card-bonus-dark.png} (100%)
+ rename screenshots/{card-bonus-light.png => card-bonus.png} (100%)
+ rename screenshots/{card.png => card-dark.png} (100%)
+ rename screenshots/{card-emergency.png => card-emergency-dark.png} (100%)
+ rename screenshots/{card-emergency-light.png => card-emergency.png} (100%)
+ rename screenshots/{card-location.png => card-location-dark.png} (100%)
+ rename screenshots/{card-location-light.png => card-location.png} (100%)
+ rename screenshots/{card-school.png => card-school-dark.png} (100%)
+ rename screenshots/{card-school-light.png => card-school.png} (100%)
+ rename screenshots/{card-tablet-locked.png => card-tablet-locked-dark.png} (100%)
+ rename screenshots/{card-tablet-locked-light.png => card-tablet-locked.png} (100%)
+ rename screenshots/{card-light.png => card.png} (100%)
+ rename screenshots/{mini-card.png => mini-card-dark.png} (100%)
+ rename screenshots/{mini-card-devices.png => mini-card-devices-dark.png} (100%)
+ rename screenshots/{mini-card-devices-light.png => mini-card-devices.png} (100%)
+ rename screenshots/{mini-card-locked.png => mini-card-locked-dark.png} (100%)
+ rename screenshots/{mini-card-locked-light.png => mini-card-locked.png} (100%)
+ rename screenshots/{mini-card-zoom.png => mini-card-zoom-dark.png} (100%)
+ rename screenshots/{mini-card-zoom-light.png => mini-card-zoom.png} (100%)
+ rename screenshots/{mini-card-light.png => mini-card.png} (100%)
+
+diff --git a/.pre-commit-config.yaml b/.pre-commit-config.yaml
+index 0d61e50..46fd2a4 100644
+--- a/.pre-commit-config.yaml
++++ b/.pre-commit-config.yaml
+@@ -23,10 +23,10 @@ repos:
+         args: [--fix]
+       - id: ruff-format
+   - repo: https://github.com/biomejs/pre-commit
+-    rev: "v2.6.6"
++    rev: "v2.6.8"
+     hooks:
+       - id: biome-check
+-        additional_dependencies: ["@biomejs/biome@2.6.6"]
++        additional_dependencies: ["@biomejs/biome@2.6.8"]
+   - repo: local
+     hooks:
+       - id: card-js-syntax
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index d288604..2752455 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,10 @@
+ # Changelog
+ 
++## 1.2.9 - 2026-11-27
++
++### Fixes
++- Tiles have the 10 px corner radius shared by the ha-* cards.
++
+ ## 1.2.8 - 2026-11-25
+ 
+ ### Fixes
+diff --git a/README.md b/README.md
+index 6fee845..f73adc7 100644
+--- a/README.md
++++ b/README.md
+@@ -338,46 +338,46 @@ A click on the location tile (or **Locate**) opens a popup at the top of the car
+ 
+ ### Animations
+ 
+-Each animation of the cards, in the dark and light themes.
++Each animation of the cards, in the light and dark themes.
+ 
+ **Phone**: the week's screen time rises with today's bar in the status color, the apps bob, a scan sweeps the screen, protection waves spread out and the shield pulses while the child is tracked; the location tile pings the last position.
+ 
+-| Dark | Light |
++| Light | Dark |
+ |---|---|
+-| <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/anim-phone.gif" alt="phone animation" width="360"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/anim-phone-light.gif" alt="phone animation, light" width="360"> |
++| <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/anim-phone.gif" alt="phone animation" width="360"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/anim-phone-dark.gif" alt="phone animation, dark" width="360"> |
+ 
+ **Locked tablet**: the screen dims, the padlock drops in and its shackle snaps shut, with the reason (locked by a parent, bedtime, school time, daily limit).
+ 
+-| Dark | Light |
++| Light | Dark |
+ |---|---|
+-| <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/anim-tablet-locked.gif" alt="locked tablet animation" width="360"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/anim-tablet-locked-light.gif" alt="locked tablet animation, light" width="360"> |
++| <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/anim-tablet-locked.gif" alt="locked tablet animation" width="360"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/anim-tablet-locked-dark.gif" alt="locked tablet animation, dark" width="360"> |
+ 
+ **Running bonus**: the band shines, its ring empties as the bonus runs out.
+ 
+-| Dark | Light |
++| Light | Dark |
+ |---|---|
+-| <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/anim-bonus.gif" alt="bonus animation" width="360"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/anim-bonus-light.gif" alt="bonus animation, light" width="360"> |
++| <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/anim-bonus.gif" alt="bonus animation" width="360"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/anim-bonus-dark.gif" alt="bonus animation, dark" width="360"> |
+ 
+ **Mini card with two devices**: each device fills up with the time used; a locked one shows its padlock.
+ 
+-| Dark | Light |
++| Light | Dark |
+ |---|---|
+-| <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/anim-mini-devices.gif" alt="mini card animation" width="300"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/anim-mini-devices-light.gif" alt="mini card animation, light" width="300"> |
++| <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/anim-mini-devices.gif" alt="mini card animation" width="300"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/anim-mini-devices-dark.gif" alt="mini card animation, dark" width="300"> |
+ 
+ ### Cards
+ 
+-| | Dark | Light |
++| | Light | Dark |
+ |---|---|---|
+-| Phone | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card.png" alt="card" width="320"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-light.png" alt="card, light" width="320"> |
+-| Locked tablet | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-tablet-locked.png" alt="locked tablet" width="320"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-tablet-locked-light.png" alt="locked tablet, light" width="320"> |
+-| Bonus running | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-bonus.png" alt="bonus" width="320"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-bonus-light.png" alt="bonus, light" width="320"> |
+-| Location popup | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-location.png" alt="location popup" width="320"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-location-light.png" alt="location popup, light" width="320"> |
+-| School mode (Pronote) | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-school.png" alt="school mode" width="320"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-school-light.png" alt="school mode, light" width="320"> |
+-| Emergency popup | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-emergency.png" alt="emergency popup" width="320"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-emergency-light.png" alt="emergency popup, light" width="320"> |
+-| Mini, one device | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/mini-card.png" alt="mini card" width="300"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/mini-card-light.png" alt="mini card, light" width="300"> |
+-| Mini, two devices | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/mini-card-devices.png" alt="mini card, devices" width="300"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/mini-card-devices-light.png" alt="mini card, devices, light" width="300"> |
+-| Mini, bedtime | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/mini-card-locked.png" alt="mini card, bedtime" width="300"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/mini-card-locked-light.png" alt="mini card, bedtime, light" width="300"> |
+-| Mini, expanded | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/mini-card-zoom.png" alt="mini card expanded to the full card" width="320"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/mini-card-zoom-light.png" alt="mini card expanded to the full card, light" width="320"> |
++| Phone | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card.png" alt="card" width="320"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-dark.png" alt="card, dark" width="320"> |
++| Locked tablet | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-tablet-locked.png" alt="locked tablet" width="320"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-tablet-locked-dark.png" alt="locked tablet, dark" width="320"> |
++| Bonus running | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-bonus.png" alt="bonus" width="320"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-bonus-dark.png" alt="bonus, dark" width="320"> |
++| Location popup | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-location.png" alt="location popup" width="320"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-location-dark.png" alt="location popup, dark" width="320"> |
++| School mode (Pronote) | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-school.png" alt="school mode" width="320"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-school-dark.png" alt="school mode, dark" width="320"> |
++| Emergency popup | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-emergency.png" alt="emergency popup" width="320"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/card-emergency-dark.png" alt="emergency popup, dark" width="320"> |
++| Mini, one device | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/mini-card.png" alt="mini card" width="300"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/mini-card-dark.png" alt="mini card, dark" width="300"> |
++| Mini, two devices | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/mini-card-devices.png" alt="mini card, devices" width="300"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/mini-card-devices-dark.png" alt="mini card, devices, dark" width="300"> |
++| Mini, bedtime | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/mini-card-locked.png" alt="mini card, bedtime" width="300"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/mini-card-locked-dark.png" alt="mini card, bedtime, dark" width="300"> |
++| Mini, expanded | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/mini-card-zoom.png" alt="mini card expanded to the full card" width="320"> | <img src="https://raw.githubusercontent.com/juju35/ha-family-link/main/screenshots/mini-card-zoom-dark.png" alt="mini card expanded to the full card, dark" width="320"> |
+ 
+ ## How it works
+ 
+diff --git a/SECURITY.md b/SECURITY.md
+new file mode 100644
+index 0000000..183f582
+--- /dev/null
++++ b/SECURITY.md
+@@ -0,0 +1,17 @@
++# Security policy
++
++## Reporting a vulnerability
++
++Please **do not open a public issue** for a security problem.
++
++Report it privately with GitHub's
++[private vulnerability reporting](https://github.com/juju35/ha-family-link/security/advisories/new)
++(Security tab → *Report a vulnerability*). Include what is affected, how to reproduce it and the
++version you use.
++
++You will get an answer within a few days. Once fixed, the fix ships in a release and the advisory
++is published with credit to the reporter, unless you prefer to stay anonymous.
++
++## Supported versions
++
++Only the latest release receives fixes. Update through the Home Assistant Marketplace.
+diff --git a/biome.json b/biome.json
+index 2a86650..9e911e7 100644
+--- a/biome.json
++++ b/biome.json
+@@ -1,5 +1,5 @@
+ {
+-  "$schema": "https://biomejs.dev/schemas/2.6.6/schema.json",
++  "$schema": "https://biomejs.dev/schemas/2.6.8/schema.json",
+   "files": {
+     "includes": ["**/*.js", "**/*.mjs", "!**/dist", "!**/vendor", "!**/node_modules", "!**/*.min.js"]
+   },
+diff --git a/custom_components/family_link/manifest.json b/custom_components/family_link/manifest.json
+index 3e420d3..c43cc11 100644
+--- a/custom_components/family_link/manifest.json
++++ b/custom_components/family_link/manifest.json
+@@ -11,5 +11,5 @@
+   "iot_class": "cloud_polling",
+   "issue_tracker": "https://github.com/juju35/ha-family-link/issues",
+   "requirements": [],
+-  "version": "1.2.8"
++  "version": "1.2.9"
+ }
+diff --git a/screenshots/anim-bonus.gif b/screenshots/anim-bonus-dark.gif
+similarity index 100%
+rename from screenshots/anim-bonus.gif
+rename to screenshots/anim-bonus-dark.gif
+diff --git a/screenshots/anim-bonus-light.gif b/screenshots/anim-bonus.gif
+similarity index 100%
+rename from screenshots/anim-bonus-light.gif
+rename to screenshots/anim-bonus.gif
+diff --git a/screenshots/anim-mini-devices.gif b/screenshots/anim-mini-devices-dark.gif
+similarity index 100%
+rename from screenshots/anim-mini-devices.gif
+rename to screenshots/anim-mini-devices-dark.gif
+diff --git a/screenshots/anim-mini-devices-light.gif b/screenshots/anim-mini-devices.gif
+similarity index 100%
+rename from screenshots/anim-mini-devices-light.gif
+rename to screenshots/anim-mini-devices.gif
+diff --git a/screenshots/anim-phone.gif b/screenshots/anim-phone-dark.gif
+similarity index 100%
+rename from screenshots/anim-phone.gif
+rename to screenshots/anim-phone-dark.gif
+diff --git a/screenshots/anim-phone-light.gif b/screenshots/anim-phone.gif
+similarity index 100%
+rename from screenshots/anim-phone-light.gif
+rename to screenshots/anim-phone.gif
+diff --git a/screenshots/anim-tablet-locked.gif b/screenshots/anim-tablet-locked-dark.gif
+similarity index 100%
+rename from screenshots/anim-tablet-locked.gif
+rename to screenshots/anim-tablet-locked-dark.gif
+diff --git a/screenshots/anim-tablet-locked-light.gif b/screenshots/anim-tablet-locked.gif
+similarity index 100%
+rename from screenshots/anim-tablet-locked-light.gif
+rename to screenshots/anim-tablet-locked.gif
+diff --git a/screenshots/card-bonus.png b/screenshots/card-bonus-dark.png
+similarity index 100%
+rename from screenshots/card-bonus.png
+rename to screenshots/card-bonus-dark.png
+diff --git a/screenshots/card-bonus-light.png b/screenshots/card-bonus.png
+similarity index 100%
+rename from screenshots/card-bonus-light.png
+rename to screenshots/card-bonus.png
+diff --git a/screenshots/card.png b/screenshots/card-dark.png
+similarity index 100%
+rename from screenshots/card.png
+rename to screenshots/card-dark.png
+diff --git a/screenshots/card-emergency.png b/screenshots/card-emergency-dark.png
+similarity index 100%
+rename from screenshots/card-emergency.png
+rename to screenshots/card-emergency-dark.png
+diff --git a/screenshots/card-emergency-light.png b/screenshots/card-emergency.png
+similarity index 100%
+rename from screenshots/card-emergency-light.png
+rename to screenshots/card-emergency.png
+diff --git a/screenshots/card-location.png b/screenshots/card-location-dark.png
+similarity index 100%
+rename from screenshots/card-location.png
+rename to screenshots/card-location-dark.png
+diff --git a/screenshots/card-location-light.png b/screenshots/card-location.png
+similarity index 100%
+rename from screenshots/card-location-light.png
+rename to screenshots/card-location.png
+diff --git a/screenshots/card-school.png b/screenshots/card-school-dark.png
+similarity index 100%
+rename from screenshots/card-school.png
+rename to screenshots/card-school-dark.png
+diff --git a/screenshots/card-school-light.png b/screenshots/card-school.png
+similarity index 100%
+rename from screenshots/card-school-light.png
+rename to screenshots/card-school.png
+diff --git a/screenshots/card-tablet-locked.png b/screenshots/card-tablet-locked-dark.png
+similarity index 100%
+rename from screenshots/card-tablet-locked.png
+rename to screenshots/card-tablet-locked-dark.png
+diff --git a/screenshots/card-tablet-locked-light.png b/screenshots/card-tablet-locked.png
+similarity index 100%
+rename from screenshots/card-tablet-locked-light.png
+rename to screenshots/card-tablet-locked.png
+diff --git a/screenshots/card-light.png b/screenshots/card.png
+similarity index 100%
+rename from screenshots/card-light.png
+rename to screenshots/card.png
+diff --git a/screenshots/mini-card.png b/screenshots/mini-card-dark.png
+similarity index 100%
+rename from screenshots/mini-card.png
+rename to screenshots/mini-card-dark.png
+diff --git a/screenshots/mini-card-devices.png b/screenshots/mini-card-devices-dark.png
+similarity index 100%
+rename from screenshots/mini-card-devices.png
+rename to screenshots/mini-card-devices-dark.png
+diff --git a/screenshots/mini-card-devices-light.png b/screenshots/mini-card-devices.png
+similarity index 100%
+rename from screenshots/mini-card-devices-light.png
+rename to screenshots/mini-card-devices.png
+diff --git a/screenshots/mini-card-locked.png b/screenshots/mini-card-locked-dark.png
+similarity index 100%
+rename from screenshots/mini-card-locked.png
+rename to screenshots/mini-card-locked-dark.png
+diff --git a/screenshots/mini-card-locked-light.png b/screenshots/mini-card-locked.png
+similarity index 100%
+rename from screenshots/mini-card-locked-light.png
+rename to screenshots/mini-card-locked.png
+diff --git a/screenshots/mini-card-zoom.png b/screenshots/mini-card-zoom-dark.png
+similarity index 100%
+rename from screenshots/mini-card-zoom.png
+rename to screenshots/mini-card-zoom-dark.png
+diff --git a/screenshots/mini-card-zoom-light.png b/screenshots/mini-card-zoom.png
+similarity index 100%
+rename from screenshots/mini-card-zoom-light.png
+rename to screenshots/mini-card-zoom.png
+diff --git a/screenshots/mini-card-light.png b/screenshots/mini-card.png
+similarity index 100%
+rename from screenshots/mini-card-light.png
+rename to screenshots/mini-card.png
+diff --git a/scripts/screenshots.py b/scripts/screenshots.py
+index 6cd6a30..30375cc 100644
+--- a/scripts/screenshots.py
++++ b/scripts/screenshots.py
+@@ -306,7 +306,7 @@ async def main() -> None:
+                     await page.locator("#wrap .zoom").click()
+                     await page.mouse.move(0, 0)
+                 card = await page.query_selector("#wrap")
+-                suffix = "" if theme == "dark" else "-light"
++                suffix = "" if theme == "light" else "-dark"
+                 if name in GIFS:
+                     frames = []
+                     for _ in range(GIF_FRAMES):
+diff --git a/src/family-link-card/card-picker.js b/src/family-link-card/card-picker.js
+index 4dec099..f33c57c 100644
+--- a/src/family-link-card/card-picker.js
++++ b/src/family-link-card/card-picker.js
+@@ -66,4 +66,4 @@ export function pickerDefine(tag, Card, options) {
+   return customElements.define(tag, lazy, options);
+ }
+ 
+-export var FAMILY_LINK_CARD_VERSION = '1.2.8';
++export var FAMILY_LINK_CARD_VERSION = '1.2.9';
+diff --git a/src/family-link-card/card.js b/src/family-link-card/card.js
+index 341773b..d107047 100644
+--- a/src/family-link-card/card.js
++++ b/src/family-link-card/card.js
+@@ -1007,7 +1007,7 @@ export class FamilyLinkCard extends HTMLElement {
+ 
+       /* Tiles, apps */
+       .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); grid-auto-flow: column; gap: 8px; }
+-      .tile { background: var(--secondary-background-color, rgba(127,127,127,.08)); border-radius: 12px; padding: 10px; display: flex; flex-direction: column; gap: 2px; min-width: 0; border: none; text-align: left; }
++      .tile { background: var(--secondary-background-color, rgba(127,127,127,.08)); border-radius: 10px; padding: 10px; display: flex; flex-direction: column; gap: 2px; min-width: 0; border: none; text-align: left; }
+       .tile.clickable { cursor: pointer; }
+       .tile small { font-size: 11px; color: var(--secondary-text-color); }
+       .tile b { font-size: 13px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+-- 
+2.43.0
+

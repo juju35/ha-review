@@ -1,0 +1,219 @@
+From e3aa25e1c24ad395832e2f4e11f095a6cb3321c5 Mon Sep 17 00:00:00 2001
+From: juju35 <julienstephan29@gmail.com>
+Date: Fri, 27 Nov 2026 04:16:03 +0100
+Subject: [PATCH] fix: apply the november review fixes (2.20.2)
+
+Fixes from the review of the ha-* repositories (juju35/ha-review).
+
+- `SECURITY.md`: how to report a vulnerability privately.
+- Tiles have the 10 px corner radius shared by the ha-* cards.
+- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).
+- Panel, Branches tab: the pull-request link only opens a github.com address.
+- The `create_repository` action has its icon (`icons.json`).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01F4sAn1x21MmgHHeW1MLKJ5
+---
+ .pre-commit-config.yaml                     |  4 ++--
+ CHANGELOG.md                                |  7 +++++++
+ SECURITY.md                                 | 17 +++++++++++++++++
+ biome.json                                  |  2 +-
+ custom_components/github_card/const.py      |  2 +-
+ custom_components/github_card/icons.json    |  5 +++++
+ custom_components/github_card/manifest.json |  2 +-
+ package-lock.json                           |  4 ++--
+ package.json                                |  2 +-
+ src/github-card/core.js                     |  2 +-
+ src/github-panel/core.js                    |  2 +-
+ src/github-panel/panel.js                   |  5 +++--
+ 12 files changed, 42 insertions(+), 12 deletions(-)
+ create mode 100644 SECURITY.md
+ create mode 100644 custom_components/github_card/icons.json
+
+diff --git a/.pre-commit-config.yaml b/.pre-commit-config.yaml
+index 504d6a5..cdad67c 100644
+--- a/.pre-commit-config.yaml
++++ b/.pre-commit-config.yaml
+@@ -23,10 +23,10 @@ repos:
+         args: [--fix]
+       - id: ruff-format
+   - repo: https://github.com/biomejs/pre-commit
+-    rev: "v2.6.4"
++    rev: "v2.6.8"
+     hooks:
+       - id: biome-check
+-        additional_dependencies: ["@biomejs/biome@2.6.4"]
++        additional_dependencies: ["@biomejs/biome@2.6.8"]
+   - repo: local
+     hooks:
+       - id: card-js-syntax
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index 0bba7ec..be3b096 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,12 @@
+ # Changelog
+ 
++## 2.20.2 - 2026-11-27
++
++### Fixes
++- Tiles have the 10 px corner radius shared by the ha-* cards.
++- Panel, Branches tab: the pull-request link only opens a github.com address.
++- The `create_repository` action has its icon (`icons.json`).
++
+ ## 2.20.1 - 2026-11-27
+ 
+ ### Fixes
+diff --git a/SECURITY.md b/SECURITY.md
+new file mode 100644
+index 0000000..42830cd
+--- /dev/null
++++ b/SECURITY.md
+@@ -0,0 +1,17 @@
++# Security policy
++
++## Reporting a vulnerability
++
++Please **do not open a public issue** for a security problem.
++
++Report it privately with GitHub's
++[private vulnerability reporting](https://github.com/juju35/ha-github/security/advisories/new)
++(Security tab → *Report a vulnerability*). Include what is affected, how to reproduce it and the
++version you use.
++
++You will get an answer within a few days. Once fixed, the fix ships in a release and the advisory
++is published with credit to the reporter, unless you prefer to stay anonymous.
++
++## Supported versions
++
++Only the latest release receives fixes. Update through the Home Assistant Marketplace.
+diff --git a/biome.json b/biome.json
+index 5f1461c..145d340 100644
+--- a/biome.json
++++ b/biome.json
+@@ -1,5 +1,5 @@
+ {
+-  "$schema": "https://biomejs.dev/schemas/2.6.4/schema.json",
++  "$schema": "https://biomejs.dev/schemas/2.6.8/schema.json",
+   "files": {
+     "includes": ["**/*.js", "**/*.mjs", "!**/dist", "!**/vendor", "!**/node_modules", "!**/*.min.js", "!custom_components/github_card/frontend/github-card.js", "!custom_components/github_card/frontend/github-panel.js"]
+   },
+diff --git a/custom_components/github_card/const.py b/custom_components/github_card/const.py
+index 5dc7def..ac89bbc 100644
+--- a/custom_components/github_card/const.py
++++ b/custom_components/github_card/const.py
+@@ -1,7 +1,7 @@
+ """Constants for the GitHub Card integration."""
+ 
+ DOMAIN = "github_card"
+-VERSION = "2.20.1"
++VERSION = "2.20.2"
+ 
+ # The core GitHub integration, whose repositories the panel follows and unfollows
+ GITHUB_DOMAIN = "github"
+diff --git a/custom_components/github_card/icons.json b/custom_components/github_card/icons.json
+new file mode 100644
+index 0000000..47eabbd
+--- /dev/null
++++ b/custom_components/github_card/icons.json
+@@ -0,0 +1,5 @@
++{
++  "services": {
++    "create_repository": { "service": "mdi:source-repository" }
++  }
++}
+diff --git a/custom_components/github_card/manifest.json b/custom_components/github_card/manifest.json
+index b29b983..185c144 100644
+--- a/custom_components/github_card/manifest.json
++++ b/custom_components/github_card/manifest.json
+@@ -11,5 +11,5 @@
+   "issue_tracker": "https://github.com/juju35/ha-github/issues",
+   "requirements": [],
+   "single_config_entry": true,
+-  "version": "2.20.1"
++  "version": "2.20.2"
+ }
+diff --git a/package-lock.json b/package-lock.json
+index e3c6f28..d08687d 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -1,12 +1,12 @@
+ {
+   "name": "ha-github",
+-  "version": "2.20.1",
++  "version": "2.20.2",
+   "lockfileVersion": 3,
+   "requires": true,
+   "packages": {
+     "": {
+       "name": "ha-github",
+-      "version": "2.20.1",
++      "version": "2.20.2",
+       "license": "MIT",
+       "devDependencies": {
+         "acorn": "^8.19.0",
+diff --git a/package.json b/package.json
+index 9a275ea..4dea019 100644
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "ha-github",
+-  "version": "2.20.1",
++  "version": "2.20.2",
+   "description": "Home Assistant integration with an admin sidebar panel to follow your GitHub repositories, and Lovelace cards.",
+   "private": true,
+   "type": "module",
+diff --git a/src/github-card/core.js b/src/github-card/core.js
+index 06e5162..9db4fa4 100644
+--- a/src/github-card/core.js
++++ b/src/github-card/core.js
+@@ -8,7 +8,7 @@
+  * entity registry (platform "github", translation key, device), whatever the language.
+  */
+ 
+-export const VERSION = "2.20.1";
++export const VERSION = "2.20.2";
+ 
+ // Material Design Icons paths.
+ // The width of an element's whole text in its own font, in fractional pixels (scrollWidth is rounded).
+diff --git a/src/github-panel/core.js b/src/github-panel/core.js
+index 847fef8..5d4f571 100644
+--- a/src/github-panel/core.js
++++ b/src/github-panel/core.js
+@@ -23,7 +23,7 @@
+  *   notifications, and the title bar hidden (the tabs and the menu button stay).
+  */
+ 
+-export const GITHUB_PANEL_VERSION = "2.20.1";
++export const GITHUB_PANEL_VERSION = "2.20.2";
+ // No Activity tab since 2.3.0: the Repositories tab shows the same; /github-config/activity opens Repositories.
+ export const GITHUB_PANEL_TABS = ["repos", "issues", "pulls", "mine", "branches", "create", "settings"];
+ // Upper bound of the minimum age of the Branches tab, in days (kept in step with const.py)
+diff --git a/src/github-panel/panel.js b/src/github-panel/panel.js
+index b0be043..2705855 100644
+--- a/src/github-panel/panel.js
++++ b/src/github-panel/panel.js
+@@ -250,7 +250,7 @@ export class GitHubPanel extends HTMLElement {
+     @container (max-width:420px) { .scene { display:none; } .bhead { right:0; } }
+     /* Tiles and rows */
+     .kpis { display:grid; grid-template-columns:repeat(auto-fit, minmax(170px, 1fr)); gap:8px; }
+-    .tile { display:flex; align-items:center; gap:10px; min-height:56px; padding:8px 10px 8px 8px; border-radius:12px; background:var(--gh-sec); box-sizing:border-box; min-width:0; }
++    .tile { display:flex; align-items:center; gap:10px; min-height:56px; padding:8px 10px 8px 8px; border-radius: 10px; background:var(--gh-sec); box-sizing:border-box; min-width:0; }
+     .kv { display:flex; flex-direction:column; min-width:0; }
+     .kv b { font-size:17px; font-weight:500; line-height:1.2; }
+     .kv span { font-size:12px; color:var(--secondary-text-color); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+@@ -1493,8 +1493,9 @@ export class GitHubPanel extends HTMLElement {
+     const days = Number.isFinite(t) ? Math.max(0, Math.floor((Date.now() - t) / 86400000)) : null;
+     const label = esc(`${b.repo}/${b.branch}`);
+     const tree = `https://github.com/${b.repo}/tree/${String(b.branch).split("/").map(encodeURIComponent).join("/")}`;
++    const prUrl = /^https:\/\/github\.com\//.test(String(b.pr?.url || "")) ? b.pr.url : `https://github.com/${b.repo}/pull/${encodeURIComponent(b.pr?.number ?? "")}`;
+     const pr = b.pr
+-      ? `<a class="rev warn" href="${esc(b.pr.url)}" target="_blank" rel="noopener noreferrer" title="${esc(this._t("b_open_pr", { number: b.pr.number }))}">${githubPanelIcon("pr")}#${esc(b.pr.number)}</a>`
++      ? `<a class="rev warn" href="${esc(prUrl)}" target="_blank" rel="noopener noreferrer" title="${esc(this._t("b_open_pr", { number: b.pr.number }))}">${githubPanelIcon("pr")}#${esc(b.pr.number)}</a>`
+       : "";
+     const box = this._gh?.authenticated
+       ? `<input type="checkbox" class="pick-repo" data-branch="${esc(key)}" aria-label="${label}" title="${label}"${on ? " checked" : ""}${this._branchBusy ? " disabled" : ""}>`
+-- 
+2.43.0
+

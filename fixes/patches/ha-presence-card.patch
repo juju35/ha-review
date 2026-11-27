@@ -1,0 +1,93 @@
+From 0f24e52dc85f6d868bf00cfd3a494647f0924736 Mon Sep 17 00:00:00 2001
+From: juju35 <julienstephan29@gmail.com>
+Date: Fri, 27 Nov 2026 04:16:06 +0100
+Subject: [PATCH] chore: apply the november review fixes
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Fixes from the review of the ha-* repositories (juju35/ha-review).
+
+- `SECURITY.md`: how to report a vulnerability privately.
+- README: the Marketplace section names the dashboard resource (`/local/community/…`).
+- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).
+
+No version bump: nothing users install changes.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01F4sAn1x21MmgHHeW1MLKJ5
+---
+ .pre-commit-config.yaml |  4 ++--
+ README.md               |  2 +-
+ SECURITY.md             | 17 +++++++++++++++++
+ biome.json              |  2 +-
+ 4 files changed, 21 insertions(+), 4 deletions(-)
+ create mode 100644 SECURITY.md
+
+diff --git a/.pre-commit-config.yaml b/.pre-commit-config.yaml
+index 2e7f037..8acb3c5 100644
+--- a/.pre-commit-config.yaml
++++ b/.pre-commit-config.yaml
+@@ -17,10 +17,10 @@ repos:
+       - id: check-merge-conflict
+       - id: mixed-line-ending
+   - repo: https://github.com/biomejs/pre-commit
+-    rev: "v2.6.4"
++    rev: "v2.6.8"
+     hooks:
+       - id: biome-check
+-        additional_dependencies: ["@biomejs/biome@2.6.4"]
++        additional_dependencies: ["@biomejs/biome@2.6.8"]
+   - repo: local
+     hooks:
+       - id: card-js-syntax
+diff --git a/README.md b/README.md
+index 01eaa40..4b1252c 100644
+--- a/README.md
++++ b/README.md
+@@ -67,7 +67,7 @@ Click the button below to add the repository directly:
+ 
+ [![Add to the Marketplace](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/marketplace_repository/?owner=juju35&repository=ha-presence-card&category=plugin)
+ 
+-Then click **Install**, and reload your browser when the Marketplace asks you to.
++Then click **Install**, and reload your browser when the Marketplace asks you to. The resource is `/local/community/ha-presence-card/presence-card.js`.
+ 
+ Or manually:
+ 
+diff --git a/SECURITY.md b/SECURITY.md
+new file mode 100644
+index 0000000..3694c36
+--- /dev/null
++++ b/SECURITY.md
+@@ -0,0 +1,17 @@
++# Security policy
++
++## Reporting a vulnerability
++
++Please **do not open a public issue** for a security problem.
++
++Report it privately with GitHub's
++[private vulnerability reporting](https://github.com/juju35/ha-presence-card/security/advisories/new)
++(Security tab → *Report a vulnerability*). Include what is affected, how to reproduce it and the
++version you use.
++
++You will get an answer within a few days. Once fixed, the fix ships in a release and the advisory
++is published with credit to the reporter, unless you prefer to stay anonymous.
++
++## Supported versions
++
++Only the latest release receives fixes. Update through the Home Assistant Marketplace.
+diff --git a/biome.json b/biome.json
+index dc3f8c3..9e911e7 100644
+--- a/biome.json
++++ b/biome.json
+@@ -1,5 +1,5 @@
+ {
+-  "$schema": "https://biomejs.dev/schemas/2.6.4/schema.json",
++  "$schema": "https://biomejs.dev/schemas/2.6.8/schema.json",
+   "files": {
+     "includes": ["**/*.js", "**/*.mjs", "!**/dist", "!**/vendor", "!**/node_modules", "!**/*.min.js"]
+   },
+-- 
+2.43.0
+

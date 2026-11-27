@@ -1,0 +1,198 @@
+From 877fd8d305726ad60cbe32d77c71bb4405e6839c Mon Sep 17 00:00:00 2001
+From: juju35 <julienstephan29@gmail.com>
+Date: Fri, 27 Nov 2026 04:16:06 +0100
+Subject: [PATCH] fix: apply the november review fixes (1.7.2)
+
+Fixes from the review of the ha-* repositories (juju35/ha-review).
+
+- `SECURITY.md`: how to report a vulnerability privately.
+- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).
+- Panel: the links to the Proxmox web interface only open http(s) addresses.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01F4sAn1x21MmgHHeW1MLKJ5
+---
+ .pre-commit-config.yaml                       |  4 ++--
+ CHANGELOG.md                                  |  5 +++++
+ SECURITY.md                                   | 17 +++++++++++++++++
+ biome.json                                    |  2 +-
+ custom_components/proxmox_panel/const.py      |  2 +-
+ custom_components/proxmox_panel/manifest.json |  2 +-
+ package-lock.json                             |  4 ++--
+ package.json                                  |  2 +-
+ src/proxmox-cards/constants.js                |  2 +-
+ src/proxmox-panel/core.js                     |  2 +-
+ src/proxmox-panel/panel.js                    |  5 +++--
+ 11 files changed, 35 insertions(+), 12 deletions(-)
+ create mode 100644 SECURITY.md
+
+diff --git a/.pre-commit-config.yaml b/.pre-commit-config.yaml
+index 69bbeae..02adf0f 100644
+--- a/.pre-commit-config.yaml
++++ b/.pre-commit-config.yaml
+@@ -23,10 +23,10 @@ repos:
+         args: [--fix]
+       - id: ruff-format
+   - repo: https://github.com/biomejs/pre-commit
+-    rev: "v2.6.4"
++    rev: "v2.6.8"
+     hooks:
+       - id: biome-check
+-        additional_dependencies: ["@biomejs/biome@2.6.4"]
++        additional_dependencies: ["@biomejs/biome@2.6.8"]
+   - repo: local
+     hooks:
+       - id: card-js-syntax
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index 7edeeb1..0c6c2f7 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,10 @@
+ # Changelog
+ 
++## 1.7.2 - 2026-11-27
++
++### Fixes
++- Panel: the links to the Proxmox web interface only open http(s) addresses.
++
+ ## 1.7.1 - 2026-11-24
+ 
+ ### Maintenance
+diff --git a/SECURITY.md b/SECURITY.md
+new file mode 100644
+index 0000000..2fdc755
+--- /dev/null
++++ b/SECURITY.md
+@@ -0,0 +1,17 @@
++# Security policy
++
++## Reporting a vulnerability
++
++Please **do not open a public issue** for a security problem.
++
++Report it privately with GitHub's
++[private vulnerability reporting](https://github.com/juju35/ha-proxmox/security/advisories/new)
++(Security tab → *Report a vulnerability*). Include what is affected, how to reproduce it and the
++version you use.
++
++You will get an answer within a few days. Once fixed, the fix ships in a release and the advisory
++is published with credit to the reporter, unless you prefer to stay anonymous.
++
++## Supported versions
++
++Only the latest release receives fixes. Update through the Home Assistant Marketplace.
+diff --git a/biome.json b/biome.json
+index 09dfccb..daed569 100644
+--- a/biome.json
++++ b/biome.json
+@@ -1,5 +1,5 @@
+ {
+-  "$schema": "https://biomejs.dev/schemas/2.6.4/schema.json",
++  "$schema": "https://biomejs.dev/schemas/2.6.8/schema.json",
+   "files": {
+     "includes": ["**/*.js", "**/*.mjs", "!**/dist", "!**/vendor", "!**/node_modules", "!**/*.min.js", "!custom_components/proxmox_panel/frontend/proxmox-panel.js", "!custom_components/proxmox_panel/frontend/proxmox-cards.js"]
+   },
+diff --git a/custom_components/proxmox_panel/const.py b/custom_components/proxmox_panel/const.py
+index 56bbc16..799a34a 100644
+--- a/custom_components/proxmox_panel/const.py
++++ b/custom_components/proxmox_panel/const.py
+@@ -1,7 +1,7 @@
+ """Constants for the Proxmox Panel integration."""
+ 
+ DOMAIN = "proxmox_panel"
+-VERSION = "1.7.1"
++VERSION = "1.7.2"
+ 
+ # The core Proxmox VE integration, whose devices and entities the panel shows
+ PROXMOX_DOMAIN = "proxmoxve"
+diff --git a/custom_components/proxmox_panel/manifest.json b/custom_components/proxmox_panel/manifest.json
+index 23fd67e..3ef2c03 100644
+--- a/custom_components/proxmox_panel/manifest.json
++++ b/custom_components/proxmox_panel/manifest.json
+@@ -12,5 +12,5 @@
+   "issue_tracker": "https://github.com/juju35/ha-proxmox/issues",
+   "requirements": [],
+   "single_config_entry": true,
+-  "version": "1.7.1"
++  "version": "1.7.2"
+ }
+diff --git a/package-lock.json b/package-lock.json
+index b5e9d87..1974e8d 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -1,12 +1,12 @@
+ {
+   "name": "ha-proxmox",
+-  "version": "1.7.1",
++  "version": "1.7.2",
+   "lockfileVersion": 3,
+   "requires": true,
+   "packages": {
+     "": {
+       "name": "ha-proxmox",
+-      "version": "1.7.1",
++      "version": "1.7.2",
+       "license": "MIT",
+       "devDependencies": {
+         "acorn": "^8.19.0",
+diff --git a/package.json b/package.json
+index 5f7b288..7c2313d 100644
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "ha-proxmox",
+-  "version": "1.7.1",
++  "version": "1.7.2",
+   "description": "Home Assistant sidebar panel for the Proxmox VE integration: nodes, virtual machines, containers, storage and backups.",
+   "private": true,
+   "type": "module",
+diff --git a/src/proxmox-cards/constants.js b/src/proxmox-cards/constants.js
+index 22d83c2..948ae41 100644
+--- a/src/proxmox-cards/constants.js
++++ b/src/proxmox-cards/constants.js
+@@ -1,4 +1,4 @@
+-export const PROXMOX_CARDS_VERSION = "1.7.1";
++export const PROXMOX_CARDS_VERSION = "1.7.2";
+ export const LANGUAGE_NAMES = {
+   en: "English", fr: "Français", de: "Deutsch", es: "Español", sr: "Српски", "sr-Latn": "Srpski (latinica)", it: "Italiano",
+   nl: "Nederlands", pt: "Português", pl: "Polski", ro: "Română", da: "Dansk", sv: "Svenska", bg: "Български", ru: "Русский",
+diff --git a/src/proxmox-panel/core.js b/src/proxmox-panel/core.js
+index 6bd7b52..33fbbd8 100644
+--- a/src/proxmox-panel/core.js
++++ b/src/proxmox-panel/core.js
+@@ -54,7 +54,7 @@ import {
+   PROXMOX_VARS,
+ } from "../../custom_components/proxmox_panel/frontend/proxmox-common.js";
+ 
+-export const PROXMOX_PANEL_VERSION = "1.7.1";
++export const PROXMOX_PANEL_VERSION = "1.7.2";
+ // The integrations whose entries the panel reads: the Proxmox VE ones (the custom one moved to proxmoxve_custom in 6.0,
+ // #32), then Proxmox Extended Sensors
+ export const PROXMOX_PANEL_VE_DOMAINS = ["proxmoxve", "proxmoxve_custom"];
+diff --git a/src/proxmox-panel/panel.js b/src/proxmox-panel/panel.js
+index 1a84047..cee82f2 100644
+--- a/src/proxmox-panel/panel.js
++++ b/src/proxmox-panel/panel.js
+@@ -645,7 +645,8 @@ export class ProxmoxPanel extends HTMLElement {
+           return `<button class="act${tone}" data-action="press" data-item="${esc(node.id)}" data-press="${a}">${proxmoxPanelIcon(a)}${esc(this._t(`a_${a}`))}</button>`;
+         })
+         .join("");
+-      const link = node.url ? `<a class="link" href="${esc(node.url)}" target="_blank" rel="noopener noreferrer" title="${esc(this._t("open_proxmox"))}" aria-label="${esc(this._t("open_proxmox"))}">${proxmoxPanelIcon("open")}</a>` : "";
++      // Web links only: a configured or reported URL never becomes a javascript: link.
++      const link = /^https?:\/\//i.test(String(node.url || "")) ? `<a class="link" href="${esc(node.url)}" target="_blank" rel="noopener noreferrer" title="${esc(this._t("open_proxmox"))}" aria-label="${esc(this._t("open_proxmox"))}">${proxmoxPanelIcon("open")}</a>` : "";
+       return `<div class="box">
+           <div class="nhead"><span class="badge${status === "online" ? "" : " muted"}">${proxmoxPanelIcon("logo")}</span>
+             <div class="t"><span class="n">${esc(node.name)}</span><div class="m">${meta}</div></div>
+@@ -753,7 +754,7 @@ export class ProxmoxPanel extends HTMLElement {
+         return `<button class="act${tone}" data-action="press" data-item="${esc(g.id)}" data-press="${a}">${proxmoxPanelIcon(a)}${esc(this._t(`a_${a}`))}</button>`;
+       })
+       .join("");
+-    const link = g.url ? `<a class="act quiet" href="${esc(g.url)}" target="_blank" rel="noopener noreferrer">${proxmoxPanelIcon("open")}${esc(this._t("open_proxmox"))}</a>` : "";
++    const link = /^https?:\/\//i.test(String(g.url || "")) ? `<a class="act quiet" href="${esc(g.url)}" target="_blank" rel="noopener noreferrer">${proxmoxPanelIcon("open")}${esc(this._t("open_proxmox"))}</a>` : "";
+     return `<div class="detail">${facts.length ? `<div class="m">${facts.join("")}</div>` : ""}<div class="acts">${actions}${link}</div></div>`;
+   }
+ 
+-- 
+2.43.0
+

@@ -1,0 +1,137 @@
+From 68cae2a1312e88b8113a953c9311dd1ea0dae8ae Mon Sep 17 00:00:00 2001
+From: juju35 <julienstephan29@gmail.com>
+Date: Fri, 27 Nov 2026 04:16:04 +0100
+Subject: [PATCH] fix: apply the november review fixes (1.2.4)
+
+Fixes from the review of the ha-* repositories (juju35/ha-review).
+
+- `SECURITY.md`: how to report a vulnerability privately.
+- Tiles have the 10 px corner radius shared by the ha-* cards.
+- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01F4sAn1x21MmgHHeW1MLKJ5
+---
+ .pre-commit-config.yaml |  4 ++--
+ CHANGELOG.md            |  5 +++++
+ SECURITY.md             | 17 +++++++++++++++++
+ biome.json              |  2 +-
+ package-lock.json       |  4 ++--
+ package.json            |  2 +-
+ src/styles.js           |  2 +-
+ 7 files changed, 29 insertions(+), 7 deletions(-)
+ create mode 100644 SECURITY.md
+
+diff --git a/.pre-commit-config.yaml b/.pre-commit-config.yaml
+index 469f0d4..8acb3c5 100644
+--- a/.pre-commit-config.yaml
++++ b/.pre-commit-config.yaml
+@@ -17,10 +17,10 @@ repos:
+       - id: check-merge-conflict
+       - id: mixed-line-ending
+   - repo: https://github.com/biomejs/pre-commit
+-    rev: "v2.6.7"
++    rev: "v2.6.8"
+     hooks:
+       - id: biome-check
+-        additional_dependencies: ["@biomejs/biome@2.6.7"]
++        additional_dependencies: ["@biomejs/biome@2.6.8"]
+   - repo: local
+     hooks:
+       - id: card-js-syntax
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index 1818655..7c7f642 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,10 @@
+ # Changelog
+ 
++## 1.2.4 - 2026-11-27
++
++### Fixes
++- Tiles have the 10 px corner radius shared by the ha-* cards.
++
+ ## 1.2.3 - 2026-11-24
+ 
+ ### Maintenance
+diff --git a/SECURITY.md b/SECURITY.md
+new file mode 100644
+index 0000000..ab62b46
+--- /dev/null
++++ b/SECURITY.md
+@@ -0,0 +1,17 @@
++# Security policy
++
++## Reporting a vulnerability
++
++Please **do not open a public issue** for a security problem.
++
++Report it privately with GitHub's
++[private vulnerability reporting](https://github.com/juju35/ha-matter-card/security/advisories/new)
++(Security tab → *Report a vulnerability*). Include what is affected, how to reproduce it and the
++version you use.
++
++You will get an answer within a few days. Once fixed, the fix ships in a release and the advisory
++is published with credit to the reporter, unless you prefer to stay anonymous.
++
++## Supported versions
++
++Only the latest release receives fixes. Update through the Home Assistant Marketplace.
+diff --git a/biome.json b/biome.json
+index 3b76bb3..9e911e7 100644
+--- a/biome.json
++++ b/biome.json
+@@ -1,5 +1,5 @@
+ {
+-  "$schema": "https://biomejs.dev/schemas/2.6.7/schema.json",
++  "$schema": "https://biomejs.dev/schemas/2.6.8/schema.json",
+   "files": {
+     "includes": ["**/*.js", "**/*.mjs", "!**/dist", "!**/vendor", "!**/node_modules", "!**/*.min.js"]
+   },
+diff --git a/package-lock.json b/package-lock.json
+index 556c94d..0f1fd12 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -1,12 +1,12 @@
+ {
+   "name": "ha-matter-card",
+-  "version": "1.2.3",
++  "version": "1.2.4",
+   "lockfileVersion": 3,
+   "requires": true,
+   "packages": {
+     "": {
+       "name": "ha-matter-card",
+-      "version": "1.2.3",
++      "version": "1.2.4",
+       "license": "MIT",
+       "devDependencies": {
+         "acorn": "^8.19.0",
+diff --git a/package.json b/package.json
+index 654e6d1..16445ec 100644
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "ha-matter-card",
+-  "version": "1.2.3",
++  "version": "1.2.4",
+   "description": "Matter and Thread network card for Home Assistant: every Matter node, its transport and its health, under an animated banner.",
+   "repository": {
+     "type": "git",
+diff --git a/src/styles.js b/src/styles.js
+index cba9531..3df35ab 100644
+--- a/src/styles.js
++++ b/src/styles.js
+@@ -141,7 +141,7 @@ export const FULL_STYLE = `
+   /* Under 390 px (a phone, a narrow column) two tiles leave the name a few letters: one node per row. */
+   @container (max-width: 389px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+   .tile { all: unset; position: relative; box-sizing: border-box; cursor: pointer; min-width: 0; min-height: 56px;
+-          display: flex; align-items: center; gap: 10px; padding: 8px 10px 8px 8px; border-radius: 12px; --t: var(--mc-ok);
++          display: flex; align-items: center; gap: 10px; padding: 8px 10px 8px 8px; border-radius: 10px; --t: var(--mc-ok);
+           background: var(--secondary-background-color, #f1f1f1); transition: background .2s; }
+   .tile.lvl-warn { --t: var(--mc-warn); } .tile.lvl-alert { --t: var(--mc-alert); }
+   /* The tile stays neutral: an issue shows on its icon, its state line and its status dot only. */
+-- 
+2.43.0
+

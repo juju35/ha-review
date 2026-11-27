@@ -1,0 +1,137 @@
+From 5e8333dcf384013ec819df2f18ba86b40bb9fb63 Mon Sep 17 00:00:00 2001
+From: juju35 <julienstephan29@gmail.com>
+Date: Fri, 27 Nov 2026 04:16:09 +0100
+Subject: [PATCH] fix: apply the november review fixes (1.5.4)
+
+Fixes from the review of the ha-* repositories (juju35/ha-review).
+
+- `SECURITY.md`: how to report a vulnerability privately.
+- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.
+- Biome 2.6.8, like the other ha-* repos (schema and pre-commit).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01F4sAn1x21MmgHHeW1MLKJ5
+---
+ .pre-commit-config.yaml |  4 ++--
+ CHANGELOG.md            |  5 +++++
+ SECURITY.md             | 17 +++++++++++++++++
+ biome.json              |  2 +-
+ package-lock.json       |  4 ++--
+ package.json            |  2 +-
+ src/todo-card/styles.js |  2 +-
+ 7 files changed, 29 insertions(+), 7 deletions(-)
+ create mode 100644 SECURITY.md
+
+diff --git a/.pre-commit-config.yaml b/.pre-commit-config.yaml
+index 469f0d4..8acb3c5 100644
+--- a/.pre-commit-config.yaml
++++ b/.pre-commit-config.yaml
+@@ -17,10 +17,10 @@ repos:
+       - id: check-merge-conflict
+       - id: mixed-line-ending
+   - repo: https://github.com/biomejs/pre-commit
+-    rev: "v2.6.7"
++    rev: "v2.6.8"
+     hooks:
+       - id: biome-check
+-        additional_dependencies: ["@biomejs/biome@2.6.7"]
++        additional_dependencies: ["@biomejs/biome@2.6.8"]
+   - repo: local
+     hooks:
+       - id: card-js-syntax
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index f40b78f..743b7f2 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,10 @@
+ # Changelog
+ 
++## 1.5.4 - 2026-11-27
++
++### Fixes
++- Idle states use the theme's secondary text colour (`--secondary-text-color`), like every ha-* card.
++
+ ## 1.5.3 - 2026-11-24
+ 
+ ### Maintenance
+diff --git a/SECURITY.md b/SECURITY.md
+new file mode 100644
+index 0000000..154b8c2
+--- /dev/null
++++ b/SECURITY.md
+@@ -0,0 +1,17 @@
++# Security policy
++
++## Reporting a vulnerability
++
++Please **do not open a public issue** for a security problem.
++
++Report it privately with GitHub's
++[private vulnerability reporting](https://github.com/juju35/ha-todo-card/security/advisories/new)
++(Security tab → *Report a vulnerability*). Include what is affected, how to reproduce it and the
++version you use.
++
++You will get an answer within a few days. Once fixed, the fix ships in a release and the advisory
++is published with credit to the reporter, unless you prefer to stay anonymous.
++
++## Supported versions
++
++Only the latest release receives fixes. Update through the Home Assistant Marketplace.
+diff --git a/biome.json b/biome.json
+index 3b76bb3..9e911e7 100644
+--- a/biome.json
++++ b/biome.json
+@@ -1,5 +1,5 @@
+ {
+-  "$schema": "https://biomejs.dev/schemas/2.6.7/schema.json",
++  "$schema": "https://biomejs.dev/schemas/2.6.8/schema.json",
+   "files": {
+     "includes": ["**/*.js", "**/*.mjs", "!**/dist", "!**/vendor", "!**/node_modules", "!**/*.min.js"]
+   },
+diff --git a/package-lock.json b/package-lock.json
+index d4ba94b..4b6d468 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -1,12 +1,12 @@
+ {
+   "name": "ha-todo-card",
+-  "version": "1.5.3",
++  "version": "1.5.4",
+   "lockfileVersion": 3,
+   "requires": true,
+   "packages": {
+     "": {
+       "name": "ha-todo-card",
+-      "version": "1.5.3",
++      "version": "1.5.4",
+       "license": "MIT",
+       "devDependencies": {
+         "acorn": "^8.19.0",
+diff --git a/package.json b/package.json
+index 905b9dd..1f33e69 100644
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "ha-todo-card",
+-  "version": "1.5.3",
++  "version": "1.5.4",
+   "description": "Lovelace cards for Home Assistant: to-do and shopping lists: tick items off, add new ones, due dates, every list of every to-do integration.",
+   "private": true,
+   "type": "module",
+diff --git a/src/todo-card/styles.js b/src/todo-card/styles.js
+index 5a00df8..d7d863a 100644
+--- a/src/todo-card/styles.js
++++ b/src/todo-card/styles.js
+@@ -4,7 +4,7 @@
+ 
+ export const BASE_STYLE = `
+   :host { --td-accent: #1e88e5; --td-ok: var(--success-color, #43a047); --td-warn: var(--warning-color, #ffa600);
+-          --td-crit: var(--error-color, #db4437); --td-idle: var(--disabled-text-color, #9e9e9e); --td-active: var(--info-color, #039be5);
++          --td-crit: var(--error-color, #db4437); --td-idle: var(--secondary-text-color, #9e9e9e); --td-active: var(--info-color, #039be5);
+           /* Text in a state color is mixed with the text color so that it reads at 4.5:1 at least. */
+           --td-accent-text: color-mix(in srgb, var(--td-accent) 50%, var(--primary-text-color)); }
+   ha-card { overflow: hidden; container: td-card / inline-size; }
+-- 
+2.43.0
+

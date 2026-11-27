@@ -1,0 +1,106 @@
+From d9daafd6ff52a4d09d6933dec93e0aecf5666204 Mon Sep 17 00:00:00 2001
+From: juju35 <julienstephan29@gmail.com>
+Date: Fri, 27 Nov 2026 04:16:12 +0100
+Subject: [PATCH] fix: apply the november review fixes (1.1.4)
+
+Fixes from the review of the ha-* repositories (juju35/ha-review).
+
+- `SECURITY.md`: how to report a vulnerability privately.
+- Tiles have the 10 px corner radius shared by the ha-* cards.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01F4sAn1x21MmgHHeW1MLKJ5
+---
+ CHANGELOG.md      |  5 +++++
+ SECURITY.md       | 17 +++++++++++++++++
+ package-lock.json |  4 ++--
+ package.json      |  2 +-
+ src/styles.js     |  2 +-
+ 5 files changed, 26 insertions(+), 4 deletions(-)
+ create mode 100644 SECURITY.md
+
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index 45d0fd4..84a3ca4 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,10 @@
+ # Changelog
+ 
++## 1.1.4 - 2026-11-27
++
++### Fixes
++- Tiles have the 10 px corner radius shared by the ha-* cards.
++
+ ## 1.1.3 - 2026-11-24
+ 
+ ### Maintenance
+diff --git a/SECURITY.md b/SECURITY.md
+new file mode 100644
+index 0000000..3029ca1
+--- /dev/null
++++ b/SECURITY.md
+@@ -0,0 +1,17 @@
++# Security policy
++
++## Reporting a vulnerability
++
++Please **do not open a public issue** for a security problem.
++
++Report it privately with GitHub's
++[private vulnerability reporting](https://github.com/juju35/ha-zwave-card/security/advisories/new)
++(Security tab → *Report a vulnerability*). Include what is affected, how to reproduce it and the
++version you use.
++
++You will get an answer within a few days. Once fixed, the fix ships in a release and the advisory
++is published with credit to the reporter, unless you prefer to stay anonymous.
++
++## Supported versions
++
++Only the latest release receives fixes. Update through the Home Assistant Marketplace.
+diff --git a/package-lock.json b/package-lock.json
+index 1e8e858..4bcbb03 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -1,12 +1,12 @@
+ {
+   "name": "ha-zwave-card",
+-  "version": "1.1.3",
++  "version": "1.1.4",
+   "lockfileVersion": 3,
+   "requires": true,
+   "packages": {
+     "": {
+       "name": "ha-zwave-card",
+-      "version": "1.1.3",
++      "version": "1.1.4",
+       "license": "MIT",
+       "devDependencies": {
+         "acorn": "^8.19.0",
+diff --git a/package.json b/package.json
+index fd38cbf..b558b17 100644
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "ha-zwave-card",
+-  "version": "1.1.3",
++  "version": "1.1.4",
+   "description": "Z-Wave network card for Home Assistant: every Z-Wave JS node, its status, security and protocol, its controller, under an animated banner.",
+   "repository": {
+     "type": "git",
+diff --git a/src/styles.js b/src/styles.js
+index 6e2731c..6b61d1d 100644
+--- a/src/styles.js
++++ b/src/styles.js
+@@ -149,7 +149,7 @@ export const FULL_STYLE = `
+   /* Under 390 px (a phone, a narrow column) two tiles leave the name a few letters: one node per row. */
+   @container (max-width: 389px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+   .tile { all: unset; position: relative; box-sizing: border-box; cursor: pointer; min-width: 0; min-height: 56px;
+-          display: flex; align-items: center; gap: 10px; padding: 8px 10px 8px 8px; border-radius: 12px; --t: var(--zw-ok);
++          display: flex; align-items: center; gap: 10px; padding: 8px 10px 8px 8px; border-radius: 10px; --t: var(--zw-ok);
+           background: var(--secondary-background-color, #f1f1f1); transition: background .2s; }
+   .tile.lvl-warn { --t: var(--zw-warn); } .tile.lvl-alert { --t: var(--zw-alert); }
+   /* A sleeping node is healthy: its status dot is grey, the rest neutral. */
+-- 
+2.43.0
+

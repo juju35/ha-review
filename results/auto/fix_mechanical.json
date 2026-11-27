@@ -1,0 +1,838 @@
+{
+ "ha-3d-printer-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-alarm-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-assist-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-backup-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-calendar-card": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-camera": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-carburants-france": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-certificate-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "resource",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-chores-card": {
+  "fixes": [
+   "security",
+   "radius"
+  ],
+  "shipped": true
+ },
+ "ha-climate-air-card": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-cloud-card": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-console-card": {
+  "fixes": [
+   "security",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-countdown-card": {
+  "fixes": [
+   "security",
+   "radius"
+  ],
+  "shipped": true
+ },
+ "ha-cover-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-dashboard-header": {
+  "fixes": [
+   "security"
+  ],
+  "shipped": false
+ },
+ "ha-device-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-dns-filter-card": {
+  "fixes": [
+   "security",
+   "resource",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-docker-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "resource",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-doorbell-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-ecowatt-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-energy-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "resource",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-energy-hub": {
+  "fixes": [
+   "security",
+   "radius"
+  ],
+  "shipped": true
+ },
+ "ha-ent-educartable": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-ent-one": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-ent-skolengo": {
+  "fixes": [
+   "security",
+   "idle"
+  ],
+  "shipped": true
+ },
+ "ha-ev-charger-card": {
+  "fixes": [
+   "security",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-family-day-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-family-link": {
+  "fixes": [
+   "security",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-findmy": {
+  "fixes": [
+   "security"
+  ],
+  "shipped": false
+ },
+ "ha-flight-board-card": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-garden-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-github": {
+  "fixes": [
+   "security",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-heating-card": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-house-rules": {
+  "fixes": [
+   "security",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-hp": {
+  "fixes": [
+   "security"
+  ],
+  "shipped": false
+ },
+ "ha-internet-box-card": {
+  "fixes": [
+   "security",
+   "resource",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-iptv": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-light-card": {
+  "fixes": [
+   "security",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-liquid-glass": {
+  "fixes": [
+   "security"
+  ],
+  "shipped": false
+ },
+ "ha-mailbox-card": {
+  "fixes": [
+   "security",
+   "radius"
+  ],
+  "shipped": true
+ },
+ "ha-maintenance": {
+  "fixes": [
+   "security",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-matter-card": {
+  "fixes": [
+   "security",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-meal-card": {
+  "fixes": [
+   "security",
+   "radius"
+  ],
+  "shipped": true
+ },
+ "ha-media-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-media-server-card": {
+  "fixes": [
+   "security",
+   "radius"
+  ],
+  "shipped": true
+ },
+ "ha-mower-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "resource",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-nas-card": {
+  "fixes": [
+   "security",
+   "resource",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-neutral": {
+  "fixes": [
+   "security"
+  ],
+  "shipped": false
+ },
+ "ha-notify-hub": {
+  "fixes": [
+   "security",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-opening-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "radius"
+  ],
+  "shipped": true
+ },
+ "ha-orange-internet-on-the-move": {
+  "fixes": [
+   "security"
+  ],
+  "shipped": false
+ },
+ "ha-parcel": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-pc-card": {
+  "fixes": [
+   "security",
+   "radius"
+  ],
+  "shipped": true
+ },
+ "ha-pet-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "resource",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-pool-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-power-device-card": {
+  "fixes": [
+   "security",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-presence-card": {
+  "fixes": [
+   "security",
+   "resource",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-printer-scanner-card": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-pronote-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-proxmox": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-public-transport": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-rain-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-remote-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-renault-picture": {
+  "fixes": [
+   "security"
+  ],
+  "shipped": false
+ },
+ "ha-reverse-proxy": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-room-card": {
+  "fixes": [
+   "security",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-router-card": {
+  "fixes": [
+   "security",
+   "resource",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-safety-card": {
+  "fixes": [
+   "security",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-saint-of-the-day": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-scene-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-scheduler-card": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-seedbox-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "resource",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-sky-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-smart-appliance-card": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-smart-comfort": {
+  "fixes": [
+   "security",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-smartlock-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "resource",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-solar-forecast-card": {
+  "fixes": [
+   "security",
+   "radius"
+  ],
+  "shipped": true
+ },
+ "ha-solar-roof-card": {
+  "fixes": [
+   "security",
+   "radius"
+  ],
+  "shipped": true
+ },
+ "ha-solar-router-card": {
+  "fixes": [
+   "security",
+   "radius"
+  ],
+  "shipped": true
+ },
+ "ha-speedtest-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-sports-card": {
+  "fixes": [
+   "security",
+   "radius"
+  ],
+  "shipped": true
+ },
+ "ha-stock-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "resource",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-switch-card": {
+  "fixes": [
+   "security",
+   "resource",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-system-hub": {
+  "fixes": [
+   "security",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-tank-card": {
+  "fixes": [
+   "security",
+   "radius"
+  ],
+  "shipped": true
+ },
+ "ha-tapo": {
+  "fixes": [
+   "security"
+  ],
+  "shipped": false
+ },
+ "ha-tempo-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-timer-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-todo-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-tracker-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-train-board-card": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-ups-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-uptime-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-utility-meter-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-uv-card": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-vacuum-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-vacuum-map": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-vehicle-card": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-vehicle-consumption": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-vivarium-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-wall-panel": {
+  "fixes": [
+   "security"
+  ],
+  "shipped": false
+ },
+ "ha-waste-card": {
+  "fixes": [
+   "security",
+   "idle",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-water-heater-card": {
+  "fixes": [
+   "security",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-water-pump-card": {
+  "fixes": [
+   "security",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-weather-card": {
+  "fixes": [
+   "security",
+   "resource",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-wero-card": {
+  "fixes": [
+   "security",
+   "resource",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-wifi-card": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-zigbee-card": {
+  "fixes": [
+   "security",
+   "radius",
+   "biome"
+  ],
+  "shipped": true
+ },
+ "ha-zlinky-card": {
+  "fixes": [
+   "security",
+   "biome"
+  ],
+  "shipped": false
+ },
+ "ha-zwave-card": {
+  "fixes": [
+   "security",
+   "radius"
+  ],
+  "shipped": true
+ }
+}

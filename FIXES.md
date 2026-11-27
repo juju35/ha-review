@@ -1,0 +1,51 @@
+# Fixes — status (27 Nov 2026)
+
+One branch `fix/review-2026-11` and one PR per repo. Shipped changes are bumped as a patch release with a
+CHANGELOG entry (`fix: apply the november review fixes (X.Y.Z)`); repo-only changes go as `chore:` without a
+bump. Commits are authored by juju35, in English, conventional commits.
+
+## What each PR contains (depending on the repo)
+- `SECURITY.md` (all 110 repos).
+- Idle colour → `var(--secondary-text-color, #9e9e9e)` (39 repos) and tile radius → 10 px (35 repos), per DECISIONS.md.
+- README Marketplace section names the `/local/community/<repo>/<file>.js` resource (39 cards).
+- Biome 2.6.8 everywhere (biome.json schema + pre-commit).
+- Targeted fixes:
+  - wero, camera: mini card compact again when it leaves the page;
+  - safety: dead toggle code removed;
+  - ENT one / educartable / skolengo: `opener` cut on the document tab;
+  - github: PR link github.com only, plus `icons.json`;
+  - proxmox: http(s) links only;
+  - house-rules, maintenance, notify-hub: 10 px ground bar (maintenance and notify-hub also get warn `#ffa600`);
+  - vehicle-consumption: ok = success colour;
+  - alarm, tracker, media-server: neutral tiles;
+  - wall-panel: guarded registration;
+  - power-device: clock-independent test;
+  - family-link: screenshot naming (light unsuffixed, `-dark` twins);
+  - hp, tapo, renault-picture, orange: README shows the source card repo's captures (no drifting copies);
+  - iptv: README security note;
+  - house-rules: README admin note;
+  - weather: README GIF widths;
+  - 6 repos: stale `sun.sun` comments;
+  - system-hub: sub-card versions follow the release.
+- Verified before pushing: every repo builds; node test suites pass (same results as before the changes:
+  only the Playwright layout tests that need a browser fail locally, as before); `check_screenshots.py` passes.
+
+## Status
+| State | Repos |
+|---|---|
+| **Merged** (auto-merge) | wero-card, alarm-card, backup-card, camera, carburants-france, console-card, docker-card, ecowatt-card, energy-hub |
+| **PR open — needs your merge** (auto-merge not enabled on these repos; merging them from here was refused by the session's safety check) | 3d-printer #31, assist #19, calendar #72, certificate #27, chores #9, climate-air #126, cloud #16, countdown #11, cover #47, dashboard-header #24, device #18, dns-filter #34, doorbell #28, energy-card #40 — or run `scripts/fix/merge_green.sh` (merges the green ones, squash title + description) |
+| **Ready as patches, not pushed yet** (87 repos) | `fixes/patches/<repo>.patch` — run `cd fixes && ./run.sh` (clone, apply, push, PR, auto-merge or merge when green) |
+
+## Still to do (next session)
+1. **In-place redraw** ([SCROLL.md](results/SCROLL.md)) — migrate to `rcMorph` + `_rewire()` (as room/flight/alarm do):
+   - cover-card and timer-card: they rewrite on every update, so they come first;
+   - then 3d-printer, energy, github, light, mower, pool, power-device, tempo, water-heater, vivarium, and room-card's `room-card`.
+   Each migration needs every listener moved to the abort signal; check it with `scripts/test_scroll_update.py`
+   plus a click-once check after N updates. These are separate PRs, to review (not auto-merged).
+2. **maintenance / notify-hub headers**: 2–3 scene proposals to choose from (decided: proposals first).
+3. Not done on purpose:
+   - shared header / detail-button markup across repos: the repos stay independent, so this is a big refactor with nothing visible for users;
+   - dashboard-header 1.5 s polling: works today, and the change is risky on every dashboard;
+   - public-transport pickle cache: local file written by the integration, acceptable;
+   - saint-of-the-day classic banner: a documented option.
