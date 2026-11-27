@@ -1,0 +1,45 @@
+{
+  "false_positive": {
+    "*": ["xss: innerHTML templates but no HTML-escape helper found"],
+    "ha-room-card": ["customCards without `pickerDefine()`"],
+    "ha-vacuum-map": ["bundle is minified", "eval/new Function"],
+    "ha-vehicle-card": ["eval/new Function", "vendor/"],
+    "ha-hp": ["TLS verification disabled"],
+    "ha-house-rules": ["xss: src/house-rules-panel/panel.js:258"]
+  },
+  "options_real": {
+    "ha-safety-card": ["`hide_when_off` / `only_on` read in `src/shared/base-card.js:486` — light/power logic copied from another card, never reachable from the documented options (dead code)"]
+  },
+  "notes": {
+    "ha-wero-card": [
+      {"sev": "minor", "area": "code", "msg": "Mini card: `disconnectedCallback` (src/core.js:34) does not reset `_zoomed` — after a view change the card comes back expanded (convention: detail view back to compact when the card leaves the page). Fix: `this._setZoom(false)` like ha-flight-board-card `mini-card.js:35`."}
+    ],
+    "ha-maintenance": [
+      {"sev": "minor", "area": "visual", "msg": "Header without a scene (flat gradient band + small icon cluster), ground bar 6 px, warn `#f59e0b`, tile radius 14 px — the card and the panel predate the charter alignment. See VISUAL-MANUAL V1."}
+    ],
+    "ha-notify-hub": [
+      {"sev": "minor", "area": "visual", "msg": "Same as maintenance: flat header without a scene, ground bar 6 px, warn `#f59e0b`. See VISUAL-MANUAL V1."}
+    ],
+    "ha-house-rules": [
+      {"sev": "minor", "area": "visual", "msg": "Ground bar 5 px in the cards and the panel (charter: 10 px). See VISUAL-MANUAL V2."},
+      {"sev": "info", "area": "code", "msg": "Websocket `house_rules/timer` and `house_rules/presence` act on entities without `@require_admin` while every other mutating command of the repo is admin-only. Acceptable (non-admins may call services anyway) but inconsistent — document it or align."}
+    ],
+    "ha-alarm-card": [
+      {"sev": "minor", "area": "visual", "msg": "Open-sensor tile background tinted red (charter: alert in red without tinting the tile). See VISUAL-MANUAL V3."}
+    ],
+    "ha-tracker-card": [{"sev": "minor", "area": "visual", "msg": "Tiles tinted by category (orange, blue): charter wants neutral tiles. VISUAL-MANUAL V4."}],
+    "ha-waste-card": [{"sev": "minor", "area": "visual", "msg": "Bin tiles tinted (yellow/orange): charter wants neutral tiles. VISUAL-MANUAL V4."}],
+    "ha-media-server-card": [{"sev": "minor", "area": "visual", "msg": "Counter tiles tinted pink/blue/purple: charter wants neutral tiles. VISUAL-MANUAL V4."}],
+    "ha-vehicle-consumption": [{"sev": "minor", "area": "visual", "msg": "`--*-ok` uses `--primary-color` (blue) instead of `--success-color`. VISUAL-MANUAL V5."}],
+    "ha-opening-card": [{"sev": "minor", "area": "visual", "msg": "Tile radius 14 px (others 10/12). VISUAL-MANUAL V6."}],
+    "ha-family-link": [{"sev": "minor", "area": "visual", "msg": "Screenshot naming inverted (unsuffixed = dark, `-light` twins) and README leads with the dark captures. VISUAL-MANUAL V7."}],
+    "ha-saint-of-the-day": [{"sev": "info", "area": "visual", "msg": "`illustration: false` keeps a 64 px 'classic' banner; other cards render no banner at all. VISUAL-MANUAL V8."}],
+    "ha-dashboard-header": [{"sev": "info", "area": "code", "msg": "Global `setInterval` polling every 1.5 s (src/core.js:1836) to catch theme/dashboard changes — runs forever on every page while visible. Consider reacting to `hass` updates / `location-changed` instead."}],
+    "ha-system-hub": [{"sev": "info", "area": "code", "msg": "Sub-card version constants lag behind the release (`*_CARD_VERSION = '2.11.0'`, `SECURITY_CARD_VERSION = '1.0.0'` vs 3.15.2): harmless for the release check (only the panel constant is read) but the console banner shows stale versions."}],
+    "ha-github": [{"sev": "minor", "area": "conventions", "msg": "`services.yaml` without `icons.json`: the actions have no icon in the UI (other integrations ship one)."}],
+    "ha-orange-internet-on-the-move": [{"sev": "info", "area": "conventions", "msg": "`country: FR` is right (French service) — add the repo to the France-only list of the conventions."}],
+    "ha-smart-comfort": [{"sev": "info", "area": "conventions", "msg": "`smart-comfort-activity-card` keeps `preview: false` (live activity feed): intended? The convention is light previews everywhere."}],
+    "ha-wall-panel": [{"sev": "info", "area": "conventions", "msg": "`preview: false` and no `pickerDefine()` (full-screen wall dashboard): probably intended; and `customElements.define` without a `customElements.get` guard (a double load throws)."}],
+    "ha-hp": [{"sev": "info", "area": "code", "msg": "TLS verification disabled towards the printer (`verify_ssl=False`): justified (printers use self-signed certificates); keep it limited to the printer host."}]
+  }
+}
