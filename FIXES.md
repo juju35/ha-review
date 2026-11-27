@@ -34,7 +34,7 @@ bump. Commits are authored by juju35, in English, conventional commits.
 | State | Repos |
 |---|---|
 | **Merged** (auto-merge) | wero-card, alarm-card, backup-card, camera, carburants-france, console-card, docker-card, ecowatt-card, energy-hub |
-| **PR open — needs your merge** (auto-merge not enabled on these repos; merging them from here was refused by the session's safety check) | 3d-printer #31, assist #19, calendar #72, certificate #27, chores #9, climate-air #126, cloud #16, countdown #11, cover #47, dashboard-header #24, device #18, dns-filter #34, doorbell #28, energy-card #40 — or run `scripts/fix/merge_green.sh` (merges the green ones, squash title + description) |
+| **Merged on request (27 Nov, 08:25)** | 3d-printer #31, assist #19, calendar #72, certificate #27, chores #9, climate-air #126, cloud #16, countdown #11, cover #47, device #18, doorbell #28, energy-card #40 (squash, title + description, CI green) |
 | **Ready as patches, not pushed yet** (87 repos) | `fixes/patches/<repo>.patch` — run `cd fixes && ./run.sh` (clone, apply, push, PR, auto-merge or merge when green) |
 
 ## Still to do (next session)
