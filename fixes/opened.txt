@@ -31,3 +31,13 @@ ha-findmy #14 auto
 ha-flight-board-card #26 auto
 ha-garden-card #29 no-auto
 ha-github #73 no-auto
+ha-heating-card #43 no-auto
+ha-house-rules #34 auto
+ha-hp #20 no-auto
+ha-internet-box-card #132 auto
+ha-iptv #120 auto
+ha-light-card #18 auto
+ha-liquid-glass #21 no-auto
+ha-mailbox-card #10 no-auto
+ha-maintenance #21 auto
+ha-matter-card #16 no-auto
